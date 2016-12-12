@@ -48,6 +48,16 @@
                ReferencedContainer = "container:SilentRunner.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0028B34F1DFEB5E300D58F84"
+               BuildableName = "SilentRunnerEngineTests.xctest"
+               BlueprintName = "SilentRunnerEngineTests"
+               ReferencedContainer = "container:SilentRunner.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
