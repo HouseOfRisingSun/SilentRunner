@@ -1,0 +1,24 @@
+{
+    "jsonrpc": "2.0",
+    "method": "application:openURL:options:",
+    "params": {
+    	"class":"UIApplication",
+    	"tag":"app",
+    	"arguments":[
+    		{
+    			"class":"NSURL",
+    			"properties":["stubProperty(absoluteString, @"https://github.com/andrewBatutin/SilentRunner")"],
+    			"methods":["[given(fileURLWithPath:"path") willReturn:"path"]"]
+
+    		},
+    		{
+    			value:{"opt1":"test"}
+    		},
+    		{
+    			"class":"block",
+    			"properties":["YES"],
+    			"methods":["we are fucked"]
+    		}
+    	]
+    }
+}
