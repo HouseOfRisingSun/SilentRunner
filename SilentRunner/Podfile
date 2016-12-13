@@ -10,27 +10,22 @@ target 'SilentRunner' do
   pod 'SocketRocket'
   pod 'OCMockito', '~> 4.0'
 
-  target 'SilentRunnerTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
-  target 'SilentRunnerUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
   target 'SilentRunnerEngine' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SilentRunnerEngineTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'JSONRPCom', :git => 'https://github.com/andrewBatutin/JSONRPCom.git'
     pod 'SocketRocket'
     pod 'OCMockito', '~> 4.0'
+    pod 'Mantle'
+    pod 'MAObjCRuntime'
+  end
+
+  target 'SilentRunnerEngineTests' do
+    inherit! :search_paths
+    # Pods for testing
+    
   end
 
 end

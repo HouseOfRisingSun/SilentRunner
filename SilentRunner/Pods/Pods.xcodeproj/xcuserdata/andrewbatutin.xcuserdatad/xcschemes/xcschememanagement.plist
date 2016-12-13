@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MAObjCRuntime.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,16 +44,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SilentRunnerTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SilentRunnerUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +52,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>24901DF811B731501F9FF150BCFA7B04</key>
+		<key>2A023507EAD85F40065A236BE2F30BD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A023507EAD85F40065A236BE2F30BD4</key>
+		<key>323A1A48328DF764CF063963A421FA6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6675D65C67CF6EC9BF2943699C018B97</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6F0D1876CAF93BF21510B1C89829408E</key>
+		<key>6001F55632A772B5C0CE7352C09FD95F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E617FB0AD4DA6C09E6AD5DEA4761EE1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E926E88902604B212CE84DE83F4C84C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>ED41B41C1D1384BF2DB1EF6C5FAA7C8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7A4C91A53A31733D8B2C9D53A148B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

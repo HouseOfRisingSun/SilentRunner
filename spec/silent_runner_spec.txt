@@ -2,9 +2,7 @@
     "jsonrpc": "2.0",
     "method": "execute",
     "params": {
-    	"class":"UIApplication",
-    	||
-    	"tag":"app",
+        "commandId":"UIApplication || app"
     	"method": "application:openURL:options:",
     	"arguments":[
     		{

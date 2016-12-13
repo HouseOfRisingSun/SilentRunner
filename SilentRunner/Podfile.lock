@@ -4,6 +4,7 @@ PODS:
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
+  - MAObjCRuntime (0.0.1)
   - OCHamcrest (6.0.0)
   - OCMockito (4.0.1):
     - OCHamcrest (~> 6.0)
@@ -11,6 +12,8 @@ PODS:
 
 DEPENDENCIES:
   - JSONRPCom (from `https://github.com/andrewBatutin/JSONRPCom.git`)
+  - Mantle
+  - MAObjCRuntime
   - OCMockito (~> 4.0)
   - SocketRocket
 
@@ -26,10 +29,11 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   JSONRPCom: 2e2508487b5671258d204f2fbe3512d04de59422
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MAObjCRuntime: a6a1d95acbfa3784d66cb35bd42904e47943b488
   OCHamcrest: fc8ab38149b97df8db8029a3f2157c951bf9081d
   OCMockito: 62ddc6afff6a883f2864d51224b1dfdc0e9a7df7
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: f53c0f6ad580911221cb139bd6c3e44e8c23289f
+PODFILE CHECKSUM: 1cc31af25c9941e03489bcfbef822799032365b4
 
 COCOAPODS: 1.1.1
