@@ -1,9 +1,11 @@
 {
     "jsonrpc": "2.0",
-    "method": "application:openURL:options:",
+    "method": "execute",
     "params": {
     	"class":"UIApplication",
+    	||
     	"tag":"app",
+    	"method": "application:openURL:options:",
     	"arguments":[
     		{
     			"class":"NSURL",
@@ -16,8 +18,7 @@
     		},
     		{
     			"class":"block",
-    			"properties":["YES"],
-    			"methods":["we are fucked"]
+    			"methods":["[given(invoke) willReturn:"smthng"]"]
     		}
     	]
     }
