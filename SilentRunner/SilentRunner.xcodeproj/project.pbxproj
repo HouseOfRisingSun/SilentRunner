@@ -21,6 +21,13 @@
 		00807EB41E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */; };
 		00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */; };
 		00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */; };
+		00807EB91E0021C500B4BD4C /* NSInvocation+Constructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB71E0021C500B4BD4C /* NSInvocation+Constructors.h */; };
+		00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */; };
+		00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */; };
+		00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */; };
+		00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EC01E00239600B4BD4C /* SRClientPool.h */; };
+		00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
+		00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
 		00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */; };
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,6 +93,11 @@
 		00807EAE1E0014FE00B4BD4C /* SRCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommandTest.m; sourceTree = "<group>"; };
 		00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+SRTransformers.h"; sourceTree = "<group>"; };
 		00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+SRTransformers.m"; sourceTree = "<group>"; };
+		00807EB71E0021C500B4BD4C /* NSInvocation+Constructors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Constructors.h"; sourceTree = "<group>"; };
+		00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Constructors.m"; sourceTree = "<group>"; };
+		00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+ConstructorsTest.m"; sourceTree = "<group>"; };
+		00807EC01E00239600B4BD4C /* SRClientPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClientPool.h; sourceTree = "<group>"; };
+		00807EC21E00252E00B4BD4C /* SRClientPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClientPool.m; sourceTree = "<group>"; };
 		00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SilentRunnerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SilentRunnerEngine.h; sourceTree = "<group>"; };
 		00ADFF8B1DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,6 +218,8 @@
 		00807EB01E00187A00B4BD4C /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				00807EB71E0021C500B4BD4C /* NSInvocation+Constructors.h */,
+				00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */,
 				00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */,
 				00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */,
 			);
@@ -215,13 +229,24 @@
 		00807EB11E00188900B4BD4C /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		00807EBF1E00235600B4BD4C /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				00807EC01E00239600B4BD4C /* SRClientPool.h */,
+				00807EC21E00252E00B4BD4C /* SRClientPool.m */,
+			);
+			path = logic;
 			sourceTree = "<group>";
 		};
 		00ADFF891DFECF1100D3B255 /* SilentRunnerEngine */ = {
 			isa = PBXGroup;
 			children = (
+				00807EBF1E00235600B4BD4C /* logic */,
 				00807EB01E00187A00B4BD4C /* utils */,
 				00807EA51E00073E00B4BD4C /* models */,
 				00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */,
@@ -278,8 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00807EB41E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h in Headers */,
+				00807EB91E0021C500B4BD4C /* NSInvocation+Constructors.h in Headers */,
 				00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */,
 				00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */,
+				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,7 +591,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
+				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
+				00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +602,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
+				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
+				00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */,
+				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
 				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,

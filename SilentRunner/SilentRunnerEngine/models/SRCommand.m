@@ -7,6 +7,8 @@
 //
 
 #import "SRCommand.h"
+#import "SRClientPool.h"
+#import "NSInvocation+Constructors.h"
 
 @implementation SRCommand
 
@@ -19,6 +21,10 @@
              @"parametrs":@"arguments",
              @"method":@"method"
              };
+}
+
+- (NSInvocation*)commandInvocation{
+    return [NSInvocation invocationWithTarget:[SRClientPool clientForTag:self.commandId] selector:NSSelectorFromString(self.method)];
 }
 
 @end

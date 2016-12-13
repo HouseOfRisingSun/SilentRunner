@@ -12,4 +12,6 @@
 
 @interface SRCommand : MTLModel <MTLJSONSerializing, SRCommandProtocol>
 
+- (NSInvocation*)commandInvocation;
+
 @end

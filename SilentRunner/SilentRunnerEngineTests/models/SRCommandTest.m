@@ -49,4 +49,37 @@
 }
 
 
+- (void)testSRCommandSuccsesfullInvocationConstruct{
+    NSDictionary* intput = @{
+                             @"commandId": @"UIApplication",
+                             @"method": @"openURL:options:completionHandler:",
+                             @"arguments": @[
+                                     @{
+                                         @"class": @"NSURL",
+                                         @"properties": @[
+                                                 @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
+                                                 ],
+                                         @"methods": @[
+                                                 @"[given(fileURLWithPath:\"path\") willReturn:\"path\"]"
+                                                 ]
+                                         },
+                                     @{
+                                         @"value": @{
+                                                 @"opt1": @"test"
+                                                 }
+                                         },
+                                     @{
+                                         @"class": @"block",
+                                         @"methods": @[
+                                                 @"[given(invoke) willReturn:\"smthng\"]"
+                                                 ]
+                                         }
+                                     ]
+                             };
+    NSError* parseError = nil;
+    SRCommand* entity = [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:intput error:&parseError];
+    NSInvocation* realResult = [entity commandInvocation];
+    XCTAssertNotNil(realResult);
+}
+
 @end
