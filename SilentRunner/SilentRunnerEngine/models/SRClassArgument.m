@@ -24,9 +24,7 @@
 - (id)argumentValue{
     id model = mock(NSClassFromString(self.className));
     NSString* methodName = self.methods[0][@"name"];
-    given(([model performSelector:NSSelectorFromString(methodName)]));
-    void* fPointer = (__bridge void *)([model performSelector:NSSelectorFromString(methodName)]);
-    MKTOngoingStubbing* stb2 = MKTGivenWithLocation(self, __FILE__, __LINE__, fPointer);
+    MKTOngoingStubbing* stb2 = given(([model performSelector:NSSelectorFromString(methodName)]));
     NSString* returnValue = self.methods[0][@"returnValue"];
     [stb2 willReturn:returnValue];
     
