@@ -12,11 +12,9 @@
 
 @synthesize argumentValue;
 
-
 + (NSDictionary*)JSONKeyPathsByPropertyKey{
     return @{@"argumentValue":@"value",
              };
 }
-
 
 @end

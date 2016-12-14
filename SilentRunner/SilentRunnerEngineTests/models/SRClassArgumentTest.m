@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "SRClassArgument.h"
+#import <OCHamcrest/OCHamcrest.h>
+#import <OCMockito/OCMockito.h>
 
 @interface SRClassArgumentTest : XCTestCase
 
@@ -32,5 +34,24 @@
     XCTAssertEqualObjects(realResult.methods, intput[@"methods"]);
 }
 
+- (void)testArgumentCreation{
+    id mock = [[MKTObjectMock alloc] initWithClass:NSURL.class];
+    stubProperty(mock, absoluteString, @"https://github.com/andrewBatutin/SilentRunner)");
+    
+    NSDictionary* intput =  @{
+                              @"class": @"NSURL",
+                              @"properties": @[
+                                      @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
+                                      ],
+                              @"methods": @[
+                                      @{@"name":@"isFileReferenceURL", @"returnValue":@1},
+                                      ]
+                              };
+    NSError* parseError = nil;
+    SRClassArgument* realResult = [MTLJSONAdapter modelOfClass:SRClassArgument.class fromJSONDictionary:intput error:&parseError];
+    id result = realResult.argumentValue;
+    XCTAssertEqualObjects(mock, result);
+    
+}
 
 @end

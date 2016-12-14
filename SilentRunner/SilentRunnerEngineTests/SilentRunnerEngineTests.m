@@ -35,18 +35,12 @@
     id smthng =  mock(((NSObject*)a).class);
     
     NSArray *mockArray = mock([NSArray class]);
-    
+    MKTOngoingStubbing* gg = given([mockArray objectAtIndex:0]);
     // stubbing
-    [given([mockArray objectAtIndex:0]) willReturn:@"first"];
+    //[given([mockArray objectAtIndex:0]) willReturn:@"first"];
+    [gg willReturn:@"smt"];
     
     NSLog(@"%@", [mockArray objectAtIndex:0]);
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end
