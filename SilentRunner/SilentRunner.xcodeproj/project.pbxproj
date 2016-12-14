@@ -33,6 +33,20 @@
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF9E1DFECF1100D3B255 /* SilentRunnerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; };
+		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; };
+		00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
+		00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
+		00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2411E0154A5002AFDF8 /* SRClassArgumentTest.m */; };
+		00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2431E015AA1002AFDF8 /* SRConcreteArgument.h */; };
+		00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */; };
+		00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */; };
+		00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2481E015CD6002AFDF8 /* SRValueArgument.h */; };
+		00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */; };
+		00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */; };
+		00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */; };
+		00F3B2501E015E78002AFDF8 /* SRBlockArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */; };
+		00F3B2511E015E78002AFDF8 /* SRBlockArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */; };
 		612FE25B2578EFA10CB7F673 /* libPods-SilentRunnerEngineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0CD0209A73CBD56E9CFE95 /* libPods-SilentRunnerEngineTests.a */; };
 		95FC5A43AD880BA0B760062B /* libPods-SilentRunner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F4BB7F3DC482C3816139AA /* libPods-SilentRunner.a */; };
 		D3231194EC22010489F9CA3D /* libPods-SilentRunnerEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9BFA6C827BE3BC1386A3F /* libPods-SilentRunnerEngine.a */; };
@@ -104,6 +118,16 @@
 		00ADFF901DFECF1100D3B255 /* SilentRunnerEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentRunnerEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SilentRunnerEngineTests.m; sourceTree = "<group>"; };
 		00ADFF991DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F3B23A1E015234002AFDF8 /* SRArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArgument.h; sourceTree = "<group>"; };
+		00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassArgument.h; sourceTree = "<group>"; };
+		00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassArgument.m; sourceTree = "<group>"; };
+		00F3B2411E0154A5002AFDF8 /* SRClassArgumentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassArgumentTest.m; sourceTree = "<group>"; };
+		00F3B2431E015AA1002AFDF8 /* SRConcreteArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRConcreteArgument.h; sourceTree = "<group>"; };
+		00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRConcreteArgument.m; sourceTree = "<group>"; };
+		00F3B2481E015CD6002AFDF8 /* SRValueArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValueArgument.h; sourceTree = "<group>"; };
+		00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValueArgument.m; sourceTree = "<group>"; };
+		00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBlockArgument.h; sourceTree = "<group>"; };
+		00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBlockArgument.m; sourceTree = "<group>"; };
 		1D0CD0209A73CBD56E9CFE95 /* libPods-SilentRunnerEngineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerEngineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7880C2570E75BDF4756BCF /* Pods-SilentRunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerTests/Pods-SilentRunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		282DF76EE5E3A609D3EFFE38 /* libPods-SilentRunnerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +227,15 @@
 				00807EA71E00078E00B4BD4C /* SRCommand.h */,
 				00807EA81E00078E00B4BD4C /* SRCommand.m */,
 				00807EAC1E0007B900B4BD4C /* SRCommandProtocol.h */,
+				00F3B23A1E015234002AFDF8 /* SRArgument.h */,
+				00F3B2431E015AA1002AFDF8 /* SRConcreteArgument.h */,
+				00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */,
+				00F3B2481E015CD6002AFDF8 /* SRValueArgument.h */,
+				00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */,
+				00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */,
+				00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */,
+				00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */,
+				00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -211,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				00807EAE1E0014FE00B4BD4C /* SRCommandTest.m */,
+				00F3B2411E0154A5002AFDF8 /* SRClassArgumentTest.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -304,9 +338,14 @@
 			files = (
 				00807EB41E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h in Headers */,
 				00807EB91E0021C500B4BD4C /* NSInvocation+Constructors.h in Headers */,
+				00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */,
+				00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */,
 				00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */,
+				00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */,
 				00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */,
+				00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */,
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
+				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,10 +629,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
+				00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
+				00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */,
 				00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */,
+				00F3B2501E015E78002AFDF8 /* SRBlockArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,13 +644,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
 				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
+				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
+				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
+				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */,
 				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
 				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,
+				00F3B2511E015E78002AFDF8 /* SRBlockArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

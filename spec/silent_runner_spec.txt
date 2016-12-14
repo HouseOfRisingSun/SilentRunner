@@ -2,21 +2,20 @@
     "jsonrpc": "2.0",
     "method": "execute",
     "params": {
-        "commandId":"UIApplication || app"
-    	"method": "application:openURL:options:",
+        "commandId":"UIApplication"
+    	"method": "openURL:options:completionHandler:",
     	"arguments":[
     		{
     			"class":"NSURL",
-    			"properties":["stubProperty(absoluteString, @"https://github.com/andrewBatutin/SilentRunner")"],
-    			"methods":["[given(fileURLWithPath:"path") willReturn:"path"]"]
-
+                "properties":{"name":"absoluteString", "value":"https://github.com/andrewBatutin/SilentRunner"},
+                "methods":{"name":"fileURLWithPath:", "returnValue":"path"},
     		},
     		{
     			value:{"opt1":"test"}
     		},
     		{
     			"class":"block",
-    			"methods":["[given(invoke) willReturn:"smthng"]"]
+                "methods":{"name":"invoke:", "returnValue":"smthng"},
     		}
     	]
     }

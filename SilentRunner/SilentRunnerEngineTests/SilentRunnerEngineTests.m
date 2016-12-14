@@ -33,7 +33,13 @@
     NSObject* a = ^{int a= a+1; test = @"";};
     [a isEqual:@"fd"];
     id smthng =  mock(((NSObject*)a).class);
-    NSLog(@"%@", smthng);
+    
+    NSArray *mockArray = mock([NSArray class]);
+    
+    // stubbing
+    [given([mockArray objectAtIndex:0]) willReturn:@"first"];
+    
+    NSLog(@"%@", [mockArray objectAtIndex:0]);
 }
 
 - (void)testPerformanceExample {

@@ -9,6 +9,7 @@
 #import "SRCommand.h"
 #import "SRClientPool.h"
 #import "NSInvocation+Constructors.h"
+#import "SRConcreteArgument.h"
 
 @implementation SRCommand
 
@@ -21,6 +22,10 @@
              @"parametrs":@"arguments",
              @"method":@"method"
              };
+}
+
++ (NSValueTransformer *)parametrsJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:SRConcreteArgument.class];
 }
 
 - (NSInvocation*)commandInvocation{
