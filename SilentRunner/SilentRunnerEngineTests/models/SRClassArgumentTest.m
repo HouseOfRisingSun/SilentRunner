@@ -19,13 +19,13 @@
 
 - (void)testSuccesfullModelParsing{
     NSDictionary* intput =  @{
-                                 @"class": @"NSURL",
-                                 @"properties": @[
-                                         @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
-                                         ],
-                                 @"methods": @[
-                                         @"[given(fileURLWithPath:\"path\") willReturn:\"path\"]"
-                                         ]
+                              @"class": @"NSURL",
+                              @"properties": @[
+                                      @{@"name":@"absoluteString", @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"}
+                                      ],
+                              @"methods": @[
+                                      @{@"name":@"isFileReferenceURL", @"returnValue":@YES},
+                                      ]
                              };
     NSError* parseError = nil;
     SRClassArgument* realResult = [MTLJSONAdapter modelOfClass:SRClassArgument.class fromJSONDictionary:intput error:&parseError];
@@ -35,23 +35,20 @@
 }
 
 - (void)testArgumentCreation{
-    id mock = [[MKTObjectMock alloc] initWithClass:NSURL.class];
-    stubProperty(mock, absoluteString, @"https://github.com/andrewBatutin/SilentRunner)");
-    
     NSDictionary* intput =  @{
                               @"class": @"NSURL",
                               @"properties": @[
-                                      @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
+                                      @{@"name":@"absoluteString", @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"}
                                       ],
                               @"methods": @[
-                                      @{@"name":@"isFileReferenceURL", @"returnValue":@1},
+                                      @{@"name":@"isFileReferenceURL", @"returnValue":@YES},
                                       ]
                               };
     NSError* parseError = nil;
     SRClassArgument* realResult = [MTLJSONAdapter modelOfClass:SRClassArgument.class fromJSONDictionary:intput error:&parseError];
-    id result = realResult.argumentValue;
-    XCTAssertEqualObjects(mock, result);
-    
+    NSURL* result = realResult.argumentValue;
+    XCTAssertEqual(YES, [result isFileReferenceURL]);
+    XCTAssertEqualObjects(@"https://github.com/andrewBatutin/SilentRunner", [result absoluteString]);
 }
 
 @end

@@ -28,6 +28,13 @@
     NSString* returnValue = self.methods[0][@"returnValue"];
     [stb2 willReturn:returnValue];
     
+    
+    //[MKTGiven([model propertyName]) willReturn:stubbedValue];
+    MKTOngoingStubbing* stbPr = given(([model performSelector:NSSelectorFromString(self.properties[0][@"name"])]));
+    [stbPr willReturn:self.properties[0][@"returnValue"]];
+    [MKTGiven([model valueForKey:@"absoluteString"]) willReturn:self.properties[0][@"returnValue"]];
+    [MKTGiven([model valueForKeyPath:@"absoluteString"]) willReturn:self.properties[0][@"returnValue"]];
+    
     return model;
 }
 
