@@ -10,6 +10,36 @@
 
 @implementation MockFabric
 
++ (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue{
+    MKTClassObjectMock* staticModel = mockClass(classValue);
+    MKTObjectMock* instanceModel = mock(classValue);
+    MKTBaseMockObject* resultModel = nil;
+    NSString* methodName = dict[@"name"];
+    SEL methodSel = NSSelectorFromString(methodName);
+    
+    if ( [staticModel respondsToSelector:methodSel] ){
+        resultModel = staticModel;
+    }else if ( [instanceModel respondsToSelector:methodSel] ){
+        resultModel = instanceModel;
+    }
+    
+    NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[resultModel methodSignatureForSelector:methodSel]];
+    [inv retainArguments];
+    [inv setSelector:methodSel];
+    [inv setTarget:resultModel];
+    
+    for (int i = 2; i < inv.methodSignature.numberOfArguments; i++) {
+        [MockFabric addAnythingWithInvocation:inv atIndex:i forModel:resultModel];
+    }
+    [inv invoke];
+    if ( dict[@"returnValue"] ){
+        id res = nil;
+        [inv getReturnValue:&res];
+        [given(res) willReturn:dict[@"returnValue"]];
+    }
+    return resultModel;
+}
+
 
 + (void)addMockForValue:(void*)value withInvocation:(NSInvocation*)inv atIndex:(NSInteger)index{
     [inv setArgument:&value atIndex:index];

@@ -17,6 +17,19 @@
 
 @implementation MockFabricTest
 
+
+- (void)testBrewingMockStaticMethod{
+    id mock = [MockFabric brewSomeMockWithDictionary:@{@"name":@"fileURLWithPath:isDirectory:", @"returnValue":@"test"} andClass:NSURL.class];
+    NSString* res =  [mock fileURLWithPath:@"" isDirectory:NO];
+    XCTAssertEqualObjects(@"test", res);
+}
+
+- (void)testBrewingMockInstanceMethod{
+    id mock = [MockFabric brewSomeMockWithDictionary:@{@"name":@"isFileReferenceURL", @"returnValue":@NO} andClass:NSURL.class];
+    BOOL res =  [mock isFileReferenceURL];
+    XCTAssertFalse(res);
+}
+
 - (void)testAddingStringValueToInvocation{
     id staticModel = mockClass(NSURL.class);
     NSString* methodName = @"fileURLWithPath:isDirectory:";
