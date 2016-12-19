@@ -8,7 +8,7 @@
     		{
     			"class":"NSURL",
                 "properties":{"name":"absoluteString", "value":"https://github.com/andrewBatutin/SilentRunner"},
-                "methods":{"name":"fileURLWithPath:", "returnValue":"path"},
+                "methods":{"name":"isFileReferenceURL:", "returnValue":"1"},
     		},
     		{
     			value:{"opt1":"test"}

@@ -22,7 +22,7 @@
 }
 
 - (id)argumentValue{
-    id model = mock(NSClassFromString(self.className));
+   /* id model = mock(NSClassFromString(self.className));
     NSString* methodName = self.methods[0][@"name"];
     MKTOngoingStubbing* stb2 = given(([model performSelector:NSSelectorFromString(methodName)]));
     NSString* returnValue = self.methods[0][@"returnValue"];
@@ -33,24 +33,76 @@
     MKTOngoingStubbing* stbPr = given(([model performSelector:NSSelectorFromString(self.properties[0][@"name"])]));
     [stbPr willReturn:self.properties[0][@"returnValue"]];
     [MKTGiven([model valueForKey:@"absoluteString"]) willReturn:self.properties[0][@"returnValue"]];
-    [MKTGiven([model valueForKeyPath:@"absoluteString"]) willReturn:self.properties[0][@"returnValue"]];
+    [MKTGiven([model valueForKeyPath:@"absoluteString"]) willReturn:self.properties[0][@"returnValue"]];*/
+    
+    MKTBaseMockObject* model = [self createModelWithMethods:self.methods andProperties:self.properties];
     
     return model;
 }
 
-MKTOngoingStubbing *myMKTGivenWithLocation(id testCase, const char *fileName, int lineNumber, ...)
-{
-    va_list args;
-    va_start(args, lineNumber);
-    for (int arg = lineNumber; arg != 0; arg = va_arg(args, int))
-    {
-        NSLog(@"");
+- (MKTBaseMockObject*)createModelWithMethods:(NSArray*)methods andProperties:(NSArray*)properties{
+    Class modelClass = NSClassFromString(self.className);
+    
+    for ( NSDictionary* model in methods ){
+        MKTBaseMockObject* res = [self addMethods:model toModel:modelClass];
+        return res;
     }
     
-    va_end(args);
     return nil;
 }
 
-
+- (MKTBaseMockObject*)addMethods:(NSDictionary*)method toModel:(Class)modelClass{
+    id staticModel = mockClass(modelClass);
+    id instanceModel = mock(modelClass);
+    NSString* methodName = @"fileURLWithPath:isDirectory:";
+    SEL methodSel = NSSelectorFromString(methodName);
+    
+    
+    if ( [staticModel respondsToSelector:methodSel] ){
+        NSLog(@"instance");
+        
+        NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[staticModel methodSignatureForSelector:methodSel]];
+        [inv setSelector:methodSel];
+        [inv setTarget:staticModel];
+    
+        
+        HCIsAnything* anyT = [[HCIsAnything alloc] init];
+        
+        const char * type2 = [inv.methodSignature getArgumentTypeAtIndex:2];
+        const char * type3 = [inv.methodSignature getArgumentTypeAtIndex:3];
+        BOOL isD = NO;
+        if ( !strcmp( type3, @encode(BOOL) ) ){
+            isD =YES;
+        }
+        
+        [inv setArgument:&anyT atIndex:2]; //arguments 0 and 1 are self and _cmd respectively, automatically set by NSInvocation
+        
+        
+        [inv setArgument:&isD atIndex:3]; //arguments 0 and 1 are self and _cmd respectively, automatically set by NSInvocation
+        
+        
+        [inv invoke];
+        id anObject;
+        [inv getReturnValue:&anObject];
+        
+        //id fff = [staticModel performSelector:NSSelectorFromString(methodName) withObject:anything()];
+        id fff2 = given(anObject);
+        [fff2 willReturn:@"tkkest"];
+        int ers =  sizeof(double);
+        NSLog(@"inst");
+        //[given([staticModel performSelector:NSSelectorFromString(methodName) withObject:anything()]) willReturn:@"test"];
+    }else if ( [instanceModel instancesRespondToSelector:methodSel] ){
+        NSLog(@"class");
+    }
+    
+    //[given([model fileURLWithPath:nil]) willReturn:@""];
+    
+    
+    //given([[model class] performSelector:NSSelectorFromString(methodName) withObject:nil]);
+    
+    //MKTOngoingStubbing* stub = given(([model performSelector:NSSelectorFromString(methodName)]));
+    //willReturn:[NSURL URLWithString:@"www.google.com"]];
+    return nil;
+}
 
 @end

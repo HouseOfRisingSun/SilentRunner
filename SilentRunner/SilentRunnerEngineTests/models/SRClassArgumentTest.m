@@ -41,7 +41,7 @@
                                       @{@"name":@"absoluteString", @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"}
                                       ],
                               @"methods": @[
-                                      @{@"name":@"isFileReferenceURL", @"returnValue":@YES},
+                                      @{@"name":@"fileURLWithPath:", @"returnValue":@YES},
                                       ]
                               };
     NSError* parseError = nil;

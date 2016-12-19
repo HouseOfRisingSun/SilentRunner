@@ -13,6 +13,10 @@
 		0004DC391DFECE5C0096C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC371DFECE5C0096C9BE /* Main.storyboard */; };
 		0004DC3B1DFECE5C0096C9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3A1DFECE5C0096C9BE /* Assets.xcassets */; };
 		0004DC3E1DFECE5C0096C9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3C1DFECE5C0096C9BE /* LaunchScreen.storyboard */; };
+		007860171E07E73F00B4DDA1 /* MockFabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 007860151E07E73F00B4DDA1 /* MockFabric.h */; };
+		007860181E07E73F00B4DDA1 /* MockFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = 007860161E07E73F00B4DDA1 /* MockFabric.m */; };
+		007860191E07E73F00B4DDA1 /* MockFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = 007860161E07E73F00B4DDA1 /* MockFabric.m */; };
+		0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078601B1E07E85C00B4DDA1 /* MockFabricTest.m */; };
 		00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EA71E00078E00B4BD4C /* SRCommand.h */; };
 		00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EA81E00078E00B4BD4C /* SRCommand.m */; };
 		00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EA81E00078E00B4BD4C /* SRCommand.m */; };
@@ -101,6 +105,9 @@
 		0004DC3A1DFECE5C0096C9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0004DC3D1DFECE5C0096C9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0004DC3F1DFECE5C0096C9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007860151E07E73F00B4DDA1 /* MockFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockFabric.h; sourceTree = "<group>"; };
+		007860161E07E73F00B4DDA1 /* MockFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockFabric.m; sourceTree = "<group>"; };
+		0078601B1E07E85C00B4DDA1 /* MockFabricTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockFabricTest.m; sourceTree = "<group>"; };
 		00807EA71E00078E00B4BD4C /* SRCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommand.h; sourceTree = "<group>"; };
 		00807EA81E00078E00B4BD4C /* SRCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommand.m; sourceTree = "<group>"; };
 		00807EAC1E0007B900B4BD4C /* SRCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommandProtocol.h; sourceTree = "<group>"; };
@@ -221,9 +228,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		007860141E07E72500B4DDA1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				007860151E07E73F00B4DDA1 /* MockFabric.h */,
+				007860161E07E73F00B4DDA1 /* MockFabric.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0078601A1E07E84900B4DDA1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0078601B1E07E85C00B4DDA1 /* MockFabricTest.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		00807EA51E00073E00B4BD4C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				007860141E07E72500B4DDA1 /* Mocks */,
 				00807EA71E00078E00B4BD4C /* SRCommand.h */,
 				00807EA81E00078E00B4BD4C /* SRCommand.m */,
 				00807EAC1E0007B900B4BD4C /* SRCommandProtocol.h */,
@@ -243,6 +268,7 @@
 		00807EA61E00074900B4BD4C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0078601A1E07E84900B4DDA1 /* Mocks */,
 				00807EAE1E0014FE00B4BD4C /* SRCommandTest.m */,
 				00F3B2411E0154A5002AFDF8 /* SRClassArgumentTest.m */,
 			);
@@ -347,6 +373,7 @@
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
+				007860171E07E73F00B4DDA1 /* MockFabric.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007860181E07E73F00B4DDA1 /* MockFabric.m in Sources */,
 				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
@@ -650,11 +678,13 @@
 				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
 				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
+				0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */,
 				00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */,
 				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
 				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,
+				007860191E07E73F00B4DDA1 /* MockFabric.m in Sources */,
 				00F3B2511E015E78002AFDF8 /* SRBlockArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
