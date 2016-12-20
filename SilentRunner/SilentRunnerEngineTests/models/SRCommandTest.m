@@ -7,7 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SRClientPool.h"
 #import "SRCommand.h"
+#import "SRMockFabric.h"
 
 @interface SRCommandTest : XCTestCase
 
@@ -50,36 +52,31 @@
 
 
 - (void)testSRCommandSuccsesfullInvocationConstruct{
+    [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     NSDictionary* intput = @{
-                             @"commandId": @"UIApplication",
-                             @"method": @"openURL:options:completionHandler:",
+                             @"commandId": @"NSMutableArray",
+                             @"method": @"addObject:",
                              @"arguments": @[
                                      @{
                                          @"class": @"NSURL",
-                                         @"properties": @[
-                                                 @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
-                                                 ],
                                          @"methods": @[
-                                                 @"[given(fileURLWithPath:\"path\") willReturn:\"path\"]"
-                                                 ]
-                                         },
-                                     @{
-                                         @"value": @{
-                                                 @"opt1": @"test"
-                                                 }
-                                         },
-                                     @{
-                                         @"class": @"block",
-                                         @"methods": @[
-                                                 @"[given(invoke) willReturn:\"smthng\"]"
+                                                 @{
+                                                     @"name": @"URLWithString:",
+                                                     @"returnValue": @"mock data"
+                                                     },
+                                                 @{
+                                                     @"name": @"fileURLWithPath:",
+                                                     @"returnValue": @"mock path"
+                                                     }
                                                  ]
                                          }
-                                     ]
-                             };
+                                     ]                             };
     NSError* parseError = nil;
     SRCommand* entity = [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:intput error:&parseError];
     NSInvocation* realResult = [entity commandInvocation];
-    XCTAssertNotNil(realResult);
+    [realResult invoke];
+    NSMutableArray* client =  [SRClientPool clientForTag:@"NSMutableArray"];
+    XCTAssertTrue(client.count == 1);
 }
 
 @end

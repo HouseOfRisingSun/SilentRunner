@@ -10,6 +10,7 @@
 
 @interface SRClientPool : NSObject
 
++ (void)addClient:(id)client forTag:(NSString *)tag;
 + (id)clientForTag:(NSString*)tag;
 
 @end

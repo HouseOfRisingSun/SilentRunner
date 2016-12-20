@@ -29,7 +29,13 @@
 }
 
 - (NSInvocation*)commandInvocation{
-    return [NSInvocation invocationWithTarget:[SRClientPool clientForTag:self.commandId] selector:NSSelectorFromString(self.method)];
+    NSInvocation* inv = [NSInvocation invocationWithTarget:[SRClientPool clientForTag:self.commandId] selector:NSSelectorFromString(self.method)];
+    int i = 2;
+    for (id parameter in self.parametrs){
+        [inv setArgument:&parameter atIndex:i];
+        i++;
+    }
+    return inv;
 }
 
 @end

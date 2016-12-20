@@ -11,8 +11,22 @@
 
 @implementation SRClientPool
 
++ (NSMutableDictionary*)tagStorage{
+    static NSMutableDictionary* dict = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dict = @{}.mutableCopy;
+    });
+    return dict;
+}
+
++ (void)addClient:(id)client forTag:(NSString *)tag{
+    NSMutableDictionary* dict = [SRClientPool tagStorage];
+    dict[tag] = client;
+}
+
 + (id)clientForTag:(NSString *)tag{
-    return [UIApplication sharedApplication];
+    return [SRClientPool tagStorage][tag];
 }
 
 @end
