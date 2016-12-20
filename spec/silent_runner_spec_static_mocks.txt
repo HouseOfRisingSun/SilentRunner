@@ -1,0 +1,18 @@
+{
+	"jsonrpc": "2.0",
+	"method": "execute",
+	"params": {
+		"commandId": "objTag",
+		"method": "addObject:",
+		"arguments": [{
+			"class": "NSURL",
+			"methods": [{
+				"name": "URLWithString",
+				"returnValue": "mock data"
+			}, {
+				"name": "fileURLWithPath",
+				"returnValue": "mock path"
+			}]
+		}]
+	}
+}

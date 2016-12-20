@@ -8,13 +8,19 @@
 
 #import "MockFabric.h"
 
+@interface MockFabric ()
+
+@property (nonatomic, strong) MKTBaseMockObject* mockModel;
+
+@end
+
 @implementation MockFabric
 
-+ (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue{
++ (MKTBaseMockObject*)mockWithModel:(NSDictionary*)model andClass:(Class)classValue{
     MKTClassObjectMock* staticModel = mockClass(classValue);
     MKTObjectMock* instanceModel = mock(classValue);
     MKTBaseMockObject* resultModel = nil;
-    NSString* methodName = dict[@"name"];
+    NSString* methodName = model[@"name"];
     SEL methodSel = NSSelectorFromString(methodName);
     
     if ( [staticModel respondsToSelector:methodSel] ){
@@ -22,7 +28,13 @@
     }else if ( [instanceModel respondsToSelector:methodSel] ){
         resultModel = instanceModel;
     }
-    
+    return resultModel;
+}
+
++ (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue{
+    MKTBaseMockObject* resultModel = [MockFabric mockWithModel:dict andClass:classValue];
+    NSString* methodName = dict[@"name"];
+    SEL methodSel = NSSelectorFromString(methodName);
     NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[resultModel methodSignatureForSelector:methodSel]];
     [inv retainArguments];
     [inv setSelector:methodSel];
@@ -60,9 +72,6 @@
         [inv setArgument:&arg atIndex:index];
         [model withMatcher:[[HCIsAnything alloc] init] forArgument:index];
     }
-    
-    
 }
-
 
 @end

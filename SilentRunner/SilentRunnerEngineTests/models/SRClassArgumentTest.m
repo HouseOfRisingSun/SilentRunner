@@ -18,7 +18,7 @@
 @implementation SRClassArgumentTest
 
 - (void)testSuccesfullModelParsing{
-    NSDictionary* intput =  @{
+    NSDictionary* intput = @{
                               @"class": @"NSURL",
                               @"properties": @[
                                       @{@"name":@"absoluteString", @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"}
@@ -35,13 +35,13 @@
 }
 
 - (void)testArgumentCreation{
-    NSDictionary* intput =  @{
+    NSDictionary* intput = @{
                               @"class": @"NSURL",
                               @"properties": @[
                                       @{@"name":@"absoluteString", @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"}
                                       ],
                               @"methods": @[
-                                      @{@"name":@"fileURLWithPath:", @"returnValue":@YES},
+                                      @{@"name":@"isFileReferenceURL", @"returnValue":@YES},
                                       ]
                               };
     NSError* parseError = nil;

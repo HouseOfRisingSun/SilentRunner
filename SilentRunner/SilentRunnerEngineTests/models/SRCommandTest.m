@@ -27,7 +27,7 @@
                           @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
                           ],
                   @"methods": @[
-                          @"[given(fileURLWithPath:\"path\") willReturn:\"path\"]"
+                          @{@"name":@"isFileReferenceURL", @"returnValue":@"1"}
                           ]
                   },
               @{

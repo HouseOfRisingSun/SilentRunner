@@ -2,21 +2,34 @@
     "jsonrpc": "2.0",
     "method": "execute",
     "params": {
-        "commandId":"UIApplication"
-    	"method": "openURL:options:completionHandler:",
-    	"arguments":[
-    		{
-    			"class":"NSURL",
-                "properties":{"name":"absoluteString", "value":"https://github.com/andrewBatutin/SilentRunner"},
-                "methods":{"name":"isFileReferenceURL:", "returnValue":"1"},
-    		},
-    		{
-    			value:{"opt1":"test"}
-    		},
-    		{
-    			"class":"block",
-                "methods":{"name":"invoke:", "returnValue":"smthng"},
-    		}
-    	]
+        "commandId": "UIApplication",
+        "method": "openURL:options:completionHandler:",
+        "arguments": [{
+            "class": "NSURL",
+            "properties": [{
+                "name": "absoluteString",
+                "value": "https://github.com/andrewBatutin/SilentRunner"
+            }, {
+                "name": "relativeString",
+                "value": "https://github.com/andrewBatutin/SilentRunner"
+            }],
+            "methods": [{
+                "name": "isFileReferenceURL",
+                "returnValue": "1"
+            }, {
+                "name": "fileReferenceURL",
+                "returnValue": "mock reference"
+            }]
+        }, {
+            "value": {
+                "opt1": "test"
+            }
+        }, {
+            "class": "block",
+            "methods": {
+                "name": "invoke:",
+                "returnValue": "smthng"
+            }
+        }]
     }
 }
