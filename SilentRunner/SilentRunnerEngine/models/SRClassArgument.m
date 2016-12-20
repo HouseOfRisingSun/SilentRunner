@@ -7,7 +7,7 @@
 //
 
 #import "SRClassArgument.h"
-#import "MockFabric.h"
+#import "SRMockFabric.h"
 
 @implementation SRClassArgument
 
@@ -28,7 +28,7 @@
 - (MKTBaseMockObject*)createModelWithMethods:(NSArray*)methods andProperties:(NSArray*)properties{
     Class modelClass = NSClassFromString(self.className);
     for ( NSDictionary* model in methods ){
-        MKTBaseMockObject* res = [MockFabric brewSomeMockWithDictionary:model andClass:modelClass];
+        MKTBaseMockObject* res = [SRMockFabric brewSomeMockWithDictionary:model andClass:modelClass];
         return res;
     }
     return nil;

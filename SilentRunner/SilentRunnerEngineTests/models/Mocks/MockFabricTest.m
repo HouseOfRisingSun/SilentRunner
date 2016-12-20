@@ -9,7 +9,7 @@
 #import <XCTest/XCTest.h>
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
-#import "MockFabric.h"
+#import "SRMockFabric.h"
 
 @interface MockFabricTest : XCTestCase
 
@@ -19,13 +19,13 @@
 
 
 - (void)testBrewingMockStaticMethod{
-    id mock = [MockFabric brewSomeMockWithDictionary:@{@"name":@"fileURLWithPath:isDirectory:", @"returnValue":@"test"} andClass:NSURL.class];
+    id mock = [SRMockFabric brewSomeMockWithDictionary:@{@"name":@"fileURLWithPath:isDirectory:", @"returnValue":@"test"} andClass:NSURL.class];
     NSString* res =  [mock fileURLWithPath:@"" isDirectory:NO];
     XCTAssertEqualObjects(@"test", res);
 }
 
 - (void)testBrewingMockInstanceMethod{
-    id mock = [MockFabric brewSomeMockWithDictionary:@{@"name":@"isFileReferenceURL", @"returnValue":@NO} andClass:NSURL.class];
+    id mock = [SRMockFabric brewSomeMockWithDictionary:@{@"name":@"isFileReferenceURL", @"returnValue":@NO} andClass:NSURL.class];
     BOOL res =  [mock isFileReferenceURL];
     XCTAssertFalse(res);
 }
@@ -38,7 +38,7 @@
     [inv setSelector:methodSel];
     [inv setTarget:staticModel];
     NSString* expRes = @"expRes";
-    [MockFabric addMockForValue:(__bridge void *)(expRes) withInvocation:inv atIndex:2];
+    [SRMockFabric addMockForValue:(__bridge void *)(expRes) withInvocation:inv atIndex:2];
     [inv retainArguments];
     id realRes = nil;
     [inv getArgument:&realRes atIndex:2];
@@ -53,7 +53,7 @@
     [inv setSelector:methodSel];
     [inv setTarget:staticModel];
     HCIsAnything* expRes = [[HCIsAnything alloc] init];
-    [MockFabric addMockForValue:(__bridge void *)(expRes) withInvocation:inv atIndex:2];
+    [SRMockFabric addMockForValue:(__bridge void *)(expRes) withInvocation:inv atIndex:2];
     __weak id realRes = nil;
     [inv getArgument:&realRes atIndex:2];
     XCTAssertEqualObjects(realRes, expRes);
@@ -67,7 +67,7 @@
     [inv retainArguments];
     [inv setSelector:methodSel];
     [inv setTarget:staticModel];
-    [MockFabric addAnythingWithInvocation:inv atIndex:2 forModel:staticModel];
+    [SRMockFabric addAnythingWithInvocation:inv atIndex:2 forModel:staticModel];
     __weak HCIsAnything* realRes = nil;
     [inv getArgument:&realRes atIndex:2];
     XCTAssertNotNil(realRes);
@@ -82,8 +82,8 @@
     [inv retainArguments];
     [inv setSelector:methodSel];
     [inv setTarget:staticModel];
-    [MockFabric addAnythingWithInvocation:inv atIndex:2 forModel:staticModel];
-    [MockFabric addAnythingWithInvocation:inv atIndex:3 forModel:staticModel];
+    [SRMockFabric addAnythingWithInvocation:inv atIndex:2 forModel:staticModel];
+    [SRMockFabric addAnythingWithInvocation:inv atIndex:3 forModel:staticModel];
     [inv invoke];
     id res = nil;
     [inv getReturnValue:&res];

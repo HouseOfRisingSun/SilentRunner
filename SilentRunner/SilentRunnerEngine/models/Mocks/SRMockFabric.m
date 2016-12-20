@@ -6,15 +6,15 @@
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
-#import "MockFabric.h"
+#import "SRMockFabric.h"
 
-@interface MockFabric ()
+@interface SRMockFabric ()
 
 @property (nonatomic, strong) MKTBaseMockObject* mockModel;
 
 @end
 
-@implementation MockFabric
+@implementation SRMockFabric
 
 + (MKTBaseMockObject*)mockWithModel:(NSDictionary*)model andClass:(Class)classValue{
     MKTClassObjectMock* staticModel = mockClass(classValue);
@@ -32,7 +32,7 @@
 }
 
 + (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue{
-    MKTBaseMockObject* resultModel = [MockFabric mockWithModel:dict andClass:classValue];
+    MKTBaseMockObject* resultModel = [SRMockFabric mockWithModel:dict andClass:classValue];
     NSString* methodName = dict[@"name"];
     SEL methodSel = NSSelectorFromString(methodName);
     NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[resultModel methodSignatureForSelector:methodSel]];
@@ -41,7 +41,7 @@
     [inv setTarget:resultModel];
     
     for (int i = 2; i < inv.methodSignature.numberOfArguments; i++) {
-        [MockFabric addAnythingWithInvocation:inv atIndex:i forModel:resultModel];
+        [SRMockFabric addAnythingWithInvocation:inv atIndex:i forModel:resultModel];
     }
     [inv invoke];
     if ( dict[@"returnValue"] ){

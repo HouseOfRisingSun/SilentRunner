@@ -10,7 +10,7 @@
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
 
-@interface MockFabric : SRConcreteArgument
+@interface SRMockFabric : SRConcreteArgument
 
 
 + (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue;
