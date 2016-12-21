@@ -1,0 +1,6 @@
+framework module Pods_SilentRunnerEngine {
+  umbrella header "Pods-SilentRunnerEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}

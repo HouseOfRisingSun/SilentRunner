@@ -8,6 +8,11 @@ PODS:
   - OCHamcrest (6.0.0)
   - OCMockito (4.0.1):
     - OCHamcrest (~> 6.0)
+  - ReactiveCocoa (5.0.0-alpha.5):
+    - ReactiveSwift (= 1.0.0-rc.2)
+  - ReactiveSwift (1.0.0-rc.2):
+    - Result (~> 3.1)
+  - Result (3.1.0)
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
@@ -15,6 +20,7 @@ DEPENDENCIES:
   - Mantle
   - MAObjCRuntime
   - OCMockito (~> 4.0)
+  - ReactiveCocoa (= 5.0.0-alpha.5)
   - SocketRocket
 
 EXTERNAL SOURCES:
@@ -32,8 +38,11 @@ SPEC CHECKSUMS:
   MAObjCRuntime: a6a1d95acbfa3784d66cb35bd42904e47943b488
   OCHamcrest: fc8ab38149b97df8db8029a3f2157c951bf9081d
   OCMockito: 62ddc6afff6a883f2864d51224b1dfdc0e9a7df7
+  ReactiveCocoa: 90c62138260fc7746d940b9effc0014b60e872fd
+  ReactiveSwift: 86aa3db3eca9a1a4a69ee6c61b138eec37afc9e6
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 1cc31af25c9941e03489bcfbef822799032365b4
+PODFILE CHECKSUM: 33d45267e56bbde98596eac82eccfb60a3a52860
 
 COCOAPODS: 1.1.1

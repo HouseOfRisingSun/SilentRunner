@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '323A1A48328DF764CF063963A421FA6F'
+               BlueprintIdentifier = '8301D380E55DDB18E45360BC2CD42E24'
                BlueprintName = 'MAObjCRuntime'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMAObjCRuntime.a'>
+               BuildableName = 'MAObjCRuntime.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

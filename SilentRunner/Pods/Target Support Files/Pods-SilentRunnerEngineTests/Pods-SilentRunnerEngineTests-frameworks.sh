@@ -82,3 +82,26 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/JSONRPCom/JSONRPCom.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OCHamcrest/OCHamcrest.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OCMockito/OCMockito.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MAObjCRuntime/MAObjCRuntime.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveSwift/ReactiveSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Result/Result.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/JSONRPCom/JSONRPCom.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OCHamcrest/OCHamcrest.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OCMockito/OCMockito.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MAObjCRuntime/MAObjCRuntime.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveSwift/ReactiveSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Result/Result.framework"
+fi
