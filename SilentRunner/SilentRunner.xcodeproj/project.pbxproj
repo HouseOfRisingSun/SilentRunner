@@ -42,6 +42,9 @@
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF9E1DFECF1100D3B255 /* SilentRunnerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00C55B0C1E30D86D007242C3 /* SRSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C55B0B1E30D86D007242C3 /* SRSandbox.swift */; };
+		00C55B0D1E30D86D007242C3 /* SRSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C55B0B1E30D86D007242C3 /* SRSandbox.swift */; };
+		00C55B0E1E30D86D007242C3 /* SRSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C55B0B1E30D86D007242C3 /* SRSandbox.swift */; };
 		00EA41D91E0D423E00C295BC /* Shit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E514DD1E0D3E6B00D4600B /* Shit.swift */; };
 		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,6 +139,7 @@
 		00ADFF901DFECF1100D3B255 /* SilentRunnerEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentRunnerEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SilentRunnerEngineTests.m; sourceTree = "<group>"; };
 		00ADFF991DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C55B0B1E30D86D007242C3 /* SRSandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSandbox.swift; sourceTree = "<group>"; };
 		00E514DD1E0D3E6B00D4600B /* Shit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shit.swift; sourceTree = "<group>"; };
 		00F3B23A1E015234002AFDF8 /* SRArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArgument.h; sourceTree = "<group>"; };
 		00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassArgument.h; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */,
+				00C55B0B1E30D86D007242C3 /* SRSandbox.swift */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -686,6 +691,7 @@
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
 				00EA41D91E0D423E00C295BC /* Shit.swift in Sources */,
+				00C55B0C1E30D86D007242C3 /* SRSandbox.swift in Sources */,
 				00A068DC1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +703,7 @@
 				007860181E07E73F00B4DDA1 /* SRMockFabric.m in Sources */,
 				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
+				00C55B0D1E30D86D007242C3 /* SRSandbox.swift in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00A068DD1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */,
 				00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
@@ -715,6 +722,7 @@
 				00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
 				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
+				00C55B0E1E30D86D007242C3 /* SRSandbox.swift in Sources */,
 				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
 				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,

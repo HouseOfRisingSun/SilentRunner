@@ -19,8 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.serv = [[SRRunnerServer alloc] initWithPath:@"http://localhost:9000/chat"];
-    [self.serv start];
+    //self.serv = [[SRRunnerServer alloc] initWithPath:@"http://localhost:9000/chat"];
+    //[self.serv start];
+    [SRRunnerServer test];
     
 }
 

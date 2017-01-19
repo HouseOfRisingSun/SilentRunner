@@ -15,12 +15,9 @@ import SocketRocket
 @objc
 public class SRRunnerServer: NSObject, SRWebSocketDelegate {
     
-    typealias SRRunnerServerValue = String
-    
     public func webSocket(_ webSocket: SRWebSocket!, didReceiveMessage message: Any!) {
          self.observer.send(value:message as! String)
     }
-    
     
     public func webSocket(_ webSocket: SRWebSocket!, didFailWithError message: Error!) {
         self.observer.send(error: AnyError(message))
@@ -28,9 +25,9 @@ public class SRRunnerServer: NSObject, SRWebSocketDelegate {
 
     
     let server : SRWebSocket
-    private var observer : Observer<SRRunnerServerValue, AnyError>!
+    private var observer : Observer<String, AnyError>!
     private var disposable : Disposable!
-    var signal : Signal<String, AnyError>!
+    private(set) var signal : Signal<String, AnyError>!
     
     init?(path:String) {
         guard let url = URL(string:path) else{
@@ -59,6 +56,14 @@ public class SRRunnerServer: NSObject, SRWebSocketDelegate {
     
     func start(){
         self.server.open()
+    }
+    
+    func stop(){
+        self.server.close()
+    }
+    
+    class func test(){
+        testData()
     }
 }
 
