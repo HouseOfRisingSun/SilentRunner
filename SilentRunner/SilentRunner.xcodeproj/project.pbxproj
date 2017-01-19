@@ -13,11 +13,6 @@
 		0004DC391DFECE5C0096C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC371DFECE5C0096C9BE /* Main.storyboard */; };
 		0004DC3B1DFECE5C0096C9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3A1DFECE5C0096C9BE /* Assets.xcassets */; };
 		0004DC3E1DFECE5C0096C9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3C1DFECE5C0096C9BE /* LaunchScreen.storyboard */; };
-		003A176A1E09790D008B7562 /* SRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 003A17681E09790D008B7562 /* SRServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003A176B1E09790D008B7562 /* SRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A17691E09790D008B7562 /* SRServer.m */; };
-		003A176C1E09790D008B7562 /* SRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A17691E09790D008B7562 /* SRServer.m */; };
-		003A17731E0AB207008B7562 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A17721E0AB207008B7562 /* test.swift */; };
-		003A17741E0AB207008B7562 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A17721E0AB207008B7562 /* test.swift */; };
 		003A17791E0AB67E008B7562 /* SilentRunnerEngine-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 003A17781E0AB67E008B7562 /* SilentRunnerEngine-Bridging-Header.h */; };
 		003A177B1E0AB6E7008B7562 /* TestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A177A1E0AB6E7008B7562 /* TestTest.swift */; };
 		007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 007860151E07E73F00B4DDA1 /* SRMockFabric.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,11 +34,15 @@
 		00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EC01E00239600B4BD4C /* SRClientPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
 		00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
+		00A068DC1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */; };
+		00A068DD1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */; };
+		00A068DE1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */; };
 		00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */; };
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF9E1DFECF1100D3B255 /* SilentRunnerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00EA41D91E0D423E00C295BC /* Shit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E514DD1E0D3E6B00D4600B /* Shit.swift */; };
 		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
@@ -112,11 +111,9 @@
 		0004DC3A1DFECE5C0096C9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0004DC3D1DFECE5C0096C9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0004DC3F1DFECE5C0096C9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		003A17681E09790D008B7562 /* SRServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRServer.h; sourceTree = "<group>"; };
-		003A17691E09790D008B7562 /* SRServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRServer.m; sourceTree = "<group>"; };
-		003A17721E0AB207008B7562 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		003A17781E0AB67E008B7562 /* SilentRunnerEngine-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SilentRunnerEngine-Bridging-Header.h"; sourceTree = "<group>"; };
 		003A177A1E0AB6E7008B7562 /* TestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTest.swift; sourceTree = "<group>"; };
+		003A178A1E0BFFF0008B7562 /* ObjcBridgedHeaderForSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcBridgedHeaderForSwift.h; sourceTree = "<group>"; };
 		007860151E07E73F00B4DDA1 /* SRMockFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMockFabric.h; sourceTree = "<group>"; };
 		007860161E07E73F00B4DDA1 /* SRMockFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMockFabric.m; sourceTree = "<group>"; };
 		0078601B1E07E85C00B4DDA1 /* MockFabricTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockFabricTest.m; sourceTree = "<group>"; };
@@ -131,12 +128,15 @@
 		00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+ConstructorsTest.m"; sourceTree = "<group>"; };
 		00807EC01E00239600B4BD4C /* SRClientPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClientPool.h; sourceTree = "<group>"; };
 		00807EC21E00252E00B4BD4C /* SRClientPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClientPool.m; sourceTree = "<group>"; };
+		00A068D91E0D477300AAE917 /* FuckYOu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuckYOu.h; sourceTree = "<group>"; };
+		00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRRunnerServer.swift; sourceTree = "<group>"; };
 		00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SilentRunnerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SilentRunnerEngine.h; sourceTree = "<group>"; };
 		00ADFF8B1DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00ADFF901DFECF1100D3B255 /* SilentRunnerEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentRunnerEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SilentRunnerEngineTests.m; sourceTree = "<group>"; };
 		00ADFF991DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E514DD1E0D3E6B00D4600B /* Shit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shit.swift; sourceTree = "<group>"; };
 		00F3B23A1E015234002AFDF8 /* SRArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArgument.h; sourceTree = "<group>"; };
 		00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassArgument.h; sourceTree = "<group>"; };
 		00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassArgument.m; sourceTree = "<group>"; };
@@ -219,6 +219,7 @@
 		0004DC2D1DFECE5C0096C9BE /* SilentRunner */ = {
 			isa = PBXGroup;
 			children = (
+				00E514DD1E0D3E6B00D4600B /* Shit.swift */,
 				0004DC311DFECE5C0096C9BE /* AppDelegate.h */,
 				0004DC321DFECE5C0096C9BE /* AppDelegate.m */,
 				0004DC341DFECE5C0096C9BE /* ViewController.h */,
@@ -228,6 +229,7 @@
 				0004DC3C1DFECE5C0096C9BE /* LaunchScreen.storyboard */,
 				0004DC3F1DFECE5C0096C9BE /* Info.plist */,
 				0004DC2E1DFECE5C0096C9BE /* Supporting Files */,
+				00A068D91E0D477300AAE917 /* FuckYOu.h */,
 			);
 			path = SilentRunner;
 			sourceTree = "<group>";
@@ -243,9 +245,7 @@
 		003A17661E0978E9008B7562 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				003A17681E09790D008B7562 /* SRServer.h */,
-				003A17691E09790D008B7562 /* SRServer.m */,
-				003A17721E0AB207008B7562 /* test.swift */,
+				00A068DB1E0D52A700AAE917 /* SRRunnerServer.swift */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -343,6 +343,7 @@
 				00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */,
 				00ADFF8B1DFECF1100D3B255 /* Info.plist */,
 				003A17781E0AB67E008B7562 /* SilentRunnerEngine-Bridging-Header.h */,
+				003A178A1E0BFFF0008B7562 /* ObjcBridgedHeaderForSwift.h */,
 			);
 			path = SilentRunnerEngine;
 			sourceTree = "<group>";
@@ -406,7 +407,6 @@
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
 				007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */,
 				00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */,
-				003A176A1E09790D008B7562 /* SRServer.h in Headers */,
 				00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +685,8 @@
 				0004DC361DFECE5C0096C9BE /* ViewController.m in Sources */,
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
+				00EA41D91E0D423E00C295BC /* Shit.swift in Sources */,
+				00A068DC1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,13 +698,12 @@
 				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
+				00A068DD1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */,
 				00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
-				003A176B1E09790D008B7562 /* SRServer.m in Sources */,
 				00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
 				00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */,
 				00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */,
 				00F3B2501E015E78002AFDF8 /* SRBlockArgument.m in Sources */,
-				003A17731E0AB207008B7562 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,12 +711,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003A176C1E09790D008B7562 /* SRServer.m in Sources */,
+				00A068DE1E0D52A700AAE917 /* SRRunnerServer.swift in Sources */,
 				00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
 				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
 				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
-				003A17741E0AB207008B7562 /* test.swift in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
 				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */,
@@ -863,13 +863,41 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47E0382DEE3684D9CA1592B3 /* Pods-SilentRunner.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SilentRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"MAObjCRuntime\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SilentRunner/FuckYOu.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Test-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -877,13 +905,42 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FDB374027CC3DD60EDDC7D7 /* Pods-SilentRunner.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				ENABLE_BITCODE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SilentRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"MAObjCRuntime\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SilentRunner/FuckYOu.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Test-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

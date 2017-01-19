@@ -24,7 +24,16 @@ class TestTest: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        test()
+        
+        let sut = WebS()
+        sut.test()
+        
+        
+        let exp = expectation(description: "")
+        
+        self.waitForExpectations(timeout: 10) { error in
+            XCTAssertNil(error)
+        }
     }
     
     func testPerformanceExample() {

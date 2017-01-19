@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SilentRunner-Test-Swift.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic, strong) SRRunnerServer* serv;
 @end
 
 @implementation ViewController
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.serv = [[SRRunnerServer alloc] initWithPath:@"http://localhost:9000/chat"];
+    [self.serv start];
+    
 }
 
 
