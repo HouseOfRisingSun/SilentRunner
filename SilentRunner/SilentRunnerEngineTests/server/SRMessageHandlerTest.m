@@ -20,7 +20,7 @@
     NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"simple_notification" withExtension:@"json"];
     NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
-    SRCommand* command = [SRMessageHandler createCommandFromMessage:msg];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
     XCTAssertNotNil(command, @"command should be created");
 }
 

@@ -50,26 +50,8 @@
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{}
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
-    
     if ( ![message isKindOfClass:NSString.class] ){ return; }
-    
     if (self.messageHandler){ self.messageHandler(message); }
-    
-    [JSONRPCDeSerialization deSerializeString:message withJSONRPCRequset:^(JSONRPCRequest *data) {
-        
-    } orJSONRPCResponse:^(JSONRPCResponse *data) {
-        
-    } orJSONRPCNotification:^(JSONRPCNotification *data) {
-        if ( ![data.params isKindOfClass:NSDictionary.class] ) { return; }
-        SRCommand* entity = [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:data.params error:nil];
-        NSInvocation* realResult = [entity commandInvocation];
-        [realResult invoke];
-        
-    } orJSONRPCError:^(JSONRPCErrorResponse *data) {
-        
-    } serializationError:^(NSError *error) {
-        
-    }];
 }
 
 @end
