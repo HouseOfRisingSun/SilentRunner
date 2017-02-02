@@ -7,9 +7,10 @@
 //
 
 #import "SRConcreteArgument.h"
+#import <SocketRocket/SocketRocket.h>
 
-@interface SRServer : SRConcreteArgument
+@interface SRServer : NSObject <SRWebSocketDelegate>
 
-
+- (instancetype)initWithURL:(NSString*)urlString;
 
 @end

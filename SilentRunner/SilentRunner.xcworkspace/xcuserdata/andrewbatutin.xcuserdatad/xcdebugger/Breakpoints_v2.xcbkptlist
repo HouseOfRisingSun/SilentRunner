@@ -223,53 +223,5 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SilentRunnerEngine/models/SRClassArgument.m"
-            timestampString = "507723912.928249"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-createModelWithMethods:andProperties:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgument createModelWithMethods:andProperties:]"
-                  moduleName = "SilentRunnerEngine"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRClassArgument.m"
-                  timestampString = "507723922.701945"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgument createModelWithMethods:andProperties:]"
-                  moduleName = "SilentRunnerEngineTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRClassArgument.m"
-                  timestampString = "507723922.90024"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "196">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
