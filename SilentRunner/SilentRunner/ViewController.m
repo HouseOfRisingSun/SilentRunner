@@ -7,16 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "SRServer.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) SRServer* serv;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.serv = [SRServer serverWithURL:@"https://www.foo.com" withMessageHandler:^(NSString * msg) {
+        
+    } withErrorHandler:^(NSError * error) {
+        
+    }];
 }
 
 
@@ -25,5 +30,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)testAction:(id)sender {
+    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
+}
 
 @end
