@@ -223,5 +223,164 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/server/SRMessageHandler.m"
+            timestampString = "507735482.012368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "+createCommandFromMessage:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45+[SRMessageHandler createCommandFromMessage:]_block_invoke_3"
+                  moduleName = "SilentRunnerEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/server/SRMessageHandler.m"
+                  timestampString = "507736096.058972"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45+[SRMessageHandler createCommandFromMessage:]_block_invoke_3"
+                  moduleName = "SilentRunnerEngineTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/server/SRMessageHandler.m"
+                  timestampString = "507736096.437689"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/SRCommand.m"
+            timestampString = "507735733.866992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-commandInvocation"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SRCommand commandInvocation]"
+                  moduleName = "SilentRunnerEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRCommand.m"
+                  timestampString = "507736096.063863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SRCommand commandInvocation]"
+                  moduleName = "SilentRunnerEngineTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRCommand.m"
+                  timestampString = "507736096.440481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/server/SRMessageHandler.m"
+            timestampString = "507736088.617911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "+createCommandFromMessage:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45+[SRMessageHandler createCommandFromMessage:]_block_invoke_3"
+                  moduleName = "SilentRunner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/server/SRMessageHandler.m"
+                  timestampString = "507736096.067066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45+[SRMessageHandler createCommandFromMessage:]_block_invoke_3"
+                  moduleName = "SilentRunnerEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/server/SRMessageHandler.m"
+                  timestampString = "507736096.068347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45+[SRMessageHandler createCommandFromMessage:]_block_invoke_3"
+                  moduleName = "SilentRunnerEngineTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/server/SRMessageHandler.m"
+                  timestampString = "507736096.44364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
