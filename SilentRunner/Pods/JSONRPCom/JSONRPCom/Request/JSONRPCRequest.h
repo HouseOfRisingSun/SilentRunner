@@ -1,5 +1,5 @@
 //
-//  JSONRPCRequset.h
+//  JSONRPCRequest.h
 //  JSONRPCom
 //
 //  Created by andrew batutin on 11/12/16.
@@ -12,7 +12,7 @@
 #import "JSONRPCMethod.h"
 #import "Mantle.h"
 
-@interface JSONRPCRequst : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId, JSONRPCMethod>
+@interface JSONRPCRequest : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId, JSONRPCMethod>
 
 - (instancetype)initWithMethod:(NSString*)methodName params:(id)params version:(NSString*)version jrpcId:(NSString*)jrpcId;
 

@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONRPCRequst.h"
+#import "JSONRPCRequest.h"
 #import "JSONRPCResponse.h"
 #import "JSONRPCNotification.h"
 #import "JSONRPCErrorResponse.h"
 
 @interface JSONRPCDeSerialization : NSObject
 
-+ (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
++ (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequest* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
                                             orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse

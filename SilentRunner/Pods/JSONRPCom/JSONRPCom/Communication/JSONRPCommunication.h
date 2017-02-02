@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONRPCRequset.h"
+#import "JSONRPCRequest.h"
 #import "JSONRPCResponse.h"
 #import "JSONRPCErrorResponse.h"
 
 @protocol JSONRPCommunication <NSObject>
 
-- (void)sendRequest:(JSONRPCRequset*)request;
+- (void)sendRequest:(JSONRPCRequest*)request;
 
 @end
