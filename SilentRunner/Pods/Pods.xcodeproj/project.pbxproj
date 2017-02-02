@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0089305DCC2F722114BD47FCEF8628E7 /* MKTCharReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9F8ADA7B10AD8B949332483359516 /* MKTCharReturnSetter.m */; };
-		01BCA764374E5C07F26BEDFDE2C33159 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 936B6E695B40FC26BC5614EE385B757C /* JSONRPCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		029DB0013F18A6912F65C80BC7B0DF94 /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A00F2ADF8A64048ED5B6DF565412B /* NSString+ToJSONDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		02E88A747B83ADD813E5FFD759D78C5B /* HCIsCollectionContainingInOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = A406476430B3F334E009DE6438F528C1 /* HCIsCollectionContainingInOrder.m */; };
 		032C08E04C6D45CA8FDC70CEF43F3BDB /* OCHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5DF2D744572AE0E71EC1A889C6EE93 /* OCHamcrest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A186DD78C6982A841D83315044ACC3 /* MKTFilterCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F3330E774C38CB70E9E8B0E61FA7F /* MKTFilterCallStack.m */; };
@@ -16,11 +16,12 @@
 		04DE986B634148D63CAA0547B3B4FA1B /* HCIsCollectionContainingInRelativeOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = B216BD697286910FB778B465DBDCC138 /* HCIsCollectionContainingInRelativeOrder.m */; };
 		05696A60B0D9B4262A2D326C17E9DDA9 /* HCIsNot.h in Headers */ = {isa = PBXBuildFile; fileRef = D656F276809B3F8B8CB2AF362FBCD528 /* HCIsNot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		070E7EAD4A259803AE598DBEABF03154 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A864DB3D1029C53E823240B15E492D /* UITextField.swift */; };
+		0723F6FC01697CD2E2BDDA888BB5E1D5 /* JSONRPCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D05411D4383779B859786ED1269416 /* JSONRPCommunication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A0385B3E00E8C72BF8E0ED41246844 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C12DE77A2DF5D1B9D157638261BBE8D5 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089AED09D89765826F26AC863F829333 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A94CCEBE31377E80C699DA1B7BF36D3 /* UITextView.swift */; };
+		089DD84DC978C9FF7C7C451AC3F96BE0 /* JSONRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = F6AF657D35FFFA35DB49805779D4F58D /* JSONRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		093B7CD4B48B546D3597C42A413FEE49 /* HCUnsignedShortReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = B51B207CC50A75D86025DD62EF09BC4F /* HCUnsignedShortReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		095988ADCF3C3453B05E7AF6F4DF5C69 /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA1BB4DB729A0A74632F95424536ADD /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A082E5E23CE2257E2D25692C5CA0991 /* NSString+ToJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A64A142A81EE0113659890694EE3EA5 /* NSString+ToJSONDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3FEB9D7C3C7FA246C7B669F9F17753 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB862529B7221D2FD5435263811D07B /* UIImageView.swift */; };
 		0A4B1C3591CBBBB4AC46FE289FB1253D /* MKTThrowsException.h in Headers */ = {isa = PBXBuildFile; fileRef = 041FA56CF9CC2C6CEE0204D27452D740 /* MKTThrowsException.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0A6C4707962A82343E2544A20A42DCEE /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44100C45EB2357C631304A93DCA965 /* Optional.swift */; };
@@ -30,13 +31,12 @@
 		0D57D9A9A2BE854CDF19DE1BC4E12F0D /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E74F40C8A3EE94DD727E0818BCBFB1 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D72718CB0C57981877317B4AC83F980 /* NSInvocation+OCHamcrest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BE9FB1290A1731BC85168A1E5C141E /* NSInvocation+OCHamcrest.m */; };
 		0E3B30D4DF4AAE6B9D50AFA805EB98A0 /* MKTMockitoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EED8CF57AEE239361576C4996A82C /* MKTMockitoCore.m */; };
-		0E47A5D7B87290837F89C563055C2792 /* JSONRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DDE311682008B8622837463497F008 /* JSONRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FFF0363902F3D0040ED4F8F1FDF77B4 /* HCTestFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CE6C972CCD1792D128F5F740C64A99 /* HCTestFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10BAC38A86EA9762EF4CDE6C6E476317 /* HCBaseMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFED6274A0DF68A513264FFBE0F97D5 /* HCBaseMatcher.m */; };
 		10DF01FFF6649118658B0D71722928AE /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F401B730621FA99C1CF2D6519A2991 /* UISegmentedControl.swift */; };
-		10E35C04F7490283CE4E65714C931DBA /* JSONRPCNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 72248F459C3C2349FDD6D48F6CBB459F /* JSONRPCNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10FE1E85F32261EF243F11A6DA6F0D93 /* MKTUnsignedCharReturnSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = AD48B0088F6666659B83DB8181AAE08A /* MKTUnsignedCharReturnSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1105F90FE4353054DB043F6908F6F238 /* HCAnyOf.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCB052ABFFCCE7F6DA7BB01AC68F51E /* HCAnyOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11870EFA213E5DAD6B36544F7781C65B /* JSONRPCSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C740A07B7F26CACDD4A7CE47CE576254 /* JSONRPCSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C2C665668F09A0BE1D45E1B658FDEA /* HCXCTestFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD353396F723362732C453EB76DADE /* HCXCTestFailureReporter.m */; };
 		121B54F5728385B0E582B6B18F2BB81E /* HCIsDictionaryContainingValue.h in Headers */ = {isa = PBXBuildFile; fileRef = FA716882E9BFF699423131059B446930 /* HCIsDictionaryContainingValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12FD4E5D850DC5C3894CB0C1A5C97324 /* CocoaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB01B97F5DC56FD7752BC183DC1C7B0A /* CocoaAction.swift */; };
@@ -78,6 +78,7 @@
 		29789D2BF3A817A4F6630A32C7DAC2F9 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE401BDEDEE60A6FF27EDE81E132061 /* EXTScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		29B4F449BDD42634A8D251D84174E2D4 /* HCBaseDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B7E12C21FA56A88921A5D1EAEA8032 /* HCBaseDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BA5BE3F4C01D6310FC7D421A8191987 /* HCDescribedAs.h in Headers */ = {isa = PBXBuildFile; fileRef = 766EADD6DD0759ED06F46DC7861A5EA7 /* HCDescribedAs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C887FD7DB1FC7D50286E04158E40366 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = C234311FE5845A08DD5A97235B248A72 /* Info.plist */; };
 		2CA3FCABA324792686FB6435DC3B6D0B /* MKTUnsignedIntArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 370E44232C0407F1E33FF25E2A374504 /* MKTUnsignedIntArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D301C3F5547A3396CC750403D0D3B5D /* HCStringContainsInOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 477B72EB056DA319EC8F40A072C13FC3 /* HCStringContainsInOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D67DBD1436314970FCB3748FF1B370A /* MKTLongArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 156CABE7065CA73A42F54EE59E0E29F3 /* MKTLongArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -100,7 +101,9 @@
 		38640C23F914B9ECE410C9EF60BB4E8B /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4133CA41C8BBD13D2D61B9305D206E60 /* SRWebSocket.m */; };
 		38960CE6A0F54EA58833A0E643452072 /* HCStringEndsWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C0C19F6CA86A15438D769C2819230F /* HCStringEndsWith.m */; };
 		389C9F4A823CCA266EAE761FD0F25DAE /* MKTAtMostTimes.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AFE1A301F9969EC5170463D2A1BC1D /* MKTAtMostTimes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38A446E3F19691B4DE96A2C92E8B270F /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6A0FB569ACC890B612D2BE77C0EB8 /* JSONRPCResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		39B99DD29EC7BC3634E645447C8B99A7 /* Pods-SilentRunnerEngineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F7BA07B3B9D61A65DB7E58473A535 /* Pods-SilentRunnerEngineTests-dummy.m */; };
+		3A41B89424D556790447DE3908216C7A /* JSONRPCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CB146CB01EDD450A75042AFA4BD2EACF /* JSONRPCRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B4A163C3C34D795279E026C07BC594B /* HCLongReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8595ABE6AADA731F806EAED9137CC538 /* HCLongReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DFEE194CA374CA75001F9A602284F55 /* MKTNonObjectArgumentMatching.h in Headers */ = {isa = PBXBuildFile; fileRef = 588941490F685411E99DB6A4BAC57906 /* MKTNonObjectArgumentMatching.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E80C7ADF05E1A54B99BD6C7EE07EED6 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EFE84E0EC293BBC7F59E2D3C88FFC0 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -116,7 +119,6 @@
 		42C2E5E7ABDC1FCD8A71184945A9B1DF /* HCStringDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B737CB31938F38D6034C92A50B70608 /* HCStringDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FBF44EDFC80AB1A877C041D9BF49BF /* MKTFloatArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 238C95F4ACA1D37590F01876114AF2F0 /* MKTFloatArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4359B6D980C38605B798E65172FE0E5A /* MKTObjectMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D656063F63515A297F6CAE0BFE828A2 /* MKTObjectMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		436FB02C21587914438760E2292DEE82 /* JSONRPCom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57267DB661627DF86E3646BE5CC88FDB /* JSONRPCom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43DC58F1ECA2411729A95E6C19067EE6 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F422504358A11256D452613A1CEC652A /* Deprecations+Removals.swift */; };
 		4401D7E61519DD01AA21894B474D28A0 /* MKTInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E17832AFC676801A3A04296B3B9A432 /* MKTInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		45952B8FD0B30BFFDB7B63F01DB10E3A /* MKTArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C96119C8698BBC4A5CCBAB0939AC84E /* MKTArgumentGetter.m */; };
@@ -126,6 +128,7 @@
 		46ADE10D9225A5404719582AB0B04A75 /* HCIsEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 225BBC3E16D2067876998AC22BC8DBB1 /* HCIsEqual.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EFAE807F46E276404E30766E2CC809 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA99B5447B72C58E1A0BE0C69D9C9B /* UICollectionView.swift */; };
 		470F485A8E1C92640A730E17A945E71B /* MKTPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D63A28857F9AD09198D7751BAED2E5 /* MKTPrinter.m */; };
+		47F580B33FFB08885E679D9C9A1ED85D /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FDF5CE282C9E521814857C856F2032 /* NSDictionary+ToString.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		483AE8E872DEF3A9F601D98581B390CB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0848A19B970A5460FCFCEDE1765A6A00 /* Result.framework */; };
 		48CD86C3D6E1E23DD7A0108ABD3801D7 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295CB3AEFCAEDC2EABCD267332BFBFB /* Action.swift */; };
 		492435A0D17CAC4AB3F7F39B9FD66C3C /* MKTObjectMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 576E50F70DAA6978CF3BC5660E6DF51C /* MKTObjectMock.m */; };
@@ -149,6 +152,7 @@
 		530A2E74CD02B11614EC28B68931A42F /* HCIsCollectionContainingInAnyOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CF4A6DE973F36BA4BE645180DE2939 /* HCIsCollectionContainingInAnyOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53A1FCC06E031EEAB2297106F23674E9 /* MKTInvocationContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 91622EE15E4306492240AFE7577FDEA5 /* MKTInvocationContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		54F2AF90824B01CD3874304F6CA1333F /* MKTFilterCallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBB51D61224786ED8BDA03EA0B1D10 /* MKTFilterCallStack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55B1E469E2FF4D0B8F0171A7B9717402 /* JSONRPCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 49E538210826F675690892C0E8FFFB1B /* JSONRPCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55E51C37C4E913EF331B6D15FEF9DDD1 /* HCInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C9DA347063DC2E43B01E83E6A80051 /* HCInvocationMatcher.m */; };
 		560C3606DA5FC9D12135CE84572CEA26 /* MKTMissingInvocationChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F82B9C3EDA62051B89F8974B93933480 /* MKTMissingInvocationChecker.m */; };
 		566D20C7CDFD19DC5FA5A8E9767A6D0A /* HCIsCollectionContainingInOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = B50FF97F3339FBF4BB2F51FBCC380C7B /* HCIsCollectionContainingInOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,9 +164,8 @@
 		5AB3C516CD1DD440A7758CE668AA8E83 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3531E96639A3FC735E04B5B33B80FF2B /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5ABBB27AE116735E1B50F868461354C8 /* HCIsCollectionContaining.m in Sources */ = {isa = PBXBuildFile; fileRef = E0468E1F7C2C366673021C57FCA48F0F /* HCIsCollectionContaining.m */; };
 		5B26E7C1BF70AF9F704FA7EBE823BC72 /* MKTFloatReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = B46808F486F2C9A1B903168ACC9E3F9D /* MKTFloatReturnSetter.m */; };
-		5B85270947CC0CA205F3133807A384E3 /* JSONRPCRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F655B70344A2733367ED15A79B8A2 /* JSONRPCRequst.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C301C9DE471F88F7DAD60FD2846A042 /* JSONRPCErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A29EA389B24C51F54DDEC986FC4A6DFE /* JSONRPCErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C386B59E708072DF3F63F21EB804F0A /* HCOrderingComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 4951C3346A25B04BAF0448ED93D70C5F /* HCOrderingComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CFFB62FB9B186F82677989A5168351E /* JSONRPCMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 915A855275AD9B47241F1A9EF0A6C5E0 /* JSONRPCMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5FF23D30D5D1EBC47234D3F12E04B9 /* MKTFloatArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E7EDE50CDE44DA4EEF2EF0F47720B1 /* MKTFloatArgumentGetter.m */; };
 		5D9E96C12A94A979916D71EABF1A3016 /* Pods-SilentRunner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927A0A4D7EF15C0A4C4F9A49DD2A864 /* Pods-SilentRunner-dummy.m */; };
 		5DE49A2BF6EC38FC10EA357C03A456C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
@@ -170,12 +173,12 @@
 		5E950CF00DCC29D1919483BDC533ED73 /* HCIsDictionaryContaining.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA498F29A7ED11F9470F8A7B10B3317 /* HCIsDictionaryContaining.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EB136159D3056FA1D5261433A95A5D7 /* OCMockito.m in Sources */ = {isa = PBXBuildFile; fileRef = 903E3DC136FD25B9D1F6F52EB4DB44F9 /* OCMockito.m */; };
 		5F3D93E3A71E1BC90E3A58DB3C0696BE /* MKTDoubleArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608C642D2AC46330835C813330122CE /* MKTDoubleArgumentGetter.m */; };
-		5F9BDD1202B9DD3DEFCE659BE54D5DD0 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C825611DBFFCC82CB1DC8C5E57525A /* JSONRPCErrorModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5FA609F0F221312A23A6ED3537F6E928 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
-		60FEA27395C331D4160A55BEE4E751C1 /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8818B96B7FB46E4963C2FBE0DD787890 /* MTLJSONAdapter+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		612C6BDC4601A97C8CB55BB8D38FA076 /* MKTLongLongArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF73F4D82C1244A36284E17D6A40180 /* MKTLongLongArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6141E012E8DEA6C35AF7B1CC1E29ECA0 /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7123FF5781992C378EF5EAE7437C6 /* Flatten.swift */; };
+		621BA917CFFBB9AA09C37C85E58B82E7 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83951DB50E906ACEAE686319FF2CC3D6 /* JSONRPCErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6282E3A708AC5266DB7C0E77C6770658 /* MKTStubbedInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = B5446FBBB3094CCC38FEEC9CCC70E871 /* MKTStubbedInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63D82B3F8B25B0A00EA97539595648CA /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 115B0B43991F653707C4D143CF4E5951 /* MTLJSONAdapter+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64E12BE68B6B7A88DEB7E09EBF5CB575 /* RTMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = B96C1B25CD376C095E2CAF1660559264 /* RTMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65A441D0A5743AF743E3F1EDF882B369 /* HCIsCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2D063CA2A6D8BFD1EB77AA7372E59 /* HCIsCloseTo.m */; };
 		65E0F1F6354299C1E155D0F69C382DB3 /* HCIsEqualCompressingWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F57329FC5CFE7A3AB96AD9B26A66C41 /* HCIsEqualCompressingWhiteSpace.m */; };
@@ -186,19 +189,21 @@
 		6990577CD89D2F109F720E130E7A16BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
 		6994A99A86FBA1AE3157462F09A5BFA9 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4D9A68353F25D4DAAB2EA37079306 /* UIBarButtonItem.swift */; };
 		69ACFA55752B133FE290C455E179D30C /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D203208DEF237D12841088828BA257D3 /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A078CF76EC3A1DD3E5A83E325126E94 /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9233FA66AE448552161ED0112767A /* JSONRPCDeSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6A65ACD445A106A328D6BE73B3719FE1 /* MKTBoolReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8DE1AA576BC64424688CECE14E32A6 /* MKTBoolReturnSetter.m */; };
 		6ABF4C61380979B812E9118F724FFBAB /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945323B24A4B691C1B7825FD5EF8374 /* Disposable.swift */; };
 		6AF9AF9AAE72A6A625A5025FFBD72D41 /* HCIsTypeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CADC4D4D92D377364CD8DEBC23D818 /* HCIsTypeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B5221AB4D5003A0E0276C6A00CBE5F8 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92326BA8FAB8ABDD0FB56512EB5ACCE /* UIScrollView.swift */; };
 		6C64E1CFDAC79745DF4F0CE64D187BFD /* MKTClassArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3491E9901CD13924560BABE56EF2A8 /* MKTClassArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C9ED282AAE19C19273C0E47869D7699 /* NSString+ToJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = B2CB9CC42545F991D56E2415224E6F5D /* NSString+ToJSONDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D2A6061740207FC2A7253B5DCCC0211 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
 		6D54E145449A88C6D4B9473519734E03 /* HCBaseDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9B8E600C467605A88A096AEB6C07A /* HCBaseDescription.m */; };
 		6D8BF53ACAAAE58F117CCB3415AF3BBB /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9E9BD779EE85738A4491DAD03E0AD /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6DC6C2598B2F5A062918D4F21E347BC0 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1131A4ACDDF32F78D99015D525B75A41 /* JSONRPCErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E320EFE4A1E52AFF9292C8EFB553981 /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA943478BB381777FE505CDB204566C /* NSDictionary+ToString.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6E37FCDF3CD0D657A1E7932D4662BC96 /* HCCharReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DDDAC5B8F7128893CCB371E7A83F50 /* HCCharReturnGetter.m */; };
 		6F0363857C1965BEC0941EF8205F99BD /* HCLongReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DF45C64B64A4F398EDC3DC9DB808E1 /* HCLongReturnGetter.m */; };
+		6F3E3453AAB9555EEF9A1457C85C3BC1 /* JSONRPCom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED1E221B874F78C5225C828A8A1F3 /* JSONRPCom-dummy.m */; };
 		6F77E863C24901C179691359EEE3DAEE /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5D441AA2D1B9A3B0C9D7F763D303A4 /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FB9C0575A10FF146D6CD13D80C44838 /* JSONRPCDeSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4C9EF4CB38308B8688D4B93D935D9F /* JSONRPCDeSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70312EB3A335F66DFE45E3A54415A3C6 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0D980970BC1BC2F7EB0A7987701E24 /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		707E4ED9FEB55A503A9C6DDAF187CF88 /* HCTestFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = F573FF0108D3F3500ECA791CDB61F0A5 /* HCTestFailureReporter.m */; };
 		708FD5A1E0F3950530E90C8D69CFEFA0 /* HCObjectReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = FB74ED90E749A998468A91BEC2A90B77 /* HCObjectReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -209,7 +214,6 @@
 		7437BD47ACEB7F810B83A87E366B7365 /* HCIsDictionaryContainingKey.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4527DD9CAE4E13EC4D095CA148D332 /* HCIsDictionaryContainingKey.m */; };
 		749921CD4B6C9DFEA3BB55B77EAE2ADD /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6554291D17686081AD6DA5C8F1461D /* NSObject+BindingTarget.swift */; };
 		74CE21729692BC9362BB28D4F0989BC8 /* HCAnyOf.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FC1DD38346027D6049CD47D7CCC1F /* HCAnyOf.m */; };
-		755B11710743D5CD7B1E2722448FE791 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E204C3BC4DF8038E105E7F6CD20F4E3 /* JSONRPCResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		77933A3D13090A87D2A7EC64E523987C /* ReactiveSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFE2A876664ADA265397F185DF241E /* ReactiveSwift-dummy.m */; };
 		7813045A055CA0E3C93338DA77C72F9D /* MKTUnsignedShortArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201866403F3321781B85439F24B02 /* MKTUnsignedShortArgumentGetter.m */; };
 		7834203F287355E6D7161899D78176B0 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B514A4A0ADE55B6B0DFB7BA6B5CD5 /* SocketRocket-dummy.m */; };
@@ -220,6 +224,7 @@
 		7A0F44F56731C32FE84FCDEC06456459 /* MKTObjectReturnSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F1E363F15D29F2D7CC331017370F5C /* MKTObjectReturnSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7A5A2B8D7FCF43EE34FE8D2758D6B8E9 /* HCArgumentCaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F341F4166D8C8BE1CC2BB6F065D71D5 /* HCArgumentCaptor.m */; };
 		7A96B69424CE2A07D63F8EC2C425DE03 /* MKTUnsignedIntArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF5C281C6F6A34DB7033FCA0CB693D /* MKTUnsignedIntArgumentGetter.m */; };
+		7B1349688C6B6F4B2E6CC04513692894 /* NSDictionary+ToString.h in Headers */ = {isa = PBXBuildFile; fileRef = C895A0D6D059EA3328B25D0A5D88A667 /* NSDictionary+ToString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B7B426CF9DCD42C72A991ECBFAA81E4 /* HCBoolReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 449AA136F80D90100342F77623467E01 /* HCBoolReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7B84D70F46861C87077B18AF4BF219F7 /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EB97C01BC9712D6B5134E88B2B5E39 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BF93D0AF9F8ADF4FC40F11DDF39FD64 /* HCStringContains.h in Headers */ = {isa = PBXBuildFile; fileRef = D1681CBFD5EF0EA77505178C724E77B2 /* HCStringContains.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -241,6 +246,7 @@
 		8A16551F4836A35C25568396A5B7D3B4 /* HCStringEndsWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 603B40C8DC17AE410504F52E785C7179 /* HCStringEndsWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A26CC0612F7B18706487E4F94979EDB /* HCClassMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E47C6BAD3D657667D8DA57DF2E59DC /* HCClassMatcher.m */; };
 		8B2B1EC78ED5559BBBB13B01D842E926 /* HCAssertThat.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BD60767DE36F2BCB031A3EE2B4E244 /* HCAssertThat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B2D6D7759F2E70ABD6E799F6D6D77E6 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9149142B4A954AFDC2F3B6B464BC7 /* JSONRPCRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8D416FE224054AA48F5FDA334D9FD755 /* HCInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C454B95F485A164030CA3D1A7908B32D /* HCInvocationMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D5944FB23E7E379D9533243CF966042 /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 413BF60E9BD0874AD5BAB7B5EB18227D /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D61F553F9064C07F2A662D86610FD1F /* HCUnsignedLongLongReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A66F25DFFC86E1B2AF8BB22D95532FE /* HCUnsignedLongLongReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -263,6 +269,7 @@
 		93B3F6CEA507B9EB9A6E8610C91A5CDD /* MKTUnsignedIntReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F5250151CB7E1F4126F89D21C2E38B /* MKTUnsignedIntReturnSetter.m */; };
 		93BA986B810AA9EBB4A66DAFD73D3547 /* MKTCallStackElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2965BCDE96895E3FC03B3AC342A55011 /* MKTCallStackElement.m */; };
 		93EAB1EA4C9C2137E00C25B87E4F5826 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39B817FEAEAD206DE2E49A6B708ED50 /* Security.framework */; };
+		93EDBBDF79DCAE332A2E4E00627D4A72 /* JSONRPCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 459E9071EFAB31E4F2AC763AE35FFB38 /* JSONRPCNotification.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		93F7DCA0170BEA711368D13A9BD06115 /* TupleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE2FCD22D766BA27917F551176E4134 /* TupleExtensions.swift */; };
 		954AF10799400B6670AC8CF3945470BB /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF18C4C1982B74BA057BCC94B16B175 /* Atomic.swift */; };
 		957B51CB9FC09838072D5FFA81761FF1 /* RTUnregisteredClass.h in Headers */ = {isa = PBXBuildFile; fileRef = B5026A63B1FDC71A69E4275D7B705216 /* RTUnregisteredClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -274,9 +281,7 @@
 		997A1696353DBA134C11E56F443F9913 /* MKTObjectReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA6BBAFC9CB2B55CDB65328EA71A63 /* MKTObjectReturnSetter.m */; };
 		99C67E64886686954AAA3F304C30ABA7 /* MKTUnsignedCharReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1348AEBF4F4C4118A4783D5FE47D3B /* MKTUnsignedCharReturnSetter.m */; };
 		9A3728220F73E199B952715471E5AA47 /* RTIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = EDBF76684BFF594FD0908BEBFEDA358F /* RTIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A43EFFCDB27D3E914BAFE6D7AFD726D /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE6FC8C45361F3598996FB7E3AF5 /* MTLJSONAdapter+Utils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9A7DCCE61D1EC05836FE709F6B64A725 /* HCSenTestFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 411E058B1638509C6CBC7D00DA38210F /* HCSenTestFailureReporter.m */; };
-		9B7E6F740DEE31744B027760F4DC09AC /* JSONRPCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 3081C76A4B22D22949B9B740950448C1 /* JSONRPCommunication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B8F2428D04424EA8879A5877999C0B2 /* MKTLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1264005D5A850B16918DAAD221203C5C /* MKTLocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9BF4CEA72E505F0F7DCDB7125712C35D /* HCEvery.m in Sources */ = {isa = PBXBuildFile; fileRef = 291741EADD1B42518D72067FDA961390 /* HCEvery.m */; };
 		9C165DBDF5800222523752ECB70C0330 /* MKTUnsignedShortArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5FC946FE83B9FAFB755689A4157A97 /* MKTUnsignedShortArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -293,11 +298,9 @@
 		A0DF16D482CC56F61EFA97F6370A5FA6 /* HCConformsToProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FF56475AD283284A7C95008A8C0C679B /* HCConformsToProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A151AE803FC0C9AC1190CF3AB142E8AB /* MKTInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 386842B83A318CC9EA6D45E42C268F87 /* MKTInvocationMatcher.m */; };
 		A1B4C5FEB81B51923C9232DDE1EEAE47 /* HCIsDictionaryContainingEntries.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A723F0861E392DF5ADEE390198632E3 /* HCIsDictionaryContainingEntries.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1E6D52D03D7C9896BD9687F7034578F /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = BC48966E36EA5E58DFB3E41BBAA679FD /* Info.plist */; };
+		A1F122D8FA66B535B2B484EF4BDCE8A9 /* JSONRPCId.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DE40EAC57D7EF126BB510DAA6E1079 /* JSONRPCId.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A249B28289E5C8AE697E42DC6E8F4096 /* MKTReturnsValue.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6866C4A3E1DBCEBA27793DDD2EE90 /* MKTReturnsValue.m */; };
 		A27EBE92B955C2ACED27F22386C32C2A /* RTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B168AB6BB433E9727E6F3676012EC73 /* RTProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A28E79063E2B3EFE6CFA06134A1CAEB2 /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED70DA92B9C599633D69460675D5718 /* JSONRPCDeSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A31D8845092B0CF3D2C2E96464F0D0AF /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D59335E24A7DA2D35D60A18DE7F4E /* NSString+ToJSONDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A33CF69B0DDAE4189C74A358FF8EC892 /* HCIsNil.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A89CAA1E3C22CA6C954522A99DA6E /* HCIsNil.m */; };
 		A3A830894BA1D59CEB8F39E6AF4502F9 /* HCRunloopRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C0A61CBF3793D42481500251344DA0 /* HCRunloopRunner.m */; };
 		A3CE9C99698721E621CD28CCE60A97F2 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C565E1BBBDA8C899D4B4A1741FBCD1 /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -311,6 +314,7 @@
 		A65F08A7A71134A0FA8CCA721E81A1B0 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = FF428D4393FF79F40072C158BC1A4E49 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6794E36705453ECA3850804D046A93A /* HCIsAnything.h in Headers */ = {isa = PBXBuildFile; fileRef = 880FA35965B6EEC970A5F4D42E622028 /* HCIsAnything.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A695A173E72218021ABB9BF36F18A9C1 /* HCStringContainsInOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DCCE3024CAA51FA4516F6E17DB125 /* HCStringContainsInOrder.m */; };
+		A6BCF0A00CE7A0E59091C83BB55A1CFC /* JSONRPCSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FE9A50EB43A92D8E76480874FD06 /* JSONRPCSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A6E7F1EDBDCF9D7C63BD437E5F205FDB /* OCMockito-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6F4EA2EE949FFD3EC1C138A76789BB /* OCMockito-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A729A71404C5A6F56AD6245CABA3A6F5 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A07BFB090BBBEA06F01D5ECF71743027 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A73B69C721405136E26C013F4A3405D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
@@ -334,6 +338,7 @@
 		AEC191A60D5004CA062BA074241EDA27 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D4620063A404BDE3D79656743E1F076E /* metamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AF018463417A1B3F363D8325DE16A1F8 /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B8FAC4B2B9C6BBCC2AB56D5D65769B /* MKMapView.swift */; };
 		AFA9D612589E337FA291687DFC1FCCBD /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1E91F61A612D96D4016B2F644E100 /* Scheduler.swift */; };
+		B0035F1FD1CBAD65DBBF1AC3BE3E0C49 /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8368B47428695263B047C416425FF76F /* JSONRPCErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B112A5921D2311BEE95E8BE1672C2E00 /* MKTVerificationMode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBE6671DDF1FFC74B8E2D82ABB1A76B /* MKTVerificationMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B18C5B91D3D50AED6AB4A3093E832B10 /* HCUnsignedCharReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D6E368E6C5DFF6ABEF6BF5C682A7E6 /* HCUnsignedCharReturnGetter.m */; };
 		B1C05BD79504F25CA1F800DB9EE4142D /* HCIsEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A1A4C758D7B58353E7FED0EE26BC44 /* HCIsEqual.m */; };
@@ -355,6 +360,7 @@
 		BB5CE457DECF85B95C1EEDF8B88790FE /* HCEvery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D585DD9790752BC961A11A3CBC6E45A /* HCEvery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB88EF268BDB80DABD4C6BDF0296334F /* HCIsTrueFalse.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CBCAE74B36A8DF614C9D2A0938C45 /* HCIsTrueFalse.m */; };
 		BBA5037A70776134E4ACA315252F2A98 /* HCRequireNonNilObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F97C05DD1192044B28BC02C269CB2B2 /* HCRequireNonNilObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0523B535CDCFCBC00BAA2A1F48F484 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE29230826E2091A68BFA60C4C981A2 /* JSONRPCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD62373435BFC8DD69EAF9CDC1DEF7FF /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89ED96935B8BAF2D3F78F57BE6F2AC /* FoundationExtensions.swift */; };
 		BDB61013FC93E871549E5BA7D2513A7F /* HCIsDictionaryContainingEntries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D4527DC5075570677B7258F5A675 /* HCIsDictionaryContainingEntries.m */; };
 		BE0A1C5EE0A57659B299248BE481D9FE /* MKTCharReturnSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C678C67A0EA399D2E1DEDB93223091 /* MKTCharReturnSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -374,10 +380,10 @@
 		C0C6FB7C81645E7A1F7CA88E6B23F046 /* HCHasProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 92437309D203399C3ABD608BD342EBE4 /* HCHasProperty.m */; };
 		C17DC85A9ECF246F7BE6DF0278D06675 /* HCGenericTestFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C7E278982BD76D94D1DC6E740A1AE /* HCGenericTestFailureReporter.m */; };
 		C1FEF601BF4F21055D40BAE6D2067F4E /* HCHasDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE18831F6F93FA36C8BEC7637ADB6E /* HCHasDescription.m */; };
+		C2EB595F0AC0E4616052F6BB644D641C /* JSONRPCNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2D7D718633819A1C87AA8EAED9628E /* JSONRPCNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3127A006A6429A26C9C8587A5D21430 /* HCUnsignedShortReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A634646E7EB97318B0F797FF5782EE /* HCUnsignedShortReturnGetter.m */; };
 		C346DB79CDAA8E19CFABF80BEBA35AB8 /* MKTInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB65FB7E0EC183EF90022CCECD50B4 /* MKTInvocation.m */; };
 		C3CAAA8998ECC20163C8035007938416 /* MKTAtLeastNumberOfInvocationsChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EF10157428C66A5ABABE0B12B1C668 /* MKTAtLeastNumberOfInvocationsChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C3EDF10B6CB5B401FCE52834DFD7394A /* NSDictionary+ToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F94E92782589CA679BB43CDD2281218 /* NSDictionary+ToString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C592AA615277668D951EE626304B98B0 /* MKTParseCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 692A41924F38DBF3DD603B6D3F0F0FEE /* MKTParseCallStack.m */; };
 		C5A2BD2647847A83349CA3FA4F3B7E1D /* MKTUnsignedCharArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D7719A550EC8AFC1D813AAEA8E201 /* MKTUnsignedCharArgumentGetter.m */; };
 		C5F54960CEC3A583DCAA259D83863B34 /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 659D96F1CAF2EADEA0CB2834FB0CC9CB /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -393,6 +399,7 @@
 		CAB4BEC57F7033A5EE4FDDEFCD8A90A5 /* HCUnsignedCharReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7397B3C3F8D468B4633C2E76218126AD /* HCUnsignedCharReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CAFADBA0E284E02E59590476E49D2A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
 		CC4AA4C20C5B58F780A1BC31B6121216 /* MKTClassReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6533E13C3BFA21BC793D9192D0065EF5 /* MKTClassReturnSetter.m */; };
+		CCA9FB60DE974622032C98E002DB69D4 /* JSONRPCErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F72D8EF77AC29102596F7C63231BB02 /* JSONRPCErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD0A5874F90F079A3D72336FB60601C5 /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 070AFD13A2C6170EBE47F38AE9CC674F /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD4FCBB36832CFB5B008B9643A6D2B64 /* HCBoolReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A3BAED94CEEE7A3EFDA76D38C0A00 /* HCBoolReturnGetter.m */; };
 		CDD9A7B168CF4EFCF54200AEF77D63F6 /* HCIsCollectionContainingInAnyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 44410AF00EC762DA370E31A14EB82CB1 /* HCIsCollectionContainingInAnyOrder.m */; };
@@ -412,7 +419,6 @@
 		D60E948B9DDC30BEFA3BC8C4155D5E3B /* UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F893B4478AEC97A5491F3F9B71BD92B7 /* UIBarItem.swift */; };
 		D70BA6B18772AB9B8C8913AC3FF028C6 /* HCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 7207E048A17C75721E6360394634E38F /* HCDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D72025DADB2C7DC4E30906C8EA456F1E /* MKTLongReturnSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D07DCB45A1BE14B180DF1D8E28CC7 /* MKTLongReturnSetter.m */; };
-		D7758B8F36E8AACF0646CD18FC1045AC /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D6065760B2987AF7ABDB5FD430BA778D /* JSONRPCErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D8358FED82899409CB879D0EB42E97A4 /* MKTStubbedInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C933BDBB18A619140587415026265C /* MKTStubbedInvocationMatcher.m */; };
 		D8544E54745DF46D32CAAF0952EF25BA /* HCIs.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E38D7C77CB07C020074C02FA82DE2A /* HCIs.m */; };
 		D8D56D56BCE9BB77D04FAC1E7720470F /* RACObjCRuntimeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B481694A4A8FAE5A2DEC08C54B5EACF5 /* RACObjCRuntimeUtilities.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -432,10 +438,7 @@
 		E011BAFCA98A7795224E03916504F5B3 /* HCIsEqualIgnoringCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C628B3539AC268F092D3504497048807 /* HCIsEqualIgnoringCase.m */; };
 		E0569A40C0C3D37016481071DBB7E870 /* MKTLongArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E917A4CA129C7E5C3D54B2C686231 /* MKTLongArgumentGetter.m */; };
 		E1139B0C46CAF6385FE6BECFFF8E71F1 /* NSObject+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30265C4813F40E68184C62CC555F582A /* NSObject+Lifetime.swift */; };
-		E20D88ACEF802C03B0E082F0662A2E09 /* JSONRPCSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 186612AD8460A542EBD7E457CEC05668 /* JSONRPCSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3802BA8CC490FFDAF716DD4EB13B472 /* HCIsTrueFalse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECF84D729528A943C635BCA4DC3081C /* HCIsTrueFalse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3DE71E1FD86DF3FC39766F62DEECA17 /* JSONRPCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B06FEABA7E5E9BF1ED1B8598F291A /* JSONRPCNotification.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E4AC7C07C2FBE8D2DE0355E57E926FB7 /* JSONRPCId.h in Headers */ = {isa = PBXBuildFile; fileRef = B3B12BC60EDBA447E699A473545F3A66 /* JSONRPCId.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5B019553B233AC3646556208CC7C971 /* HCDoubleReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BCFDB5B0A6B83D05D980319C69DDFC77 /* HCDoubleReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E62A0171E19A4004E3EDC428B38ABA8A /* MKTBaseMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB3B393A332AD730D69C0FB21B9F68F /* MKTBaseMockObject.m */; };
 		E6A6A462CD8A58892D3A0DE522F641D8 /* HCMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5156232F767F9B7D10E94CFE00255368 /* HCMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -447,44 +450,41 @@
 		E9CA4A40640CF69D62C3CBF1E204DCF3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408741AD00AEFF9755FA44A9B34C1E61 /* UIView.swift */; };
 		E9DF31E9A41FB23E9CF695D7C9435749 /* HCReturnValueGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65C309DB5D3E0D779AC45E44D783EE /* HCReturnValueGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EAA6C22662BDEC9EA4302C6CA6EB3D14 /* RTUnregisteredClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EE066311DDE5B2A4D44D8EE98CC7BB58 /* RTUnregisteredClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAAE9E49DADC960D282268A318C97125 /* JSONRPCom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCEAB76E7D2E6DFAB97AE8735B325C0 /* JSONRPCom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED2155C5CCE030B960C3D69A760AC865 /* MKTNumberOfInvocationsChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = E34D86CF32A66860F4ACC5C812EAA76D /* MKTNumberOfInvocationsChecker.m */; };
 		ED235AB10934AD2D341BBBC53E7716FA /* Pods-SilentRunner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC8A43D2BB212C3C758845D8AFDFACD /* Pods-SilentRunner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED8D62D69D19BF09B50E8CFC1A0EF1F7 /* JSONRPCRequst.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B1411CB8BA1A35626CF8CD47BE2ACB /* JSONRPCRequst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED926260750C08D314353E76F9DAF4FB /* JSONRPCSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C41A2477F7E1CA377EBDDD5E166C41D /* JSONRPCSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EF0F4723DA4E60868235092D75FE5276 /* HCStringDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC73943425ECB0B9369A2C5B7AE4B6 /* HCStringDescription.m */; };
 		EF6104FE5F3B70139F5A364B68D08E52 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865DFA37BF54A07E451230315D28720 /* UIControl.swift */; };
 		EFFABAC9180AFE3DAB9CEF3573C2B112 /* MKTStructArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C46AE098C7614E7D08CAC9A6306D5B8 /* MKTStructArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F1350E7C28882DAB462FA47BEF080C41 /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF01C57F5E0E63C4385472A036B7A5 /* UIGestureRecognizer.swift */; };
 		F13C916F0EA6CCCD4C1D7D4DC1AE7995 /* MKTShortReturnSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E86198AF3368EA8D683F8E5684F7B0 /* MKTShortReturnSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2012839FA802269E92AFB61F28D9905 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E84F92532C4D147226C62AA0FCFA24 /* JSONRPCErrorModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F4030F5D14F73B514B67320D4770775F /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D6988B1416777B14508061FD0A185A /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F43D1E47BFDD7948A823318AA2F9835F /* MKTArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA30B87638342F047C304F33FF10C4A1 /* MKTArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F4E4FEA90364BB6D57937A67D7492EDC /* MKTBoolArgumentGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EFD4ABFDAE6EA2834C47351A3A1165 /* MKTBoolArgumentGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F526486F4A60DC94F2468EF32BDE02F7 /* OCMockito-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F326C4B1D2479E5BB7465E5F81EA05F6 /* OCMockito-dummy.m */; };
 		F5AECC683EDDCE57254767432B43FBBD /* NSObject+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484DF99EBFAE6BA606C9F6B73E0DE9A /* NSObject+Association.swift */; };
 		F5E71342FE67034A77F1E3882C66A69D /* MKTInvocationsChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8309DC3BE91BF847BE74CCF03977A4EF /* MKTInvocationsChecker.m */; };
+		F67DEEAFB91973A8F8E91C2FCD60AC81 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6AFD76827B12E15A5780DA7189ABF /* MTLJSONAdapter+Utils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F6E25733267606081F8EBA3D3CEFE456 /* HCIsEqualCompressingWhiteSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = A14EBA21FD8A6D41202B7262CCFC7FD4 /* HCIsEqualCompressingWhiteSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70F92CF1239C23195C35ECAD885ACA2 /* MKT_TPDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C5421F2B5F3C46643D77EA973FAC60 /* MKT_TPDWeakProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F73838D415A3D93F8D9BB84065104DD2 /* HCIsNot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B30F20E8C9691D9F6B2DCB98D8007EF /* HCIsNot.m */; };
 		F775030FFCDB28561631DE01D5CFF91A /* MKTBoolArgumentGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B690A00E7DA7FC9F0B473FF66748E4 /* MKTBoolArgumentGetter.m */; };
 		F7DD170B5F4319395FDB7DE036CA4FD4 /* HCBaseMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E0403840BEE3D2C14664ED3904917FBF /* HCBaseMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F83739B123BB45C8B2E42AF2A53A2C16 /* NSInvocation+OCMockito.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFC4A20B959C039B2734A9A7811E95F /* NSInvocation+OCMockito.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F881036B483A5183AA018D909218092A /* JSONRPCom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6F0FBAD07BAF689407DE9175777AA8 /* JSONRPCom-dummy.m */; };
 		F8F483A8ACF6DA754A7A8885E8392BC4 /* MKTThrowsException.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0123562D7126C16C30288C4E68A21 /* MKTThrowsException.m */; };
-		F8F605606EF77F7E7B9105D6F6D82E2B /* JSONRPCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD2B5E601B2DFBA048BFEC160D73463 /* JSONRPCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9B56F67D9B1FD823A7547C03363D61D /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EEAB1E63E89AB00F454B70FD9C3A28C /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9CB14D3A27B72C70A4576BAD797B324 /* NSInvocation+OCHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEFE0D2330034573EA462444AD40E10 /* NSInvocation+OCHamcrest.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FA4F410D084B0779971129CE0D5E11DA /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCEFDAC82EBD1C0C4450C89CECB178 /* Bag.swift */; };
 		FA89DB166DA1C459BD678B2C7B38AF10 /* HCTestFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 39681783E71AF2DDFD99FBBCDA84A221 /* HCTestFailure.m */; };
 		FAC7D05AD427F95584AA51A0D3EEC050 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D402F1EF5EC8685DC126C17F0D895B /* SignalProducer.swift */; };
 		FB3D35A7EBA52C3E4F3EEB616780ADDD /* MKTTestLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 70822507918B669E62650BFB66DB9115 /* MKTTestLocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FC2B018F32FB2B4ADFE8831665DEF12B /* JSONRPCMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5624162A996D0F2A435BDC564D2F29 /* JSONRPCMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC35B8C9D85E99A9B695742AC9E1D350 /* HCCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BC6DE3139C6E7D08A382047BC975A5 /* HCCollect.m */; };
 		FC3EC55A63B7C347EECA06C82711D051 /* MKTBoolReturnSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C38180ACF4531BC84A4FC9E5F25F19B /* MKTBoolReturnSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FC83EA910CB9F3FD10216E4D3BEA62D1 /* HCIsTypeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA61DCF6635C50E2700EDBDD02AA948 /* HCIsTypeOf.m */; };
 		FCBD9BA7CBFA1FB9850ED7B7ED0E49EA /* HCFloatReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA18A7B9D2146FB6083B919884FE19CA /* HCFloatReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FCD88D3B6FB8BF70B28CF69C7C180013 /* MKTObjectAndProtocolMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C50211B760B48B069FBD4CD3061FA0 /* MKTObjectAndProtocolMock.m */; };
 		FCFE42BB3B6F298433F361CC7DF12465 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1041E847302E9AA556279EA18354B4D1 /* ResultProtocol.swift */; };
-		FE3A0B715271C57759C733764B4A6FEB /* JSONRPCDeSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7B744D2295466AB0D84A4034747F9B /* JSONRPCDeSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEA4487C70615D19F14C0ED23D64A81A /* HCObjectReturnGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB21D122AF7BAE9AB118197473D65BF9 /* HCObjectReturnGetter.m */; };
 		FEDCD38CE823EF2A7A9BF8DFFC97854D /* MKTPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF450574C5C027BF834DF0BDC7F25F06 /* MKTPrinter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FF180FBDC0AB456B544D6B32CC1D2061 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7CF3AFDAD6280F306D8D83A3A434C /* Foundation.framework */; };
@@ -728,10 +728,13 @@
 		03C616A77AE9E620462AB9DCE61FAF07 /* MKTLongReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTLongReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTLongReturnSetter.h; sourceTree = "<group>"; };
 		041FA56CF9CC2C6CEE0204D27452D740 /* MKTThrowsException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTThrowsException.h; path = Source/OCMockito/Stubbing/MKTThrowsException.h; sourceTree = "<group>"; };
 		046C7C0FEB311CF260EE4DCDF06D4AD1 /* HCIsEmptyCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEmptyCollection.h; path = Source/Library/Collection/HCIsEmptyCollection.h; sourceTree = "<group>"; };
+		04A6A0FB569ACC890B612D2BE77C0EB8 /* JSONRPCResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponse.m; path = JSONRPCom/Response/JSONRPCResponse.m; sourceTree = "<group>"; };
 		04DDDAC5B8F7128893CCB371E7A83F50 /* HCCharReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCCharReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCCharReturnGetter.m; sourceTree = "<group>"; };
 		04F1E91F61A612D96D4016B2F644E100 /* Scheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = Sources/Scheduler.swift; sourceTree = "<group>"; };
 		054D7719A550EC8AFC1D813AAEA8E201 /* MKTUnsignedCharArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedCharArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedCharArgumentGetter.m; sourceTree = "<group>"; };
+		05E84F92532C4D147226C62AA0FCFA24 /* JSONRPCErrorModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCErrorModel.m; path = JSONRPCom/Response/JSONRPCErrorModel.m; sourceTree = "<group>"; };
 		064E917A4CA129C7E5C3D54B2C686231 /* MKTLongArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTLongArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTLongArgumentGetter.m; sourceTree = "<group>"; };
+		06E9149142B4A954AFDC2F3B6B464BC7 /* JSONRPCRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCRequest.m; path = JSONRPCom/Request/JSONRPCRequest.m; sourceTree = "<group>"; };
 		06EFD87A6AA5B11D6B7C6F980C6E52E8 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
 		070AFD13A2C6170EBE47F38AE9CC674F /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		07D402F1EF5EC8685DC126C17F0D895B /* SignalProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducer.swift; path = Sources/SignalProducer.swift; sourceTree = "<group>"; };
@@ -740,24 +743,23 @@
 		08D63A28857F9AD09198D7751BAED2E5 /* MKTPrinter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTPrinter.m; path = Source/OCMockito/Invocation/MKTPrinter.m; sourceTree = "<group>"; };
 		0944549236277C4F805A59D14D43C859 /* UIStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStepper.swift; path = ReactiveCocoa/UIKit/iOS/UIStepper.swift; sourceTree = "<group>"; };
 		09C565E1BBBDA8C899D4B4A1741FBCD1 /* MTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLJSONAdapter.m; path = Mantle/MTLJSONAdapter.m; sourceTree = "<group>"; };
+		09DE40EAC57D7EF126BB510DAA6E1079 /* JSONRPCId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCId.h; path = JSONRPCom/JSONRPC/JSONRPCId.h; sourceTree = "<group>"; };
 		0A44100C45EB2357C631304A93DCA965 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Optional.swift; sourceTree = "<group>"; };
 		0B26989E98006E4BE22842BE52127DCB /* ReactiveCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveCocoa-dummy.m"; sourceTree = "<group>"; };
 		0B698E3ACA0A638CA916EF0CD4063624 /* HCIsEmptyCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEmptyCollection.m; path = Source/Library/Collection/HCIsEmptyCollection.m; sourceTree = "<group>"; };
 		0C90271ED8197A89C18EA1198BE82BA2 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		0D656063F63515A297F6CAE0BFE828A2 /* MKTObjectMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTObjectMock.h; path = Source/OCMockito/Mocking/MKTObjectMock.h; sourceTree = "<group>"; };
-		0DA943478BB381777FE505CDB204566C /* NSDictionary+ToString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ToString.m"; path = "JSONRPCom/Utils/NSDictionary+ToString.m"; sourceTree = "<group>"; };
 		0DFC4A20B959C039B2734A9A7811E95F /* NSInvocation+OCMockito.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMockito.h"; path = "Source/OCMockito/Invocation/NSInvocation+OCMockito.h"; sourceTree = "<group>"; };
 		0E6554291D17686081AD6DA5C8F1461D /* NSObject+BindingTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+BindingTarget.swift"; path = "ReactiveCocoa/NSObject+BindingTarget.swift"; sourceTree = "<group>"; };
 		0E9A0D7E86AA08D108B6AE9773A86FE3 /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ReactiveCocoa/UIKit/UIButton.swift; sourceTree = "<group>"; };
 		0ECF84D729528A943C635BCA4DC3081C /* HCIsTrueFalse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsTrueFalse.h; path = Source/Library/Number/HCIsTrueFalse.h; sourceTree = "<group>"; };
 		0F39D767403E20F5209EA2EFD6FF6C81 /* MKTUnsignedLongReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedLongReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongReturnSetter.m; sourceTree = "<group>"; };
 		0F42653FACBD706FD3A0D96CBD89D69E /* MAObjCRuntime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAObjCRuntime.xcconfig; sourceTree = "<group>"; };
-		0F94E92782589CA679BB43CDD2281218 /* NSDictionary+ToString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ToString.h"; path = "JSONRPCom/Utils/NSDictionary+ToString.h"; sourceTree = "<group>"; };
 		1000CBDE64A4F1D4BD89AC300E7A7F17 /* HCWrapInMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCWrapInMatcher.h; path = Source/Core/Helpers/HCWrapInMatcher.h; sourceTree = "<group>"; };
 		102B58B0AEBAA49CDC0B086AB162B569 /* HCStringStartsWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringStartsWith.m; path = Source/Library/Text/HCStringStartsWith.m; sourceTree = "<group>"; };
 		1041E847302E9AA556279EA18354B4D1 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
 		10E4CA8B034CB36C7B19F7D8715AF8B4 /* NSInvocation+OCMockito.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMockito.m"; path = "Source/OCMockito/Invocation/NSInvocation+OCMockito.m"; sourceTree = "<group>"; };
-		1131A4ACDDF32F78D99015D525B75A41 /* JSONRPCErrorModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCErrorModel.h; path = JSONRPCom/Response/JSONRPCErrorModel.h; sourceTree = "<group>"; };
+		115B0B43991F653707C4D143CF4E5951 /* MTLJSONAdapter+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLJSONAdapter+Utils.h"; path = "JSONRPCom/Utils/MTLJSONAdapter+Utils.h"; sourceTree = "<group>"; };
 		125FD3F5D5F4AC2EDFB46C4B6EED071F /* HCTestFailureReporterChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCTestFailureReporterChain.m; path = Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.m; sourceTree = "<group>"; };
 		1264005D5A850B16918DAAD221203C5C /* MKTLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTLocation.h; path = Source/OCMockito/Invocation/MKTLocation.h; sourceTree = "<group>"; };
 		127C2EF379B475C5DCF2F2E1FC8FA656 /* HCIsEqualToNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqualToNumber.h; path = Source/Library/Number/HCIsEqualToNumber.h; sourceTree = "<group>"; };
@@ -772,15 +774,13 @@
 		15BCBF4BBFAE677F7F4FEDE00D61B47E /* Pods-SilentRunnerEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilentRunnerEngine.release.xcconfig"; sourceTree = "<group>"; };
 		1608C642D2AC46330835C813330122CE /* MKTDoubleArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTDoubleArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTDoubleArgumentGetter.m; sourceTree = "<group>"; };
 		168ED64FB28C4619F8FDF1B17B2ABE80 /* MKTSingletonSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTSingletonSwizzler.m; path = Source/OCMockito/Mocking/MKTSingletonSwizzler.m; sourceTree = "<group>"; };
+		16D05411D4383779B859786ED1269416 /* JSONRPCommunication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCommunication.h; path = JSONRPCom/Communication/JSONRPCommunication.h; sourceTree = "<group>"; };
 		186466778C3B4EBE3D5380C48C6705AF /* MAObjCRuntime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MAObjCRuntime.framework; path = MAObjCRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		186612AD8460A542EBD7E457CEC05668 /* JSONRPCSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCSerialization.h; path = JSONRPCom/Serialization/JSONRPCSerialization.h; sourceTree = "<group>"; };
-		19B1411CB8BA1A35626CF8CD47BE2ACB /* JSONRPCRequst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCRequst.h; path = JSONRPCom/Request/JSONRPCRequst.h; sourceTree = "<group>"; };
 		19F8A623BF78E8E85D708E2BEC2916FB /* HCIsDictionaryContainingValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContainingValue.m; path = Source/Library/Collection/HCIsDictionaryContainingValue.m; sourceTree = "<group>"; };
 		1A7BCA28CD5796EC88B41F97CB900032 /* HCIsDictionaryContaining.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContaining.m; path = Source/Library/Collection/HCIsDictionaryContaining.m; sourceTree = "<group>"; };
 		1AB38861A881D108501EBC4940203E11 /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
 		1AD537852891DFD25B91613C653FE1C2 /* Mantle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Mantle.modulemap; sourceTree = "<group>"; };
 		1BCE65499F84411F03F88022F3D4E5BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BD2B5E601B2DFBA048BFEC160D73463 /* JSONRPCom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCom.h; path = JSONRPCom/JSONRPCom.h; sourceTree = "<group>"; };
 		1C2E4CA628F0BA66E9ADC7C031DA8F40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C4DCCE3024CAA51FA4516F6E17DB125 /* HCStringContainsInOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringContainsInOrder.m; path = Source/Library/Text/HCStringContainsInOrder.m; sourceTree = "<group>"; };
 		1C8D07DCB45A1BE14B180DF1D8E28CC7 /* MKTLongReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTLongReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTLongReturnSetter.m; sourceTree = "<group>"; };
@@ -795,10 +795,10 @@
 		225BBC3E16D2067876998AC22BC8DBB1 /* HCIsEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqual.h; path = Source/Library/Object/HCIsEqual.h; sourceTree = "<group>"; };
 		238C95F4ACA1D37590F01876114AF2F0 /* MKTFloatArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTFloatArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTFloatArgumentGetter.h; sourceTree = "<group>"; };
 		244B514A4A0ADE55B6B0DFB7BA6B5CD5 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
-		24D97F44F7189C63BB998244142E769A /* JSONRPCom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONRPCom-prefix.pch"; sourceTree = "<group>"; };
 		26CA85366FBBF9CD796F87E3F283EB34 /* MKTReturnValueSetterChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTReturnValueSetterChain.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTReturnValueSetterChain.m; sourceTree = "<group>"; };
 		26E2E0A1F98C3E8E92960C39D6D10609 /* MKTInvocationContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTInvocationContainer.m; path = Source/OCMockito/Stubbing/MKTInvocationContainer.m; sourceTree = "<group>"; };
 		26EFD4ABFDAE6EA2834C47351A3A1165 /* MKTBoolArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTBoolArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTBoolArgumentGetter.h; sourceTree = "<group>"; };
+		271DC807C3EB9BB4CEF12E9DFA9653F1 /* JSONRPCom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONRPCom.xcconfig; sourceTree = "<group>"; };
 		285B58F0A94AF3E71B477231C3E80705 /* OCMockito-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMockito-prefix.pch"; sourceTree = "<group>"; };
 		28BFE2A876664ADA265397F185DF241E /* ReactiveSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveSwift-dummy.m"; sourceTree = "<group>"; };
 		28C7D11301496766D9880144328D25C7 /* UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIProgressView.swift; path = ReactiveCocoa/UIKit/UIProgressView.swift; sourceTree = "<group>"; };
@@ -816,11 +816,12 @@
 		2C73CEEFD2D48C9FB1C2BEDC9D4F2AE4 /* MKTExecutesBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTExecutesBlock.m; path = Source/OCMockito/Stubbing/MKTExecutesBlock.m; sourceTree = "<group>"; };
 		2C9712B512FC64C01D199D035DE44D42 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
 		2CA83CB1CD775CE29D9CDBA5F9A451B4 /* MKTIntArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTIntArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTIntArgumentGetter.m; sourceTree = "<group>"; };
+		2CCEAB76E7D2E6DFAB97AE8735B325C0 /* JSONRPCom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONRPCom-umbrella.h"; sourceTree = "<group>"; };
 		2D63403A5388E6B404B82CD41DDBF043 /* HCIsCollectionOnlyContaining.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionOnlyContaining.m; path = Source/Library/Collection/HCIsCollectionOnlyContaining.m; sourceTree = "<group>"; };
 		2F29A3F1E0822463273E766ADD0D120C /* HCUnsignedLongReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCUnsignedLongReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.m; sourceTree = "<group>"; };
 		2F57329FC5CFE7A3AB96AD9B26A66C41 /* HCIsEqualCompressingWhiteSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEqualCompressingWhiteSpace.m; path = Source/Library/Text/HCIsEqualCompressingWhiteSpace.m; sourceTree = "<group>"; };
+		2F72D8EF77AC29102596F7C63231BB02 /* JSONRPCErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCErrorResponse.h; path = JSONRPCom/Response/JSONRPCErrorResponse.h; sourceTree = "<group>"; };
 		30265C4813F40E68184C62CC555F582A /* NSObject+Lifetime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Lifetime.swift"; path = "ReactiveCocoa/NSObject+Lifetime.swift"; sourceTree = "<group>"; };
-		3081C76A4B22D22949B9B740950448C1 /* JSONRPCommunication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCommunication.h; path = JSONRPCom/Communication/JSONRPCommunication.h; sourceTree = "<group>"; };
 		30CC61933542F916B1475A15D6178317 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DD9A018D8EDFF485AA185E70CC710E /* ReactiveSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveSwift.xcconfig; sourceTree = "<group>"; };
 		3182675DCD5A448BDB4E57681F535731 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveCocoa.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -843,10 +844,10 @@
 		3AA85259A295F76E25CF1EF6B13CF877 /* MKTProtocolMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTProtocolMock.h; path = Source/OCMockito/Mocking/MKTProtocolMock.h; sourceTree = "<group>"; };
 		3B8201866403F3321781B85439F24B02 /* MKTUnsignedShortArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedShortArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedShortArgumentGetter.m; sourceTree = "<group>"; };
 		3C1895D3E430B59CB9F0DE6065DA58A0 /* MKTOngoingStubbing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTOngoingStubbing.m; path = Source/OCMockito/Stubbing/MKTOngoingStubbing.m; sourceTree = "<group>"; };
-		3C41A2477F7E1CA377EBDDD5E166C41D /* JSONRPCSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCSerialization.m; path = JSONRPCom/Serialization/JSONRPCSerialization.m; sourceTree = "<group>"; };
 		3C5FC946FE83B9FAFB755689A4157A97 /* MKTUnsignedShortArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTUnsignedShortArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedShortArgumentGetter.h; sourceTree = "<group>"; };
 		3C96119C8698BBC4A5CCBAB0939AC84E /* MKTArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetter.m; sourceTree = "<group>"; };
 		3CBC5FD223404CC368A57D76F6069539 /* MKTStructReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTStructReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTStructReturnSetter.h; sourceTree = "<group>"; };
+		3D530105B85B15AF05DC2197A3463B45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E006C1B540A7F6B8D3BC4956EA46075 /* Reactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reactive.swift; path = Sources/Reactive.swift; sourceTree = "<group>"; };
 		3E6A3EE867E7DFAE95EBF1118B7E90BD /* HCXCTestFailureReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCXCTestFailureReporter.h; path = Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.h; sourceTree = "<group>"; };
 		3F407FFA4F32E756EA263F1943ED9DF0 /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
@@ -859,6 +860,7 @@
 		43A5C67D91955C9092982E8DD992F3F6 /* MKTUnsignedLongReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTUnsignedLongReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongReturnSetter.h; sourceTree = "<group>"; };
 		44410AF00EC762DA370E31A14EB82CB1 /* HCIsCollectionContainingInAnyOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContainingInAnyOrder.m; path = Source/Library/Collection/HCIsCollectionContainingInAnyOrder.m; sourceTree = "<group>"; };
 		449AA136F80D90100342F77623467E01 /* HCBoolReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCBoolReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCBoolReturnGetter.h; sourceTree = "<group>"; };
+		459E9071EFAB31E4F2AC763AE35FFB38 /* JSONRPCNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCNotification.m; path = JSONRPCom/Request/JSONRPCNotification.m; sourceTree = "<group>"; };
 		45C0C19F6CA86A15438D769C2819230F /* HCStringEndsWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringEndsWith.m; path = Source/Library/Text/HCStringEndsWith.m; sourceTree = "<group>"; };
 		466D3C65F6313BBDD8B5074BCCA0E41B /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
 		46F401B730621FA99C1CF2D6519A2991 /* UISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISegmentedControl.swift; path = ReactiveCocoa/UIKit/UISegmentedControl.swift; sourceTree = "<group>"; };
@@ -868,14 +870,13 @@
 		48C9DA347063DC2E43B01E83E6A80051 /* HCInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCInvocationMatcher.m; path = Source/Core/Helpers/HCInvocationMatcher.m; sourceTree = "<group>"; };
 		48E0123562D7126C16C30288C4E68A21 /* MKTThrowsException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTThrowsException.m; path = Source/OCMockito/Stubbing/MKTThrowsException.m; sourceTree = "<group>"; };
 		4951C3346A25B04BAF0448ED93D70C5F /* HCOrderingComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCOrderingComparison.h; path = Source/Library/Number/HCOrderingComparison.h; sourceTree = "<group>"; };
+		49E538210826F675690892C0E8FFFB1B /* JSONRPCom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCom.h; path = JSONRPCom/JSONRPCom.h; sourceTree = "<group>"; };
 		49EC73943425ECB0B9369A2C5B7AE4B6 /* HCStringDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringDescription.m; path = Source/Core/HCStringDescription.m; sourceTree = "<group>"; };
 		4A0A0AC6B9ADE1F56B5C17D0CB461A5D /* HCIsDictionaryContainingKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsDictionaryContainingKey.h; path = Source/Library/Collection/HCIsDictionaryContainingKey.h; sourceTree = "<group>"; };
 		4A2EA141B543DB0BC5CA10BC35706B8E /* MKTClassObjectMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTClassObjectMock.h; path = Source/OCMockito/Mocking/MKTClassObjectMock.h; sourceTree = "<group>"; };
 		4A5F2F88040AC5DA1A84A9704137ABD3 /* MKTUnsignedLongLongReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedLongLongReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongLongReturnSetter.m; sourceTree = "<group>"; };
-		4A64A142A81EE0113659890694EE3EA5 /* NSString+ToJSONDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ToJSONDictionary.h"; path = "JSONRPCom/Utils/NSString+ToJSONDictionary.h"; sourceTree = "<group>"; };
 		4B168AB6BB433E9727E6F3676012EC73 /* RTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RTProtocol.m; sourceTree = "<group>"; };
 		4B737CB31938F38D6034C92A50B70608 /* HCStringDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringDescription.h; path = Source/Core/HCStringDescription.h; sourceTree = "<group>"; };
-		4B7B744D2295466AB0D84A4034747F9B /* JSONRPCDeSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCDeSerialization.h; path = JSONRPCom/Serialization/JSONRPCDeSerialization.h; sourceTree = "<group>"; };
 		4C3DEF27113F8E7BF662569DA75822D5 /* Pods-SilentRunnerEngineTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SilentRunnerEngineTests-umbrella.h"; sourceTree = "<group>"; };
 		4C4B591F844B96954254486F97459758 /* MKTOngoingStubbing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTOngoingStubbing.h; path = Source/OCMockito/Stubbing/MKTOngoingStubbing.h; sourceTree = "<group>"; };
 		4C775D662F605DC3A90286E10691110A /* MKTShortReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTShortReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTShortReturnSetter.m; sourceTree = "<group>"; };
@@ -889,18 +890,17 @@
 		50D3B49FBF63F5B8CECC0E7EC06871D0 /* HCRunloopRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCRunloopRunner.h; path = Source/Core/Helpers/HCRunloopRunner.h; sourceTree = "<group>"; };
 		5156232F767F9B7D10E94CFE00255368 /* HCMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCMatcher.h; path = Source/Core/HCMatcher.h; sourceTree = "<group>"; };
 		518AE98D0BCACBF61A68792E1EC2410B /* HCDiagnosingMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCDiagnosingMatcher.m; path = Source/Core/HCDiagnosingMatcher.m; sourceTree = "<group>"; };
+		52D5FE9A50EB43A92D8E76480874FD06 /* JSONRPCSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCSerialization.m; path = JSONRPCom/Serialization/JSONRPCSerialization.m; sourceTree = "<group>"; };
 		5360BD7E98414F97997E12B6E7B5584D /* HCWrapInMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCWrapInMatcher.m; path = Source/Core/Helpers/HCWrapInMatcher.m; sourceTree = "<group>"; };
 		539AE66CD71A476831EF21ADF1C3AAD0 /* MKTDoubleArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTDoubleArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTDoubleArgumentGetter.h; sourceTree = "<group>"; };
 		53A3AA8D0AC09874929F90DD4FD67D17 /* UIKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKeyboard.swift; path = ReactiveCocoa/UIKit/iOS/UIKeyboard.swift; sourceTree = "<group>"; };
 		53BD60767DE36F2BCB031A3EE2B4E244 /* HCAssertThat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAssertThat.h; path = Source/Core/HCAssertThat.h; sourceTree = "<group>"; };
 		53BE9FB1290A1731BC85168A1E5C141E /* NSInvocation+OCHamcrest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCHamcrest.m"; path = "Source/Core/Helpers/NSInvocation+OCHamcrest.m"; sourceTree = "<group>"; };
 		54EB97C01BC9712D6B5134E88B2B5E39 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLJSONKeyPath.h"; path = "Mantle/NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
-		557B3E3F3469E4BD6F0EA658BA22808A /* JSONRPCom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONRPCom.xcconfig; sourceTree = "<group>"; };
 		55B8A16EE05B96EDB2EAD24220B6BF7E /* OCMockito.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OCMockito.modulemap; sourceTree = "<group>"; };
 		55E4BF2EA1FFDF4E2BA5A57547B7C4DB /* HCGenericTestFailureReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCGenericTestFailureReporter.h; path = Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.h; sourceTree = "<group>"; };
 		55FC729B9D6306811AC408CF1D8BE7E8 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLModel+NSCoding.h"; path = "Mantle/MTLModel+NSCoding.h"; sourceTree = "<group>"; };
 		56F1E363F15D29F2D7CC331017370F5C /* MKTObjectReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTObjectReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTObjectReturnSetter.h; sourceTree = "<group>"; };
-		57267DB661627DF86E3646BE5CC88FDB /* JSONRPCom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONRPCom-umbrella.h"; sourceTree = "<group>"; };
 		576E50F70DAA6978CF3BC5660E6DF51C /* MKTObjectMock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTObjectMock.m; path = Source/OCMockito/Mocking/MKTObjectMock.m; sourceTree = "<group>"; };
 		57BDCD5EEF83911B29ABA1051519A306 /* HCAssertThat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCAssertThat.m; path = Source/Core/HCAssertThat.m; sourceTree = "<group>"; };
 		582AE94435A0C451EE4A193F8A5AEE9D /* HCIsCollectionOnlyContaining.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionOnlyContaining.h; path = Source/Library/Collection/HCIsCollectionOnlyContaining.h; sourceTree = "<group>"; };
@@ -916,7 +916,6 @@
 		5DCB36E4F3A83E88192887D2B8F2660B /* HCShortReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCShortReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.m; sourceTree = "<group>"; };
 		5DD7D9ADDD71E5558CCF1DB3D84C2389 /* HCClassMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCClassMatcher.h; path = Source/Library/Object/HCClassMatcher.h; sourceTree = "<group>"; };
 		5DE427D6486AB35FA5479ACC20F97FDC /* HCUnsignedLongReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCUnsignedLongReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.h; sourceTree = "<group>"; };
-		5ED70DA92B9C599633D69460675D5718 /* JSONRPCDeSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCDeSerialization.m; path = JSONRPCom/Serialization/JSONRPCDeSerialization.m; sourceTree = "<group>"; };
 		603B40C8DC17AE410504F52E785C7179 /* HCStringEndsWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringEndsWith.h; path = Source/Library/Text/HCStringEndsWith.h; sourceTree = "<group>"; };
 		60DD353396F723362732C453EB76DADE /* HCXCTestFailureReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCXCTestFailureReporter.m; path = Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.m; sourceTree = "<group>"; };
 		617025C9F37765A0CD0CC274776C4865 /* HCSelfDescribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSelfDescribing.h; path = Source/Core/HCSelfDescribing.h; sourceTree = "<group>"; };
@@ -943,10 +942,9 @@
 		6BC00D2DB57BD635F9F40342316674EC /* HCIntReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIntReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCIntReturnGetter.h; sourceTree = "<group>"; };
 		6C38180ACF4531BC84A4FC9E5F25F19B /* MKTBoolReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTBoolReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTBoolReturnSetter.h; sourceTree = "<group>"; };
 		6CE8310474B5CA4B0DEA03F6BDE02460 /* ReactiveCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveCocoa.modulemap; sourceTree = "<group>"; };
-		6D5624162A996D0F2A435BDC564D2F29 /* JSONRPCMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCMethod.h; path = JSONRPCom/Request/JSONRPCMethod.h; sourceTree = "<group>"; };
-		6E204C3BC4DF8038E105E7F6CD20F4E3 /* JSONRPCResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponse.m; path = JSONRPCom/Response/JSONRPCResponse.m; sourceTree = "<group>"; };
 		6E3491E9901CD13924560BABE56EF2A8 /* MKTClassArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTClassArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTClassArgumentGetter.h; sourceTree = "<group>"; };
 		6E55A2C1881475B4F7D926C62B74C69F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7ED1E221B874F78C5225C828A8A1F3 /* JSONRPCom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONRPCom-dummy.m"; sourceTree = "<group>"; };
 		6EA7AE97A4A94EB2C672EC08560CC30E /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		6ECF264F06233D21C2E6CF6A065ED311 /* MTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLJSONAdapter.h; path = Mantle/MTLJSONAdapter.h; sourceTree = "<group>"; };
 		6ED9B8E600C467605A88A096AEB6C07A /* HCBaseDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCBaseDescription.m; path = Source/Core/HCBaseDescription.m; sourceTree = "<group>"; };
@@ -959,7 +957,6 @@
 		7192E250112AF1658DBC1F19713AD2D9 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraint.swift; path = ReactiveCocoa/Shared/NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		719A530F54C2C13D9725AA31F1472D71 /* HCArgumentCaptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCArgumentCaptor.h; path = Source/Library/Object/HCArgumentCaptor.h; sourceTree = "<group>"; };
 		7207E048A17C75721E6360394634E38F /* HCDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDescription.h; path = Source/Core/HCDescription.h; sourceTree = "<group>"; };
-		72248F459C3C2349FDD6D48F6CBB459F /* JSONRPCNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCNotification.h; path = JSONRPCom/Request/JSONRPCNotification.h; sourceTree = "<group>"; };
 		731AC2550B0267EF7F7E757372F37917 /* MKTObjectAndProtocolMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTObjectAndProtocolMock.h; path = Source/OCMockito/Mocking/MKTObjectAndProtocolMock.h; sourceTree = "<group>"; };
 		7397B3C3F8D468B4633C2E76218126AD /* HCUnsignedCharReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCUnsignedCharReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCUnsignedCharReturnGetter.h; sourceTree = "<group>"; };
 		740AA4291F5B155E75E732DAD0E25A7C /* MKTMockingProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTMockingProgress.h; path = Source/OCMockito/Core/MKTMockingProgress.h; sourceTree = "<group>"; };
@@ -983,15 +980,17 @@
 		7DB2D8F96228525FA5978F5AAD151962 /* ResultExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultExtensions.swift; path = Sources/ResultExtensions.swift; sourceTree = "<group>"; };
 		7E0D980970BC1BC2F7EB0A7987701E24 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
 		7E3C0DE880ACFF1C80AEE57AB623144D /* ReactiveSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveSwift.modulemap; sourceTree = "<group>"; };
+		7E7A00F2ADF8A64048ED5B6DF565412B /* NSString+ToJSONDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ToJSONDictionary.m"; path = "JSONRPCom/Utils/NSString+ToJSONDictionary.m"; sourceTree = "<group>"; };
 		7F6C0A17A03B0B9D90427C1BFE3F0E49 /* MKTReturnsValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTReturnsValue.h; path = Source/OCMockito/Stubbing/MKTReturnsValue.h; sourceTree = "<group>"; };
 		7F97C05DD1192044B28BC02C269CB2B2 /* HCRequireNonNilObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCRequireNonNilObject.h; path = Source/Core/Helpers/HCRequireNonNilObject.h; sourceTree = "<group>"; };
 		7FCE07ADF11773DE22F724AA8B0F9B50 /* Pods-SilentRunnerEngine-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SilentRunnerEngine-acknowledgements.markdown"; sourceTree = "<group>"; };
 		806034DE8A51827A22F5805CBACAE60F /* MAObjCRuntime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MAObjCRuntime.modulemap; sourceTree = "<group>"; };
 		808FD1ADE8938E16BA9E694E0E7DD80D /* HCHasProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCHasProperty.h; path = Source/Library/Object/HCHasProperty.h; sourceTree = "<group>"; };
 		81CE6EB0D44719F9E721CC47D410A611 /* MKTAtLeastNumberOfInvocationsChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTAtLeastNumberOfInvocationsChecker.m; path = Source/OCMockito/Verifying/MKTAtLeastNumberOfInvocationsChecker.m; sourceTree = "<group>"; };
-		81DDE311682008B8622837463497F008 /* JSONRPC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPC.h; path = JSONRPCom/JSONRPC/JSONRPC.h; sourceTree = "<group>"; };
 		824BC03D7259705F86E282320C4677BA /* MKTIntArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTIntArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTIntArgumentGetter.h; sourceTree = "<group>"; };
 		8309DC3BE91BF847BE74CCF03977A4EF /* MKTInvocationsChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTInvocationsChecker.m; path = Source/OCMockito/Verifying/MKTInvocationsChecker.m; sourceTree = "<group>"; };
+		8368B47428695263B047C416425FF76F /* JSONRPCErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCErrorResponse.m; path = JSONRPCom/Response/JSONRPCErrorResponse.m; sourceTree = "<group>"; };
+		83951DB50E906ACEAE686319FF2CC3D6 /* JSONRPCErrorModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCErrorModel.h; path = JSONRPCom/Response/JSONRPCErrorModel.h; sourceTree = "<group>"; };
 		83A634646E7EB97318B0F797FF5782EE /* HCUnsignedShortReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCUnsignedShortReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCUnsignedShortReturnGetter.m; sourceTree = "<group>"; };
 		83C5421F2B5F3C46643D77EA973FAC60 /* MKT_TPDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKT_TPDWeakProxy.h; path = "Source/ThirdParty/TPDWeakProxy-1.1.0/TPDWeakProxy/MKT_TPDWeakProxy.h"; sourceTree = "<group>"; };
 		83DE18831F6F93FA36C8BEC7637ADB6E /* HCHasDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCHasDescription.m; path = Source/Library/Object/HCHasDescription.m; sourceTree = "<group>"; };
@@ -999,7 +998,6 @@
 		84B2D063CA2A6D8BFD1EB77AA7372E59 /* HCIsCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCloseTo.m; path = Source/Library/Number/HCIsCloseTo.m; sourceTree = "<group>"; };
 		8556F141527057E97FF85A8583A2C2EF /* Pods_SilentRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SilentRunner.framework; path = "Pods-SilentRunner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8595ABE6AADA731F806EAED9137CC538 /* HCLongReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCLongReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCLongReturnGetter.h; sourceTree = "<group>"; };
-		866D59335E24A7DA2D35D60A18DE7F4E /* NSString+ToJSONDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ToJSONDictionary.m"; path = "JSONRPCom/Utils/NSString+ToJSONDictionary.m"; sourceTree = "<group>"; };
 		86AB65A51336FF97B620393AB7D4186F /* MKTUnsignedLongArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedLongArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedLongArgumentGetter.m; sourceTree = "<group>"; };
 		8701DCE8CBFA0A772E05B24B30F42D4D /* MKTStructReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTStructReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTStructReturnSetter.m; sourceTree = "<group>"; };
 		87E56DEDE09E81566985C920AB7A4D18 /* MKTShortArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTShortArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTShortArgumentGetter.m; sourceTree = "<group>"; };
@@ -1007,7 +1005,6 @@
 		87FC654E05EB56500712F9EC8606EE69 /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
 		87FDD30CA5E5D25E8C6C6BA3FE25C7AE /* HCLongLongReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCLongLongReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCLongLongReturnGetter.m; sourceTree = "<group>"; };
 		880FA35965B6EEC970A5F4D42E622028 /* HCIsAnything.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsAnything.h; path = Source/Library/Logical/HCIsAnything.h; sourceTree = "<group>"; };
-		8818B96B7FB46E4963C2FBE0DD787890 /* MTLJSONAdapter+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLJSONAdapter+Utils.h"; path = "JSONRPCom/Utils/MTLJSONAdapter+Utils.h"; sourceTree = "<group>"; };
 		8AD0A521393045F6E210B039EC9E5796 /* Pods-SilentRunnerEngine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SilentRunnerEngine-umbrella.h"; sourceTree = "<group>"; };
 		8AE4331F7480EFD816B3573B1244FB74 /* Pods-SilentRunnerEngineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SilentRunnerEngineTests-frameworks.sh"; sourceTree = "<group>"; };
 		8AE7442ED3B90D1BB2FCABDACBF88026 /* HCConformsToProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCConformsToProtocol.m; path = Source/Library/Object/HCConformsToProtocol.m; sourceTree = "<group>"; };
@@ -1025,10 +1022,9 @@
 		9005174214B2CA58B9441C321B99C463 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
 		903E3DC136FD25B9D1F6F52EB4DB44F9 /* OCMockito.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMockito.m; path = Source/OCMockito/Core/OCMockito.m; sourceTree = "<group>"; };
 		911B5BD771A8A8A6F3DD453C12A14B29 /* ReactiveCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveCocoa.h; path = ReactiveCocoa/ReactiveCocoa.h; sourceTree = "<group>"; };
+		915A855275AD9B47241F1A9EF0A6C5E0 /* JSONRPCMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCMethod.h; path = JSONRPCom/Request/JSONRPCMethod.h; sourceTree = "<group>"; };
 		91622EE15E4306492240AFE7577FDEA5 /* MKTInvocationContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTInvocationContainer.h; path = Source/OCMockito/Stubbing/MKTInvocationContainer.h; sourceTree = "<group>"; };
-		9183A7ECD44EB8AEB7541EE8AD4D6CE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92437309D203399C3ABD608BD342EBE4 /* HCHasProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCHasProperty.m; path = Source/Library/Object/HCHasProperty.m; sourceTree = "<group>"; };
-		936B6E695B40FC26BC5614EE385B757C /* JSONRPCResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCResponse.h; path = JSONRPCom/Response/JSONRPCResponse.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94C98D9E96449773F41E4832104431FF /* MKTMatchingInvocationsFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTMatchingInvocationsFinder.m; path = Source/OCMockito/Invocation/MKTMatchingInvocationsFinder.m; sourceTree = "<group>"; };
 		95B59D9A638FFFDF89486CE8E5BBC2A3 /* HCCollect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCCollect.h; path = Source/Core/Helpers/HCCollect.h; sourceTree = "<group>"; };
@@ -1044,7 +1040,6 @@
 		9D194C5E623019A99E3664DB23ED8C38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DCA87E7239A3AA405EC8B2521954A52 /* MKTAtMostNumberOfInvocationsChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTAtMostNumberOfInvocationsChecker.m; path = Source/OCMockito/Verifying/MKTAtMostNumberOfInvocationsChecker.m; sourceTree = "<group>"; };
 		9DFAFB6723F6CECD099271CC8C58B7DA /* RTProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTProperty.h; sourceTree = "<group>"; };
-		9E4F655B70344A2733367ED15A79B8A2 /* JSONRPCRequst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCRequst.m; path = JSONRPCom/Request/JSONRPCRequst.m; sourceTree = "<group>"; };
 		9FC484D6318D0134D1E81342098E3D90 /* MKTIntReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTIntReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTIntReturnSetter.h; sourceTree = "<group>"; };
 		A07BFB090BBBEA06F01D5ECF71743027 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
 		A14EBA21FD8A6D41202B7262CCFC7FD4 /* HCIsEqualCompressingWhiteSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqualCompressingWhiteSpace.h; path = Source/Library/Text/HCIsEqualCompressingWhiteSpace.h; sourceTree = "<group>"; };
@@ -1054,7 +1049,6 @@
 		A27C15A6C1F84B9F70A0D07FEA076F96 /* HCShortReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCShortReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.h; sourceTree = "<group>"; };
 		A27CC3FFA817AF869D326E9452EF0DD5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveSwift.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29861961E2AA9BFE2AC0D5C4255D71B /* MKTLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTLocation.m; path = Source/OCMockito/Invocation/MKTLocation.m; sourceTree = "<group>"; };
-		A29EA389B24C51F54DDEC986FC4A6DFE /* JSONRPCErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCErrorResponse.h; path = JSONRPCom/Response/JSONRPCErrorResponse.h; sourceTree = "<group>"; };
 		A356522F7C0D78EBA4BC1AA686942AA6 /* OCHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCHamcrest-umbrella.h"; sourceTree = "<group>"; };
 		A3775BAF5748AF2F2A10644802BBA238 /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = ReactiveCocoa/UIKit/UITableView.swift; sourceTree = "<group>"; };
 		A406476430B3F334E009DE6438F528C1 /* HCIsCollectionContainingInOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContainingInOrder.m; path = Source/Library/Collection/HCIsCollectionContainingInOrder.m; sourceTree = "<group>"; };
@@ -1067,9 +1061,11 @@
 		A8C7FBBCB7387F2A3A5B477E3BE4E1C0 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Mantle.framework; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93E05277B544EF39EB8577E50455792 /* HCAllOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAllOf.h; path = Source/Library/Logical/HCAllOf.h; sourceTree = "<group>"; };
 		A9A3745D82AACFB115444F6678C91780 /* MKTMissingInvocationChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTMissingInvocationChecker.h; path = Source/OCMockito/Verifying/MKTMissingInvocationChecker.h; sourceTree = "<group>"; };
+		AA8D521759C97424E34D849B52BD3E8D /* JSONRPCom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONRPCom-prefix.pch"; sourceTree = "<group>"; };
 		AB150952EF546137D7B0179A9B61186F /* MKTBaseMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTBaseMockObject.h; path = Source/OCMockito/Mocking/MKTBaseMockObject.h; sourceTree = "<group>"; };
 		AB21D122AF7BAE9AB118197473D65BF9 /* HCObjectReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCObjectReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCObjectReturnGetter.m; sourceTree = "<group>"; };
 		AB83D70E9A73B2F37BA77016C7ECF022 /* OCMockito.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCMockito.xcconfig; sourceTree = "<group>"; };
+		AC2D7D718633819A1C87AA8EAED9628E /* JSONRPCNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCNotification.h; path = JSONRPCom/Request/JSONRPCNotification.h; sourceTree = "<group>"; };
 		AC65C309DB5D3E0D779AC45E44D783EE /* HCReturnValueGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCReturnValueGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCReturnValueGetter.h; sourceTree = "<group>"; };
 		AD39196E2F87A79F834A3DD474BE0839 /* MKTArgumentGetterChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTArgumentGetterChain.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetterChain.m; sourceTree = "<group>"; };
 		AD48B0088F6666659B83DB8181AAE08A /* MKTUnsignedCharReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTUnsignedCharReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedCharReturnSetter.h; sourceTree = "<group>"; };
@@ -1078,14 +1074,16 @@
 		AE53B8C502896452914C0CF708E17EE8 /* MKTClassReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTClassReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTClassReturnSetter.h; sourceTree = "<group>"; };
 		AEB7D1C9930AB21B404090F946359DE4 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIActivityIndicatorView.swift; path = ReactiveCocoa/UIKit/UIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		AEF18C4C1982B74BA057BCC94B16B175 /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Atomic.swift; sourceTree = "<group>"; };
+		AF4C9EF4CB38308B8688D4B93D935D9F /* JSONRPCDeSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCDeSerialization.h; path = JSONRPCom/Serialization/JSONRPCDeSerialization.h; sourceTree = "<group>"; };
 		AF6FC1DD38346027D6049CD47D7CCC1F /* HCAnyOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCAnyOf.m; path = Source/Library/Logical/HCAnyOf.m; sourceTree = "<group>"; };
+		AFC6AFD76827B12E15A5780DA7189ABF /* MTLJSONAdapter+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLJSONAdapter+Utils.m"; path = "JSONRPCom/Utils/MTLJSONAdapter+Utils.m"; sourceTree = "<group>"; };
 		AFED370407EF9AC6CA2AE68C886104D5 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		B0C6E5A3A9FC2C56CAC22B7164C5407F /* Pods-SilentRunnerEngineTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SilentRunnerEngineTests-resources.sh"; sourceTree = "<group>"; };
 		B0C933BDBB18A619140587415026265C /* MKTStubbedInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTStubbedInvocationMatcher.m; path = Source/OCMockito/Stubbing/MKTStubbedInvocationMatcher.m; sourceTree = "<group>"; };
 		B216BD697286910FB778B465DBDCC138 /* HCIsCollectionContainingInRelativeOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContainingInRelativeOrder.m; path = Source/Library/Collection/HCIsCollectionContainingInRelativeOrder.m; sourceTree = "<group>"; };
 		B2ADE70CF82D609BA28395E58AFB66FE /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
+		B2CB9CC42545F991D56E2415224E6F5D /* NSString+ToJSONDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ToJSONDictionary.h"; path = "JSONRPCom/Utils/NSString+ToJSONDictionary.h"; sourceTree = "<group>"; };
 		B2DA99B5447B72C58E1A0BE0C69D9C9B /* UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionView.swift; path = ReactiveCocoa/UIKit/UICollectionView.swift; sourceTree = "<group>"; };
-		B3B12BC60EDBA447E699A473545F3A66 /* JSONRPCId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCId.h; path = JSONRPCom/JSONRPC/JSONRPCId.h; sourceTree = "<group>"; };
 		B3DA72A7F302A0740DD42DE7F42F9CC1 /* HCThrowsException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCThrowsException.h; path = Source/Library/Object/HCThrowsException.h; sourceTree = "<group>"; };
 		B4281F8042E4C5C0F8B758413A31B9D4 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
 		B46808F486F2C9A1B903168ACC9E3F9D /* MKTFloatReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTFloatReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTFloatReturnSetter.m; sourceTree = "<group>"; };
@@ -1113,16 +1111,15 @@
 		BB5DF2D744572AE0E71EC1A889C6EE93 /* OCHamcrest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCHamcrest.h; path = Source/OCHamcrest.h; sourceTree = "<group>"; };
 		BBCB052ABFFCCE7F6DA7BB01AC68F51E /* HCAnyOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAnyOf.h; path = Source/Library/Logical/HCAnyOf.h; sourceTree = "<group>"; };
 		BBF70F53A8C7353B1C7DE9D60E2A3959 /* HCSubstringMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCSubstringMatcher.m; path = Source/Library/Text/HCSubstringMatcher.m; sourceTree = "<group>"; };
-		BC48966E36EA5E58DFB3E41BBAA679FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = JSONRPCom/Info.plist; sourceTree = "<group>"; };
 		BCFDB5B0A6B83D05D980319C69DDFC77 /* HCDoubleReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDoubleReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCDoubleReturnGetter.h; sourceTree = "<group>"; };
 		BD02063B78DECDCCC6D07E5E096F1C8F /* OCHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OCHamcrest.modulemap; sourceTree = "<group>"; };
 		BD3B2EBE63F2471546DD23A8CBE30A05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD6F0FBAD07BAF689407DE9175777AA8 /* JSONRPCom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONRPCom-dummy.m"; sourceTree = "<group>"; };
 		BDB6854D1325F98DB23D71AA6DECD24A /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
 		BE0DE2DAE1AEED7DF31769AED6EE8970 /* HCIsIn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsIn.m; path = Source/Library/Collection/HCIsIn.m; sourceTree = "<group>"; };
 		BEC26A4388A6A8D3FB498CCF9CA33946 /* MKTInvocationsChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTInvocationsChecker.h; path = Source/OCMockito/Verifying/MKTInvocationsChecker.h; sourceTree = "<group>"; };
 		BF6BCFEF335231CD5CB730B8CAE1457E /* Pods-SilentRunnerEngine-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SilentRunnerEngine-resources.sh"; sourceTree = "<group>"; };
 		BFB3B393A332AD730D69C0FB21B9F68F /* MKTBaseMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTBaseMockObject.m; path = Source/OCMockito/Mocking/MKTBaseMockObject.m; sourceTree = "<group>"; };
+		BFE29230826E2091A68BFA60C4C981A2 /* JSONRPCResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCResponse.h; path = JSONRPCom/Response/JSONRPCResponse.h; sourceTree = "<group>"; };
 		BFE9F8ADA7B10AD8B949332483359516 /* MKTCharReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTCharReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTCharReturnSetter.m; sourceTree = "<group>"; };
 		BFF73F4D82C1244A36284E17D6A40180 /* MKTLongLongArgumentGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTLongLongArgumentGetter.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTLongLongArgumentGetter.h; sourceTree = "<group>"; };
 		C0E9E9BD779EE85738A4491DAD03E0AD /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
@@ -1130,6 +1127,7 @@
 		C112C1DFE86137208283569D529CCEDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12DE77A2DF5D1B9D157638261BBE8D5 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		C1AFE1A301F9969EC5170463D2A1BC1D /* MKTAtMostTimes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTAtMostTimes.h; path = Source/OCMockito/Verifying/MKTAtMostTimes.h; sourceTree = "<group>"; };
+		C234311FE5845A08DD5A97235B248A72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = JSONRPCom/Info.plist; sourceTree = "<group>"; };
 		C26B03F50A0C8C880EF143AB866F8935 /* MAObjCRuntime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAObjCRuntime-umbrella.h"; sourceTree = "<group>"; };
 		C2D6C13DB4F5DA3CB1A3B83122CEF5A5 /* MKTMockitoCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTMockitoCore.h; path = Source/OCMockito/Core/MKTMockitoCore.h; sourceTree = "<group>"; };
 		C30A24366C679CE81E95CF60F4DE8DFD /* Pods-SilentRunner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SilentRunner-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1147,13 +1145,16 @@
 		C6B4D9A68353F25D4DAAB2EA37079306 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBarButtonItem.swift; path = ReactiveCocoa/UIKit/UIBarButtonItem.swift; sourceTree = "<group>"; };
 		C6C9DE89B80A24E676C6E5646C50F38E /* Pods-SilentRunnerEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilentRunnerEngineTests.release.xcconfig"; sourceTree = "<group>"; };
 		C73A89CAA1E3C22CA6C954522A99DA6E /* HCIsNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsNil.m; path = Source/Library/Object/HCIsNil.m; sourceTree = "<group>"; };
+		C740A07B7F26CACDD4A7CE47CE576254 /* JSONRPCSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCSerialization.h; path = JSONRPCom/Serialization/JSONRPCSerialization.h; sourceTree = "<group>"; };
 		C7554B2416252336991BEF418988DD9D /* HCFloatReturnGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCFloatReturnGetter.m; path = Source/Core/Helpers/ReturnValueGetters/HCFloatReturnGetter.m; sourceTree = "<group>"; };
 		C7C678C67A0EA399D2E1DEDB93223091 /* MKTCharReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTCharReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTCharReturnSetter.h; sourceTree = "<group>"; };
+		C895A0D6D059EA3328B25D0A5D88A667 /* NSDictionary+ToString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ToString.h"; path = "JSONRPCom/Utils/NSDictionary+ToString.h"; sourceTree = "<group>"; };
 		C8986AAE37A06BEBD9FFAD1AE08321B8 /* Pods-SilentRunnerEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SilentRunnerEngine-dummy.m"; sourceTree = "<group>"; };
 		C8A05E25895AEEF8DE314FA1E6713141 /* Pods-SilentRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilentRunner.release.xcconfig"; sourceTree = "<group>"; };
 		C90115761504A9907DE4018CC84BF66B /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		C92326BA8FAB8ABDD0FB56512EB5ACCE /* UIScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollView.swift; path = ReactiveCocoa/UIKit/UIScrollView.swift; sourceTree = "<group>"; };
 		C9E8B93A10A6E1340F91D6695302F25C /* MKTVerificationData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTVerificationData.m; path = Source/OCMockito/Verifying/MKTVerificationData.m; sourceTree = "<group>"; };
+		CB146CB01EDD450A75042AFA4BD2EACF /* JSONRPCRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPCRequest.h; path = JSONRPCom/Request/JSONRPCRequest.h; sourceTree = "<group>"; };
 		CB528A283CD8EA224A9CEE4301FF4825 /* Pods-SilentRunnerEngineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SilentRunnerEngineTests.modulemap"; sourceTree = "<group>"; };
 		CB6D2E36E3CD227FE9C1CA26D92BECD3 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC796914DA0893B7143861E1551CCCB5 /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLJSONKeyPath.m"; path = "Mantle/NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
@@ -1167,20 +1168,21 @@
 		D1001CAAE86501237F5E8266740B20B3 /* MKTExactTimes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTExactTimes.m; path = Source/OCMockito/Verifying/MKTExactTimes.m; sourceTree = "<group>"; };
 		D1681CBFD5EF0EA77505178C724E77B2 /* HCStringContains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringContains.h; path = Source/Library/Text/HCStringContains.h; sourceTree = "<group>"; };
 		D1CE6C972CCD1792D128F5F740C64A99 /* HCTestFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCTestFailure.h; path = Source/Core/Helpers/TestFailureReporters/HCTestFailure.h; sourceTree = "<group>"; };
+		D1FDF5CE282C9E521814857C856F2032 /* NSDictionary+ToString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ToString.m"; path = "JSONRPCom/Utils/NSDictionary+ToString.m"; sourceTree = "<group>"; };
 		D203208DEF237D12841088828BA257D3 /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
 		D22549E5906F58DA0AF9BD4B5BE0D77F /* HCIsSame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsSame.m; path = Source/Library/Object/HCIsSame.m; sourceTree = "<group>"; };
 		D295CB3AEFCAEDC2EABCD267332BFBFB /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
+		D3E9233FA66AE448552161ED0112767A /* JSONRPCDeSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCDeSerialization.m; path = JSONRPCom/Serialization/JSONRPCDeSerialization.m; sourceTree = "<group>"; };
 		D4050410BBD5F84CB4AE579B3B8D18B8 /* ReactiveSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-umbrella.h"; sourceTree = "<group>"; };
 		D4620063A404BDE3D79656743E1F076E /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
 		D4683BCBBB761AD212B33E06F52E8CD4 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		D48D0293E1135046A4F7D95DAFC5AC0E /* HCNumberAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCNumberAssert.m; path = Source/Library/Number/HCNumberAssert.m; sourceTree = "<group>"; };
 		D4D6988B1416777B14508061FD0A185A /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
+		D556FE08260E059A01863B834F24A12F /* JSONRPCom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JSONRPCom.modulemap; sourceTree = "<group>"; };
 		D5918174C1C95D570A9A1CA6891E7018 /* ReactiveSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-prefix.pch"; sourceTree = "<group>"; };
 		D60485A76FF1AAD500038CBE0AFE0E15 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = Mantle/extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
-		D6065760B2987AF7ABDB5FD430BA778D /* JSONRPCErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCErrorResponse.m; path = JSONRPCom/Response/JSONRPCErrorResponse.m; sourceTree = "<group>"; };
 		D656F276809B3F8B8CB2AF362FBCD528 /* HCIsNot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsNot.h; path = Source/Library/Logical/HCIsNot.h; sourceTree = "<group>"; };
 		D6943A2FDCC1B7B9DFCA528F8F3787DF /* HCTestFailureReporterChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCTestFailureReporterChain.h; path = Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.h; sourceTree = "<group>"; };
-		D75ADE6FC8C45361F3598996FB7E3AF5 /* MTLJSONAdapter+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLJSONAdapter+Utils.m"; path = "JSONRPCom/Utils/MTLJSONAdapter+Utils.m"; sourceTree = "<group>"; };
 		D7A2F3542A7E2C7A63857576C3846971 /* RTProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RTProperty.m; sourceTree = "<group>"; };
 		D7B690A00E7DA7FC9F0B473FF66748E4 /* MKTBoolArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTBoolArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTBoolArgumentGetter.m; sourceTree = "<group>"; };
 		D87709781709C85644F019D5A29AEC2C /* Pods-SilentRunnerEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilentRunnerEngine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1233,20 +1235,18 @@
 		EE89ED96935B8BAF2D3F78F57BE6F2AC /* FoundationExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationExtensions.swift; path = Sources/FoundationExtensions.swift; sourceTree = "<group>"; };
 		EEA1850E7D3996212B40D4278008A227 /* MKTUnsignedShortReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedShortReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedShortReturnSetter.m; sourceTree = "<group>"; };
 		EEEFE0D2330034573EA462444AD40E10 /* NSInvocation+OCHamcrest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCHamcrest.h"; path = "Source/Core/Helpers/NSInvocation+OCHamcrest.h"; sourceTree = "<group>"; };
-		F07B06FEABA7E5E9BF1ED1B8598F291A /* JSONRPCNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCNotification.m; path = JSONRPCom/Request/JSONRPCNotification.m; sourceTree = "<group>"; };
 		F202E470909848C9060F43AF1B119012 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnidirectionalBinding.swift; path = Sources/UnidirectionalBinding.swift; sourceTree = "<group>"; };
 		F326C4B1D2479E5BB7465E5F81EA05F6 /* OCMockito-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMockito-dummy.m"; sourceTree = "<group>"; };
 		F3CF4A6DE973F36BA4BE645180DE2939 /* HCIsCollectionContainingInAnyOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionContainingInAnyOrder.h; path = Source/Library/Collection/HCIsCollectionContainingInAnyOrder.h; sourceTree = "<group>"; };
 		F40C0D70F4142376CA4E9059ECC1C3E8 /* MKTDoubleReturnSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTDoubleReturnSetter.h; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTDoubleReturnSetter.h; sourceTree = "<group>"; };
 		F422504358A11256D452613A1CEC652A /* Deprecations+Removals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deprecations+Removals.swift"; path = "Sources/Deprecations+Removals.swift"; sourceTree = "<group>"; };
 		F43EED8CF57AEE239361576C4996A82C /* MKTMockitoCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTMockitoCore.m; path = Source/OCMockito/Core/MKTMockitoCore.m; sourceTree = "<group>"; };
-		F4DEB810B8012917500D3A33ECBCFB6A /* JSONRPCom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JSONRPCom.modulemap; sourceTree = "<group>"; };
 		F56C52477DED4D49E994278D9793BE2D /* UIRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIRefreshControl.swift; path = ReactiveCocoa/UIKit/iOS/UIRefreshControl.swift; sourceTree = "<group>"; };
 		F573FF0108D3F3500ECA791CDB61F0A5 /* HCTestFailureReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCTestFailureReporter.m; path = Source/Core/Helpers/TestFailureReporters/HCTestFailureReporter.m; sourceTree = "<group>"; };
-		F5C825611DBFFCC82CB1DC8C5E57525A /* JSONRPCErrorModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONRPCErrorModel.m; path = JSONRPCom/Response/JSONRPCErrorModel.m; sourceTree = "<group>"; };
 		F5CA8374429AE0597E0CE9098C53AF94 /* MKTArgumentGetterChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTArgumentGetterChain.h; path = Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetterChain.h; sourceTree = "<group>"; };
 		F61236EC85CE1E49A4623DAF4037EC22 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
 		F63E6922E88483E7768365A5A91E3764 /* HCDiagnosingMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDiagnosingMatcher.h; path = Source/Core/HCDiagnosingMatcher.h; sourceTree = "<group>"; };
+		F6AF657D35FFFA35DB49805779D4F58D /* JSONRPC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRPC.h; path = JSONRPCom/JSONRPC/JSONRPC.h; sourceTree = "<group>"; };
 		F6CF5C281C6F6A34DB7033FCA0CB693D /* MKTUnsignedIntArgumentGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTUnsignedIntArgumentGetter.m; path = Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedIntArgumentGetter.m; sourceTree = "<group>"; };
 		F7BC6DE3139C6E7D08A382047BC975A5 /* HCCollect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCCollect.m; path = Source/Core/Helpers/HCCollect.m; sourceTree = "<group>"; };
 		F82B9C3EDA62051B89F8974B93933480 /* MKTMissingInvocationChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTMissingInvocationChecker.m; path = Source/OCMockito/Verifying/MKTMissingInvocationChecker.m; sourceTree = "<group>"; };
@@ -1878,6 +1878,41 @@
 			path = "Target Support Files/Pods-SilentRunnerEngine";
 			sourceTree = "<group>";
 		};
+		5B5482063CF4714EF5F4B0BD6514C45A /* JSONRPCom */ = {
+			isa = PBXGroup;
+			children = (
+				C234311FE5845A08DD5A97235B248A72 /* Info.plist */,
+				F6AF657D35FFFA35DB49805779D4F58D /* JSONRPC.h */,
+				AF4C9EF4CB38308B8688D4B93D935D9F /* JSONRPCDeSerialization.h */,
+				D3E9233FA66AE448552161ED0112767A /* JSONRPCDeSerialization.m */,
+				83951DB50E906ACEAE686319FF2CC3D6 /* JSONRPCErrorModel.h */,
+				05E84F92532C4D147226C62AA0FCFA24 /* JSONRPCErrorModel.m */,
+				2F72D8EF77AC29102596F7C63231BB02 /* JSONRPCErrorResponse.h */,
+				8368B47428695263B047C416425FF76F /* JSONRPCErrorResponse.m */,
+				09DE40EAC57D7EF126BB510DAA6E1079 /* JSONRPCId.h */,
+				915A855275AD9B47241F1A9EF0A6C5E0 /* JSONRPCMethod.h */,
+				AC2D7D718633819A1C87AA8EAED9628E /* JSONRPCNotification.h */,
+				459E9071EFAB31E4F2AC763AE35FFB38 /* JSONRPCNotification.m */,
+				49E538210826F675690892C0E8FFFB1B /* JSONRPCom.h */,
+				16D05411D4383779B859786ED1269416 /* JSONRPCommunication.h */,
+				CB146CB01EDD450A75042AFA4BD2EACF /* JSONRPCRequest.h */,
+				06E9149142B4A954AFDC2F3B6B464BC7 /* JSONRPCRequest.m */,
+				BFE29230826E2091A68BFA60C4C981A2 /* JSONRPCResponse.h */,
+				04A6A0FB569ACC890B612D2BE77C0EB8 /* JSONRPCResponse.m */,
+				C740A07B7F26CACDD4A7CE47CE576254 /* JSONRPCSerialization.h */,
+				52D5FE9A50EB43A92D8E76480874FD06 /* JSONRPCSerialization.m */,
+				115B0B43991F653707C4D143CF4E5951 /* MTLJSONAdapter+Utils.h */,
+				AFC6AFD76827B12E15A5780DA7189ABF /* MTLJSONAdapter+Utils.m */,
+				C895A0D6D059EA3328B25D0A5D88A667 /* NSDictionary+ToString.h */,
+				D1FDF5CE282C9E521814857C856F2032 /* NSDictionary+ToString.m */,
+				B2CB9CC42545F991D56E2415224E6F5D /* NSString+ToJSONDictionary.h */,
+				7E7A00F2ADF8A64048ED5B6DF565412B /* NSString+ToJSONDictionary.m */,
+				F199C912A9BB1ACB19D234919E589A37 /* Support Files */,
+			);
+			name = JSONRPCom;
+			path = JSONRPCom;
+			sourceTree = "<group>";
+		};
 		70DE71A1A0380FA3B1E153037BBA4C66 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1886,41 +1921,6 @@
 				1C47926868EF74C96AEF63A454435628 /* Pods-SilentRunnerEngineTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		713F72530ACFF89FB36BFEF56B458966 /* JSONRPCom */ = {
-			isa = PBXGroup;
-			children = (
-				BC48966E36EA5E58DFB3E41BBAA679FD /* Info.plist */,
-				81DDE311682008B8622837463497F008 /* JSONRPC.h */,
-				4B7B744D2295466AB0D84A4034747F9B /* JSONRPCDeSerialization.h */,
-				5ED70DA92B9C599633D69460675D5718 /* JSONRPCDeSerialization.m */,
-				1131A4ACDDF32F78D99015D525B75A41 /* JSONRPCErrorModel.h */,
-				F5C825611DBFFCC82CB1DC8C5E57525A /* JSONRPCErrorModel.m */,
-				A29EA389B24C51F54DDEC986FC4A6DFE /* JSONRPCErrorResponse.h */,
-				D6065760B2987AF7ABDB5FD430BA778D /* JSONRPCErrorResponse.m */,
-				B3B12BC60EDBA447E699A473545F3A66 /* JSONRPCId.h */,
-				6D5624162A996D0F2A435BDC564D2F29 /* JSONRPCMethod.h */,
-				72248F459C3C2349FDD6D48F6CBB459F /* JSONRPCNotification.h */,
-				F07B06FEABA7E5E9BF1ED1B8598F291A /* JSONRPCNotification.m */,
-				1BD2B5E601B2DFBA048BFEC160D73463 /* JSONRPCom.h */,
-				3081C76A4B22D22949B9B740950448C1 /* JSONRPCommunication.h */,
-				19B1411CB8BA1A35626CF8CD47BE2ACB /* JSONRPCRequst.h */,
-				9E4F655B70344A2733367ED15A79B8A2 /* JSONRPCRequst.m */,
-				936B6E695B40FC26BC5614EE385B757C /* JSONRPCResponse.h */,
-				6E204C3BC4DF8038E105E7F6CD20F4E3 /* JSONRPCResponse.m */,
-				186612AD8460A542EBD7E457CEC05668 /* JSONRPCSerialization.h */,
-				3C41A2477F7E1CA377EBDDD5E166C41D /* JSONRPCSerialization.m */,
-				8818B96B7FB46E4963C2FBE0DD787890 /* MTLJSONAdapter+Utils.h */,
-				D75ADE6FC8C45361F3598996FB7E3AF5 /* MTLJSONAdapter+Utils.m */,
-				0F94E92782589CA679BB43CDD2281218 /* NSDictionary+ToString.h */,
-				0DA943478BB381777FE505CDB204566C /* NSDictionary+ToString.m */,
-				4A64A142A81EE0113659890694EE3EA5 /* NSString+ToJSONDictionary.h */,
-				866D59335E24A7DA2D35D60A18DE7F4E /* NSString+ToJSONDictionary.m */,
-				818F4211A6A9FE9BEB256B489E211F2F /* Support Files */,
-			);
-			name = JSONRPCom;
-			path = JSONRPCom;
 			sourceTree = "<group>";
 		};
 		71BEA5E4CF9A415E93553D7FD3B95DAC /* Products */ = {
@@ -1951,20 +1951,6 @@
 				71BEA5E4CF9A415E93553D7FD3B95DAC /* Products */,
 				70DE71A1A0380FA3B1E153037BBA4C66 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		818F4211A6A9FE9BEB256B489E211F2F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9183A7ECD44EB8AEB7541EE8AD4D6CE1 /* Info.plist */,
-				F4DEB810B8012917500D3A33ECBCFB6A /* JSONRPCom.modulemap */,
-				557B3E3F3469E4BD6F0EA658BA22808A /* JSONRPCom.xcconfig */,
-				BD6F0FBAD07BAF689407DE9175777AA8 /* JSONRPCom-dummy.m */,
-				24D97F44F7189C63BB998244142E769A /* JSONRPCom-prefix.pch */,
-				57267DB661627DF86E3646BE5CC88FDB /* JSONRPCom-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JSONRPCom";
 			sourceTree = "<group>";
 		};
 		8282188D2A32AB9D43545FBF480AD6CA /* Frameworks */ = {
@@ -2071,7 +2057,7 @@
 		CFC2736C8C6A725CDD5ABF985D91107E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				713F72530ACFF89FB36BFEF56B458966 /* JSONRPCom */,
+				5B5482063CF4714EF5F4B0BD6514C45A /* JSONRPCom */,
 				0F9A791AF4EEA82B07EC4CA78FD8241C /* Mantle */,
 				103C6CCE09023EA56253667F0A11E705 /* MAObjCRuntime */,
 				19E4D9D4B0E7ECE74BF8C92B2FB9660A /* OCHamcrest */,
@@ -2145,6 +2131,20 @@
 				C39B817FEAEAD206DE2E49A6B708ED50 /* Security.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F199C912A9BB1ACB19D234919E589A37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D530105B85B15AF05DC2197A3463B45 /* Info.plist */,
+				D556FE08260E059A01863B834F24A12F /* JSONRPCom.modulemap */,
+				271DC807C3EB9BB4CEF12E9DFA9653F1 /* JSONRPCom.xcconfig */,
+				6E7ED1E221B874F78C5225C828A8A1F3 /* JSONRPCom-dummy.m */,
+				AA8D521759C97424E34D849B52BD3E8D /* JSONRPCom-prefix.pch */,
+				2CCEAB76E7D2E6DFAB97AE8735B325C0 /* JSONRPCom-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONRPCom";
 			sourceTree = "<group>";
 		};
 		FCAAD55989706F0C999BAABD1FDFD4AE /* Support Files */ = {
@@ -2273,6 +2273,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70EFE30CA951BB6806C01EB263F2B67A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089DD84DC978C9FF7C7C451AC3F96BE0 /* JSONRPC.h in Headers */,
+				6FB9C0575A10FF146D6CD13D80C44838 /* JSONRPCDeSerialization.h in Headers */,
+				621BA917CFFBB9AA09C37C85E58B82E7 /* JSONRPCErrorModel.h in Headers */,
+				CCA9FB60DE974622032C98E002DB69D4 /* JSONRPCErrorResponse.h in Headers */,
+				A1F122D8FA66B535B2B484EF4BDCE8A9 /* JSONRPCId.h in Headers */,
+				5CFFB62FB9B186F82677989A5168351E /* JSONRPCMethod.h in Headers */,
+				C2EB595F0AC0E4616052F6BB644D641C /* JSONRPCNotification.h in Headers */,
+				EAAE9E49DADC960D282268A318C97125 /* JSONRPCom-umbrella.h in Headers */,
+				55B1E469E2FF4D0B8F0171A7B9717402 /* JSONRPCom.h in Headers */,
+				0723F6FC01697CD2E2BDDA888BB5E1D5 /* JSONRPCommunication.h in Headers */,
+				3A41B89424D556790447DE3908216C7A /* JSONRPCRequest.h in Headers */,
+				BC0523B535CDCFCBC00BAA2A1F48F484 /* JSONRPCResponse.h in Headers */,
+				11870EFA213E5DAD6B36544F7781C65B /* JSONRPCSerialization.h in Headers */,
+				63D82B3F8B25B0A00EA97539595648CA /* MTLJSONAdapter+Utils.h in Headers */,
+				7B1349688C6B6F4B2E6CC04513692894 /* NSDictionary+ToString.h in Headers */,
+				6C9ED282AAE19C19273C0E47869D7699 /* NSString+ToJSONDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83F440EA4C37DBB9741A8802E48A029B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2301,29 +2324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28377271E7A0482FB7780433B61F756E /* Result-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8FC2FE799D5B0FA1C7F8039D458D9CB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E47A5D7B87290837F89C563055C2792 /* JSONRPC.h in Headers */,
-				FE3A0B715271C57759C733764B4A6FEB /* JSONRPCDeSerialization.h in Headers */,
-				6DC6C2598B2F5A062918D4F21E347BC0 /* JSONRPCErrorModel.h in Headers */,
-				5C301C9DE471F88F7DAD60FD2846A042 /* JSONRPCErrorResponse.h in Headers */,
-				E4AC7C07C2FBE8D2DE0355E57E926FB7 /* JSONRPCId.h in Headers */,
-				FC2B018F32FB2B4ADFE8831665DEF12B /* JSONRPCMethod.h in Headers */,
-				10E35C04F7490283CE4E65714C931DBA /* JSONRPCNotification.h in Headers */,
-				436FB02C21587914438760E2292DEE82 /* JSONRPCom-umbrella.h in Headers */,
-				F8F605606EF77F7E7B9105D6F6D82E2B /* JSONRPCom.h in Headers */,
-				9B7E6F740DEE31744B027760F4DC09AC /* JSONRPCommunication.h in Headers */,
-				ED8D62D69D19BF09B50E8CFC1A0EF1F7 /* JSONRPCRequst.h in Headers */,
-				01BCA764374E5C07F26BEDFDE2C33159 /* JSONRPCResponse.h in Headers */,
-				E20D88ACEF802C03B0E082F0662A2E09 /* JSONRPCSerialization.h in Headers */,
-				60FEA27395C331D4160A55BEE4E751C1 /* MTLJSONAdapter+Utils.h in Headers */,
-				C3EDF10B6CB5B401FCE52834DFD7394A /* NSDictionary+ToString.h in Headers */,
-				0A082E5E23CE2257E2D25692C5CA0991 /* NSString+ToJSONDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2640,9 +2640,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C0728113DC811C544E82644F6BC993D /* Build configuration list for PBXNativeTarget "JSONRPCom" */;
 			buildPhases = (
-				B3A916A17C0D6ADF2D542A7104F8BA06 /* Sources */,
+				E5D1BC1B1524CC26136F8E174134E1CF /* Sources */,
 				57F384ACD9201ED47F16C10E054C1D88 /* Frameworks */,
-				C8FC2FE799D5B0FA1C7F8039D458D9CB /* Headers */,
+				70EFE30CA951BB6806C01EB263F2B67A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -2942,25 +2942,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3A916A17C0D6ADF2D542A7104F8BA06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1E6D52D03D7C9896BD9687F7034578F /* Info.plist in Sources */,
-				A28E79063E2B3EFE6CFA06134A1CAEB2 /* JSONRPCDeSerialization.m in Sources */,
-				5F9BDD1202B9DD3DEFCE659BE54D5DD0 /* JSONRPCErrorModel.m in Sources */,
-				D7758B8F36E8AACF0646CD18FC1045AC /* JSONRPCErrorResponse.m in Sources */,
-				E3DE71E1FD86DF3FC39766F62DEECA17 /* JSONRPCNotification.m in Sources */,
-				F881036B483A5183AA018D909218092A /* JSONRPCom-dummy.m in Sources */,
-				5B85270947CC0CA205F3133807A384E3 /* JSONRPCRequst.m in Sources */,
-				755B11710743D5CD7B1E2722448FE791 /* JSONRPCResponse.m in Sources */,
-				ED926260750C08D314353E76F9DAF4FB /* JSONRPCSerialization.m in Sources */,
-				9A43EFFCDB27D3E914BAFE6D7AFD726D /* MTLJSONAdapter+Utils.m in Sources */,
-				6E320EFE4A1E52AFF9292C8EFB553981 /* NSDictionary+ToString.m in Sources */,
-				A31D8845092B0CF3D2C2E96464F0D0AF /* NSString+ToJSONDictionary.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D402060CE92B0C8B077FD0AE37BF1E16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3049,6 +3030,25 @@
 			files = (
 				7834203F287355E6D7161899D78176B0 /* SocketRocket-dummy.m in Sources */,
 				38640C23F914B9ECE410C9EF60BB4E8B /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D1BC1B1524CC26136F8E174134E1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C887FD7DB1FC7D50286E04158E40366 /* Info.plist in Sources */,
+				6A078CF76EC3A1DD3E5A83E325126E94 /* JSONRPCDeSerialization.m in Sources */,
+				F2012839FA802269E92AFB61F28D9905 /* JSONRPCErrorModel.m in Sources */,
+				B0035F1FD1CBAD65DBBF1AC3BE3E0C49 /* JSONRPCErrorResponse.m in Sources */,
+				93EDBBDF79DCAE332A2E4E00627D4A72 /* JSONRPCNotification.m in Sources */,
+				6F3E3453AAB9555EEF9A1457C85C3BC1 /* JSONRPCom-dummy.m in Sources */,
+				8B2D6D7759F2E70ABD6E799F6D6D77E6 /* JSONRPCRequest.m in Sources */,
+				38A446E3F19691B4DE96A2C92E8B270F /* JSONRPCResponse.m in Sources */,
+				A6BCF0A00CE7A0E59091C83BB55A1CFC /* JSONRPCSerialization.m in Sources */,
+				F67DEEAFB91973A8F8E91C2FCD60AC81 /* MTLJSONAdapter+Utils.m in Sources */,
+				47F580B33FFB08885E679D9C9A1ED85D /* NSDictionary+ToString.m in Sources */,
+				029DB0013F18A6912F65C80BC7B0DF94 /* NSString+ToJSONDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3612,7 +3612,7 @@
 		};
 		AB5BE8191D5146369B169993329CC90B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 557B3E3F3469E4BD6F0EA658BA22808A /* JSONRPCom.xcconfig */;
+			baseConfigurationReference = 271DC807C3EB9BB4CEF12E9DFA9653F1 /* JSONRPCom.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3781,7 +3781,7 @@
 		};
 		C5C3832D77AC10664705E51CB2C1B4DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 557B3E3F3469E4BD6F0EA658BA22808A /* JSONRPCom.xcconfig */;
+			baseConfigurationReference = 271DC807C3EB9BB4CEF12E9DFA9653F1 /* JSONRPCom.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

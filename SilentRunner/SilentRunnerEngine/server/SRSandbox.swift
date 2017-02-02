@@ -46,9 +46,11 @@ func parseMessage( message:String ) throws -> [String:Any] {
         throw SRParseErrors.DataParseError
     }
     
+    
+    
     return result
     
 }
 
-func createModel ( dict:[String:Any] ) throws -> 
+//func createModel ( dict:[String:Any] ) throws ->
 

@@ -8,7 +8,7 @@
 #import "JSONRPCom.h"
 #import "JSONRPCMethod.h"
 #import "JSONRPCNotification.h"
-#import "JSONRPCRequst.h"
+#import "JSONRPCRequest.h"
 #import "JSONRPCErrorModel.h"
 #import "JSONRPCErrorResponse.h"
 #import "JSONRPCResponse.h"

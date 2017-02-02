@@ -42,10 +42,10 @@
     };
 }
 
-+ (void (^)(NSDictionary*))requestValue:(void (^)(JSONRPCRequst* data))request serializationError:(void (^)(NSError* error))serializationError{
++ (void (^)(NSDictionary*))requestValue:(void (^)(JSONRPCRequest* data))request serializationError:(void (^)(NSError* error))serializationError{
     return ^(NSDictionary* dict){
-        [self parseJSON:dict forModel:[JSONRPCRequst class] withResult:^(id<JSONRPC> entity) {
-            request((JSONRPCRequst*)entity);
+        [self parseJSON:dict forModel:[JSONRPCRequest class] withResult:^(id<JSONRPC> entity) {
+            request((JSONRPCRequest*)entity);
         } serializationError:^(NSError *error) {
             serializationError(error);
         }];
@@ -82,7 +82,7 @@
     };
 }
 
-+ (NSDictionary*)serializationMappingwithJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
++ (NSDictionary*)serializationMappingwithJSONRPCRequset:(void (^)(JSONRPCRequest* data))request
                                       orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                   orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
                                          orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse
@@ -95,7 +95,7 @@
     return serializationMapping.copy;
 }
 
-+ (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
++ (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequest* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
                                             orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse
@@ -126,7 +126,7 @@
 + (void)parseJSON:(NSDictionary*)json forModel:(Class)modelOfClass withResult:(void (^)(id<JSONRPC>entity))block
                                        serializationError:(void (^)(NSError* error))error{
     NSError* parseError = nil;
-    JSONRPCRequst* result = [MTLJSONAdapter modelOfClass:modelOfClass fromJSONDictionary:json error:&parseError];
+    JSONRPCRequest* result = [MTLJSONAdapter modelOfClass:modelOfClass fromJSONDictionary:json error:&parseError];
     if (!parseError){
         block(result);
     }else{

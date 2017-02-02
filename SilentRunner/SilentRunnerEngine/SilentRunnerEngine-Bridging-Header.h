@@ -8,4 +8,6 @@
 
 
 #import <SocketRocket/SocketRocket.h>
+#import <JSONRPCom/JSONRPCom.h>
+#import "NSInvocation+Constructors.h"
 

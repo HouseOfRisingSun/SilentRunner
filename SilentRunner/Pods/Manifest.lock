@@ -1,5 +1,5 @@
 PODS:
-  - JSONRPCom (0.0.2):
+  - JSONRPCom (0.0.3):
     - Mantle
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
@@ -29,11 +29,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   JSONRPCom:
-    :commit: e1e83e0fca9cb8857d8200184541131eb1ae6775
+    :commit: 78c2bcc3cf207c76e9b04dad42b8af37489ddaea
     :git: https://github.com/andrewBatutin/JSONRPCom.git
 
 SPEC CHECKSUMS:
-  JSONRPCom: 2e2508487b5671258d204f2fbe3512d04de59422
+  JSONRPCom: af1f0ce5a134dabf6625cb0bb47dce06e6cec6bd
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   MAObjCRuntime: a6a1d95acbfa3784d66cb35bd42904e47943b488
   OCHamcrest: fc8ab38149b97df8db8029a3f2157c951bf9081d

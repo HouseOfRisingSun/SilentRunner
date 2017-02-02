@@ -13,6 +13,7 @@
 //  the License.
 
 #import <Foundation/Foundation.h>
+#import <JSONRPCom/JSONRPCom.h>
 
 
 @interface NSInvocation (Constructors)
