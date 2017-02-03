@@ -1,1 +1,5 @@
-language: objective-c
+language: objective-c 
+osx_image: xcode8
+xcode_project: SilentRunner/SilentRunner.xcodeproj
+xcode_scheme: SilentRunner/SilentRunner.xcworkspace 
+xcode_sdk: iphonesimulator9.1 
