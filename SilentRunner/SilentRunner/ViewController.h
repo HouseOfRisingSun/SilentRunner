@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 - (IBAction)testAction:(id)sender;
+- (IBAction)runServer:(id)sender;
 
 @end
 

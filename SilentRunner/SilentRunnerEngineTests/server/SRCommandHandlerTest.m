@@ -29,4 +29,12 @@
     XCTAssertNil(error);
 }
 
+- (void)testNilCommandInvocationDontCrash{
+    SRCommand* command = nil;
+    NSError* error = nil;
+    [SRCommandHandler runCommand:command withError:&error];
+    XCTAssertTrue(YES, @"we are still alive");
+}
+
+
 @end
