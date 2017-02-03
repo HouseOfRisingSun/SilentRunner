@@ -51,6 +51,11 @@
 		00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
 		00B3F1511E436AAE00D41C01 /* SRMessageHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */; };
 		00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B3F1531E436BE200D41C01 /* simple_notification.json */; };
+		00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */; };
+		00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F16E1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */; };
 		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; };
 		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; };
 		00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
@@ -148,6 +153,9 @@
 		00B3F14B1E43673100D41C01 /* SRMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMessageHandler.m; sourceTree = "<group>"; };
 		00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMessageHandlerTest.m; sourceTree = "<group>"; };
 		00B3F1531E436BE200D41C01 /* simple_notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simple_notification.json; sourceTree = "<group>"; };
+		00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommandHandler.h; sourceTree = "<group>"; };
+		00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommandHandler.m; sourceTree = "<group>"; };
+		00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommandHandlerTest.m; sourceTree = "<group>"; };
 		00F3B23A1E015234002AFDF8 /* SRArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArgument.h; sourceTree = "<group>"; };
 		00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassArgument.h; sourceTree = "<group>"; };
 		00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassArgument.m; sourceTree = "<group>"; };
@@ -258,6 +266,8 @@
 				003A17691E09790D008B7562 /* SRServer.m */,
 				00B3F14A1E43673100D41C01 /* SRMessageHandler.h */,
 				00B3F14B1E43673100D41C01 /* SRMessageHandler.m */,
+				00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */,
+				00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -267,6 +277,7 @@
 			children = (
 				00B3F13E1E434F2E00D41C01 /* SRServerTest.m */,
 				00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */,
+				00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -428,6 +439,7 @@
 				00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */,
 				00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */,
 				00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */,
+				00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */,
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
@@ -711,6 +723,7 @@
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
 				00B3F14D1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
+				00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +736,7 @@
 				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
+				00B3F16E1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
 				00B3F14E1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				003A176B1E09790D008B7562 /* SRServer.m in Sources */,
@@ -752,6 +766,8 @@
 				00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
+				00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */,
+				00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
 				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,
 				007860191E07E73F00B4DDA1 /* SRMockFabric.m in Sources */,
