@@ -91,5 +91,5 @@ Smaples of messages:
 * Mock objects parser
 * Invocation engine
 * WebSocket integration
-
+* CI integration
  
