@@ -40,6 +40,22 @@
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF9E1DFECF1100D3B255 /* SilentRunnerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00B3F13F1E434F2E00D41C01 /* SRServerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F13E1E434F2E00D41C01 /* SRServerTest.m */; };
+		00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F1441E43532000D41C01 /* NSURL+Validity.h */; };
+		00B3F1471E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
+		00B3F1481E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
+		00B3F1491E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
+		00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F14A1E43673100D41C01 /* SRMessageHandler.h */; };
+		00B3F14D1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
+		00B3F14E1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
+		00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
+		00B3F1511E436AAE00D41C01 /* SRMessageHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */; };
+		00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B3F1531E436BE200D41C01 /* simple_notification.json */; };
+		00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */; };
+		00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F16E1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
+		00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */; };
 		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; };
 		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; };
 		00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
@@ -130,6 +146,16 @@
 		00ADFF901DFECF1100D3B255 /* SilentRunnerEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentRunnerEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SilentRunnerEngineTests.m; sourceTree = "<group>"; };
 		00ADFF991DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B3F13E1E434F2E00D41C01 /* SRServerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRServerTest.m; sourceTree = "<group>"; };
+		00B3F1441E43532000D41C01 /* NSURL+Validity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Validity.h"; sourceTree = "<group>"; };
+		00B3F1451E43532000D41C01 /* NSURL+Validity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Validity.m"; sourceTree = "<group>"; };
+		00B3F14A1E43673100D41C01 /* SRMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMessageHandler.h; sourceTree = "<group>"; };
+		00B3F14B1E43673100D41C01 /* SRMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMessageHandler.m; sourceTree = "<group>"; };
+		00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMessageHandlerTest.m; sourceTree = "<group>"; };
+		00B3F1531E436BE200D41C01 /* simple_notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simple_notification.json; sourceTree = "<group>"; };
+		00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommandHandler.h; sourceTree = "<group>"; };
+		00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommandHandler.m; sourceTree = "<group>"; };
+		00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommandHandlerTest.m; sourceTree = "<group>"; };
 		00F3B23A1E015234002AFDF8 /* SRArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArgument.h; sourceTree = "<group>"; };
 		00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassArgument.h; sourceTree = "<group>"; };
 		00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassArgument.m; sourceTree = "<group>"; };
@@ -238,6 +264,10 @@
 			children = (
 				003A17681E09790D008B7562 /* SRServer.h */,
 				003A17691E09790D008B7562 /* SRServer.m */,
+				00B3F14A1E43673100D41C01 /* SRMessageHandler.h */,
+				00B3F14B1E43673100D41C01 /* SRMessageHandler.m */,
+				00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */,
+				00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -245,6 +275,9 @@
 		003A17671E0978F7008B7562 /* server */ = {
 			isa = PBXGroup;
 			children = (
+				00B3F13E1E434F2E00D41C01 /* SRServerTest.m */,
+				00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */,
+				00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -303,6 +336,8 @@
 				00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */,
 				00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */,
 				00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */,
+				00B3F1441E43532000D41C01 /* NSURL+Validity.h */,
+				00B3F1451E43532000D41C01 /* NSURL+Validity.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -340,6 +375,7 @@
 		00ADFF961DFECF1100D3B255 /* SilentRunnerEngineTests */ = {
 			isa = PBXGroup;
 			children = (
+				00B3F1521E436BE200D41C01 /* test_resources */,
 				003A17671E0978F7008B7562 /* server */,
 				00807EB11E00188900B4BD4C /* utils */,
 				00807EA61E00074900B4BD4C /* models */,
@@ -347,6 +383,14 @@
 				00ADFF991DFECF1100D3B255 /* Info.plist */,
 			);
 			path = SilentRunnerEngineTests;
+			sourceTree = "<group>";
+		};
+		00B3F1521E436BE200D41C01 /* test_resources */ = {
+			isa = PBXGroup;
+			children = (
+				00B3F1531E436BE200D41C01 /* simple_notification.json */,
+			);
+			path = test_resources;
 			sourceTree = "<group>";
 		};
 		5542792B974B8775341EB988 /* Pods */ = {
@@ -394,9 +438,12 @@
 				00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */,
 				00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */,
 				00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */,
+				00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */,
+				00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */,
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
+				00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */,
 				007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +584,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,9 +718,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3F1471E43532000D41C01 /* NSURL+Validity.m in Sources */,
 				0004DC361DFECE5C0096C9BE /* ViewController.m in Sources */,
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
+				00B3F14D1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
+				00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,10 +731,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3F1481E43532000D41C01 /* NSURL+Validity.m in Sources */,
 				007860181E07E73F00B4DDA1 /* SRMockFabric.m in Sources */,
 				00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
+				00B3F16E1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
+				00B3F14E1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				003A176B1E09790D008B7562 /* SRServer.m in Sources */,
 				00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
@@ -697,17 +751,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3F1491E43532000D41C01 /* NSURL+Validity.m in Sources */,
 				003A176C1E09790D008B7562 /* SRServer.m in Sources */,
 				00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
 				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
+				00B3F1511E436AAE00D41C01 /* SRMessageHandlerTest.m in Sources */,
 				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
+				00B3F13F1E434F2E00D41C01 /* SRServerTest.m in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
 				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */,
 				00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */,
+				00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
 				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
+				00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */,
+				00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
 				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,
 				007860191E07E73F00B4DDA1 /* SRMockFabric.m in Sources */,

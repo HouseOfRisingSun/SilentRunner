@@ -7,16 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "SRServer.h"
+#import "SRClientPool.h"
+#import "SRCommandHandler.h"
+#import "SRMessageHandler.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic, strong) SRServer* serv;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+        NSError* error = nil;
+        [SRCommandHandler runCommand:command withError:&error];
+        NSLog(@"%@", [SRClientPool clientForTag:@"NSMutableArray"]);
+    } withErrorHandler:^(NSError * error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 
@@ -25,5 +38,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)testAction:(id)sender {
+    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
+}
+
+- (IBAction)runServer:(id)sender {
+    [self.serv.webSocket open];
+}
 
 @end

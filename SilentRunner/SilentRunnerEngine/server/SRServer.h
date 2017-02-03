@@ -7,9 +7,20 @@
 //
 
 #import "SRConcreteArgument.h"
+#import <SocketRocket/SocketRocket.h>
 
-@interface SRServer : SRConcreteArgument
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SRServer : NSObject <SRWebSocketDelegate>
 
+@property (nonatomic, readonly, strong) SRWebSocket* webSocket;
+@property (nonatomic, readonly, copy)  void (^messageHandler) (NSString* );
+@property (nonatomic, readonly, copy) void (^errorHandler) (NSError*);
+
++ (nullable SRServer*)serverWithURL:(NSString*)url withMessageHandler:(nullable void (^)(NSString*))messageHandler withErrorHandler:(nullable void (^)(NSError*))errorHandler;
+
+- (nullable instancetype)initWithURL:(NSString*)urlString;
+
+NS_ASSUME_NONNULL_END
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONRPCRequst.h"
+#import "JSONRPCRequest.h"
 #import "JSONRPCResponse.h"
 #import "JSONRPCNotification.h"
 #import "JSONRPCErrorResponse.h"
