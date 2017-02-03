@@ -1,5 +1,3 @@
 language: objective-c 
-osx_image: xcode8
-xcode_project: SilentRunner/SilentRunner.xcodeproj
-xcode_scheme: SilentRunner/SilentRunner.xcworkspace 
-xcode_sdk: iphonesimulator9.1 
+script:
+	- xcodebuild -workspace SilentRunner/SilentRunner.xcworkspace  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' -scheme SilentRunnerEngine  test
