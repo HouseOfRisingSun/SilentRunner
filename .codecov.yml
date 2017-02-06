@@ -14,7 +14,7 @@ coverage:
   - Carthage/.*
   - .*Tests.m
   - .*Tests.swift
-  - SilentRunner/Tests/.*
+  - SilentRunner/SilentRunnerEngineTests/.*
   - SilentRunner/Pods/.*
   - SilentRunner/Build/.*
 
