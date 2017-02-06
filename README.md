@@ -1,5 +1,9 @@
 # Silent Runner
 
+ [![Build Status](https://travis-ci.org/andrewBatutin/SilentRunner.svg?branch=master)](https://travis-ci.org/andrewBatutin/SilentRunner)
+
+ [![codecov](https://codecov.io/gh/andrewBatutin/SilentRunner/branch/master/graph/badge.svg)](https://codecov.io/gh/andrewBatutin/SilentRunner)
+
 ##Intro
 ![alt text][logo]
 [logo]:http://vignette1.wikia.nocookie.net/eastenders/images/f/f6/Under-construction.png/revision/latest?cb=20141120185311
@@ -87,9 +91,6 @@ Smaples of messages:
 ###TODO
 
 * Formal protocol spec
-* Protocol parser implementation
-* Mock objects parser
-* Invocation engine
-* WebSocket integration
-* CI integration
- 
+* Add suport for mock properties
+* Add support for nil arguments
+* Add support for properties getter/setter invocations

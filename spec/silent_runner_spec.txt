@@ -2,18 +2,18 @@
     "jsonrpc": "2.0",
     "method": "execute",
     "params": {
-        "commandId": "UIApplication",
-        "method": "openURL:options:completionHandler:",
-        "arguments": [{
+        "commandId": "UIApplication", // tag of the object at Client Pool
+        "method": "openURL:options:completionHandler:", // instance/class methods - ready, property getter/setter - TBD
+        "arguments": [{ // array in correct order, dict - not worth it, add nil - TBD
             "class": "NSURL",
-            "properties": [{
+            "properties": [{ //TBD
                 "name": "absoluteString",
                 "value": "https://github.com/andrewBatutin/SilentRunner"
             }, {
                 "name": "relativeString",
                 "value": "https://github.com/andrewBatutin/SilentRunner"
             }],
-            "methods": [{
+            "methods": [{ 
                 "name": "isFileReferenceURL",
                 "returnValue": "1"
             }, {
