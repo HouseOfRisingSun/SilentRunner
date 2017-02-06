@@ -48,7 +48,7 @@
     SRClassArgument* realResult = [MTLJSONAdapter modelOfClass:SRClassArgument.class fromJSONDictionary:intput error:&parseError];
     NSURL* result = realResult.argumentValue;
     XCTAssertEqual(YES, [result isFileReferenceURL]);
-    //XCTAssertEqualObjects(@"https://github.com/andrewBatutin/SilentRunner", [result absoluteString]);
+    XCTAssertEqualObjects(@"https://github.com/andrewBatutin/SilentRunner", [result absoluteString]);
 }
 
 @end

@@ -8,6 +8,16 @@ coverage:
   round: down
   range: 70...100
 
+  ignore:
+  - Pods/.*
+  - Applications/Xcode.app/.*
+  - Carthage/.*
+  - .*Tests.m
+  - .*Tests.swift
+  - SilentRunner/Tests/.*
+  - SilentRunner/Pods/.*
+  - SilentRunner/Build/.*
+
   status:
     # Learn more at http://docs.codecov.io/docs/codecov-yaml
     project: true
@@ -17,7 +27,3 @@ coverage:
 comment:
   layout: "header, diff"
   behavior: default  # update if exists else create new
-
-
-ignore:
-  - "Pods"
