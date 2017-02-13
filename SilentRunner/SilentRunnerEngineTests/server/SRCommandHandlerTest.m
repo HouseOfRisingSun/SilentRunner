@@ -62,7 +62,6 @@
     XCTAssertNil(error);
     NSURL* mockURL = res[0];
     XCTAssertEqualObjects(@"mock url", [mockURL fileReferenceURL]);
-    //absoluteString
     XCTAssertEqualObjects(@"https://github.com/andrewBatutin/SilentRunner", mockURL.absoluteString);
     XCTAssertEqual(YES, [mockURL isFileReferenceURL]);
 }

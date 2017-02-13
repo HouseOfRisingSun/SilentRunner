@@ -32,11 +32,16 @@
 - (MKTBaseMockObject*)createModelWithMethods:(NSArray*)methods andProperties:(NSArray*)properties{
     Class modelClass = NSClassFromString(self.className);
     MKTObjectMock* object = [SRMockFabric mockWithClass:modelClass];
+    NSError* error = nil;
     for ( NSDictionary* model in methods ){
-        [SRMockFabric addMethodsWithDictionary:model toModel:object withError:nil];
+        [SRMockFabric addMethodsWithDictionary:model toModel:object withError:&error];
     }
     for ( NSDictionary* prop in properties ){
-        [SRMockFabric addPropertiesWithDictionary:prop toModel:object withError:nil];
+        [SRMockFabric addPropertiesWithDictionary:prop toModel:object withError:&error];
+    }
+    if ( error ) {
+        NSException* exp = [NSException exceptionWithName:@"error argument parsing" reason:error.description userInfo:error.userInfo];
+        @throw exp;
     }
     return object;
 }

@@ -61,11 +61,11 @@
                                          @"class": @"NSURL",
                                          @"methods": @[
                                                  @{
-                                                     @"name": @"URLWithString:",
+                                                     @"name": @"isFileReferenceURL:",
                                                      @"returnValue": @"mock data"
                                                      },
                                                  @{
-                                                     @"name": @"fileURLWithPath:",
+                                                     @"name": @"fileReferenceURL",
                                                      @"returnValue": @"mock path"
                                                      }
                                                  ]
