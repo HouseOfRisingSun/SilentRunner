@@ -55,8 +55,9 @@
     }
 }
 
-+ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model{
-    
+// TODO - add KVO support to mock
++ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error{
+    [self addMethodsWithDictionary:dict toModel:model withError:error];
 }
 
 + (BOOL)isStaticMethod:(NSDictionary*)model atClass:(MKTObjectMock*)mockObject{

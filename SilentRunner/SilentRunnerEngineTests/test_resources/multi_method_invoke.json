@@ -12,7 +12,11 @@
                                                                             },{
                                                 "name": "fileReferenceURL",
                                                 "returnValue": "mock url"
-                                            }]
+                                            }],
+                              "properties": [{
+                                             "name":"absoluteString",
+                                             "returnValue":"https://github.com/andrewBatutin/SilentRunner"
+                                             }]
                               }]
             }
 }

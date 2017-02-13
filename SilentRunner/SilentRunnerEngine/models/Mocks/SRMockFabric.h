@@ -14,7 +14,7 @@
 
 + (MKTObjectMock*)mockWithClass:(Class)classValue;
 + (void)addMethodsWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error;
-+ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model;
++ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error;
 + (void)addMockForValue:(void *)value withInvocation:(NSInvocation*)inv atIndex:(NSInteger)index;
 + (void)addAnythingWithInvocation:(NSInvocation*)inv atIndex:(NSInteger)index forModel:(MKTBaseMockObject*)model;
 

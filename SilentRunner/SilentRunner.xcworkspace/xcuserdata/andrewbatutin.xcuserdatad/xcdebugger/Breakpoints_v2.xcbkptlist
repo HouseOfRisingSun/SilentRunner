@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
-            timestampString = "508678019.320637"
+            timestampString = "508679768.698702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "+isStaticMethod:atClass:"
             landmarkType = "7">
          </BreakpointContent>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
-            timestampString = "508678019.320637"
+            timestampString = "508679768.698702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "+isStaticMethod:atClass:"
             landmarkType = "7">
             <Locations>
@@ -184,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
-            timestampString = "508678019.320637"
+            timestampString = "508679768.698702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "+isStaticMethod:atClass:"
             landmarkType = "7">
             <Locations>

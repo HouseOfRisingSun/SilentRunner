@@ -37,6 +37,11 @@
                BlueprintName = "SilentRunnerEngineTests"
                ReferencedContainer = "container:SilentRunner.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SRCommandTest/testSRCommandSuccsesfullParsing">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -36,7 +36,7 @@
         [SRMockFabric addMethodsWithDictionary:model toModel:object withError:nil];
     }
     for ( NSDictionary* prop in properties ){
-        [SRMockFabric addPropertiesWithDictionary:prop toModel:object];
+        [SRMockFabric addPropertiesWithDictionary:prop toModel:object withError:nil];
     }
     return object;
 }
