@@ -23,10 +23,12 @@
     [super viewDidLoad];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
-        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
         NSError* error = nil;
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
+            NSLog(@"error  = %@", error);
+        }];
         [SRCommandHandler runCommand:command withError:&error];
-        NSLog(@"%@", [SRClientPool clientForTag:@"NSMutableArray"]);
+        NSLog(@"res - %@, %@", [SRClientPool clientForTag:@"NSMutableArray"], error);
     } withErrorHandler:^(NSError * error) {
         NSLog(@"%@", error);
     }];

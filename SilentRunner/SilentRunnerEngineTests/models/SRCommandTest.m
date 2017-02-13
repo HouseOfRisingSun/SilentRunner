@@ -61,7 +61,7 @@
                                          @"class": @"NSURL",
                                          @"methods": @[
                                                  @{
-                                                     @"name": @"isFileReferenceURL:",
+                                                     @"name": @"isFileReferenceURL",
                                                      @"returnValue": @"mock data"
                                                      },
                                                  @{

@@ -25,7 +25,6 @@
     NSString* methodName = dict[@"name"];
     SEL methodSel = NSSelectorFromString(methodName);
     
-    
     if ( [self isStaticMethod:dict atClass:model] ) {
          if (error) {
              *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:@"static methods not supported"}];

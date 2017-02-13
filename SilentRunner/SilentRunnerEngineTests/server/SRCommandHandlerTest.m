@@ -21,7 +21,7 @@
     NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"simple_notification" withExtension:@"json"];
     NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
-    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
     NSError* error = nil;
     [SRCommandHandler runCommand:command withError:&error];
     NSMutableArray* res =  [SRClientPool clientForTag:@"NSMutableArray"];
@@ -40,10 +40,10 @@
     NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"simple_notification" withExtension:@"json"];
     NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
-    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
     NSError* error = nil;
     [SRCommandHandler runCommand:command withError:&error];
-    command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
     [SRCommandHandler runCommand:command withError:&error];
     NSMutableArray* res =  [SRClientPool clientForTag:@"NSMutableArray"];
     XCTAssertTrue(res.count == 2);
@@ -54,7 +54,7 @@
     NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"multi_method_invoke" withExtension:@"json"];
     NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
-    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
     NSError* error = nil;
     [SRCommandHandler runCommand:command withError:&error];
     NSMutableArray* res =  [SRClientPool clientForTag:@"NSMutableArray"];

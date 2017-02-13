@@ -24,6 +24,17 @@
              };
 }
 
+- (BOOL)validate:(NSError **)error {
+    BOOL res = NO;
+    @try {
+        res = [super validate:error];
+    } @catch (NSException *exception) {
+        *error = [NSError errorWithDomain:exception.reason code:999 userInfo:exception.userInfo];
+    } @finally {
+        return res;
+    }
+}
+
 - (id)argumentValue{
     MKTBaseMockObject* model = [self createModelWithMethods:self.methods andProperties:self.properties];
     return model;

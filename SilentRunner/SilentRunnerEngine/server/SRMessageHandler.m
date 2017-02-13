@@ -11,7 +11,7 @@
 
 @implementation SRMessageHandler
 
-+ (nullable id<SRCommandProtocol>)createCommandFromMessage:(nullable NSString*)message{
++ (nullable id<SRCommandProtocol>)createCommandFromMessage:(nullable NSString*)message withError:(void (^)(NSError* error))parseErrorHandler{
     __block id <SRCommandProtocol> command = nil;
     [JSONRPCDeSerialization deSerializeString:message withJSONRPCRequset:^(JSONRPCRequest *data) {
         
@@ -21,7 +21,13 @@
         if ( ![data.params isKindOfClass:NSDictionary.class] ) { command = nil; return; }
         NSError* error = nil;
         SRCommand* entity = [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:data.params error:&error];
-        if ( error ) { command = nil; return; }
+        if ( error ) {
+            command = nil;
+            if ( parseErrorHandler ){
+                parseErrorHandler(error);
+            }
+            return;
+        }
         command = entity;
         
     } orJSONRPCError:^(JSONRPCErrorResponse *data) {
