@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SilentRunnerEngineTests/models/Mocks/MockFabricTest.m"
-            timestampString = "503844682.958521"
+            timestampString = "508675367.17549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-testBrewingMockInstanceMethod"
             landmarkType = "7">
             <Locations>
@@ -88,43 +88,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SilentRunnerEngine/models/SRClassArgument.m"
-            timestampString = "503932141.451126"
+            timestampString = "508677294.922463"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-createModelWithMethods:andProperties:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508677234.110146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "+addMethodsWithDictionary:toModel:withError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508678019.320637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+isStaticMethod:atClass:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508678019.320637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "+isStaticMethod:atClass:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgument createModelWithMethods:andProperties:]"
+                  symbolName = "+[SRMockFabric isStaticMethod:atClass:]"
                   moduleName = "SilentRunnerEngine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRClassArgument.m"
-                  timestampString = "503933705.915589"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.059358"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "111">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "284">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgument createModelWithMethods:andProperties:]"
+                  symbolName = "+[SRMockFabric isStaticMethod:atClass:]"
                   moduleName = "SilentRunnerEngineTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/SRClassArgument.m"
-                  timestampString = "503933706.126419"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.325619"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "111">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "284">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -135,76 +183,110 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SilentRunnerEngineTests/models/SRClassArgumentTest.m"
-            timestampString = "507723857.845127"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508678019.320637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-testArgumentCreation"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "+isStaticMethod:atClass:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgumentTest testArgumentCreation]"
-                  moduleName = "SilentRunnerEngineTests"
+                  symbolName = "+[SRMockFabric isStaticMethod:atClass:]"
+                  moduleName = "SilentRunnerEngine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngineTests/models/SRClassArgumentTest.m"
-                  timestampString = "507723922.888689"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.062176"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "1640">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "305">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgumentTest testArgumentCreation]"
+                  symbolName = "+[SRMockFabric isStaticMethod:atClass:]"
                   moduleName = "SilentRunnerEngineTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngineTests/models/SRClassArgumentTest.m"
-                  timestampString = "507723922.891469"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.32735"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "3243">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgumentTest testArgumentCreation]"
-                  moduleName = "SilentRunnerEngineTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngineTests/models/SRClassArgumentTest.m"
-                  timestampString = "507723922.894513"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "3417">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SRClassArgumentTest testArgumentCreation]"
-                  moduleName = "SilentRunnerEngineTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngineTests/models/SRClassArgumentTest.m"
-                  timestampString = "507723922.896677"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "3554">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "305">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508677234.110146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "+addMethodsWithDictionary:toModel:withError:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[SRMockFabric addMethodsWithDictionary:toModel:]"
+                  moduleName = "SilentRunnerEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.064983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[SRMockFabric addMethodsWithDictionary:toModel:]"
+                  moduleName = "SilentRunnerEngineTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/SilentRunner/SilentRunner/SilentRunner/SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+                  timestampString = "508676022.329342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SilentRunnerEngine/models/Mocks/SRMockFabric.m"
+            timestampString = "508678070.119907"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "+addMethodsWithDictionary:toModel:withError:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

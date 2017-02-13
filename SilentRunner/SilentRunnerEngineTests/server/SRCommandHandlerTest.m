@@ -36,5 +36,34 @@
     XCTAssertTrue(YES, @"we are still alive");
 }
 
+- (void)testDoubleCommandInvocation{
+    NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"simple_notification" withExtension:@"json"];
+    NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    NSError* error = nil;
+    [SRCommandHandler runCommand:command withError:&error];
+    command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    [SRCommandHandler runCommand:command withError:&error];
+    NSMutableArray* res =  [SRClientPool clientForTag:@"NSMutableArray"];
+    XCTAssertTrue(res.count == 2);
+    XCTAssertNil(error);
+}
+
+- (void)testCommandInvocationWithMultiMethodMock{
+    NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"multi_method_invoke" withExtension:@"json"];
+    NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+    NSError* error = nil;
+    [SRCommandHandler runCommand:command withError:&error];
+    NSMutableArray* res =  [SRClientPool clientForTag:@"NSMutableArray"];
+    XCTAssertTrue(res.count == 1);
+    XCTAssertNil(error);
+    NSURL* mockURL = res[0];
+    XCTAssertEqualObjects(@"mock url", [mockURL fileReferenceURL]);
+    XCTAssertEqual(YES, [mockURL isFileReferenceURL]);
+}
+
 
 @end

@@ -16,32 +16,36 @@
 
 @implementation SRMockFabric
 
-+ (MKTBaseMockObject*)mockWithModel:(NSDictionary*)model andClass:(Class)classValue{
-    MKTClassObjectMock* staticModel = mockClass(classValue);
++ (MKTObjectMock*)mockWithClass:(Class)classValue{
     MKTObjectMock* instanceModel = mock(classValue);
-    MKTBaseMockObject* resultModel = nil;
-    NSString* methodName = model[@"name"];
-    SEL methodSel = NSSelectorFromString(methodName);
-    
-    if ( [staticModel respondsToSelector:methodSel] ){
-        resultModel = staticModel;
-    }else if ( [instanceModel respondsToSelector:methodSel] ){
-        resultModel = instanceModel;
-    }
-    return resultModel;
+    return instanceModel;
 }
 
-+ (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue{
-    MKTBaseMockObject* resultModel = [SRMockFabric mockWithModel:dict andClass:classValue];
++ (void)addMethodsWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error{
     NSString* methodName = dict[@"name"];
     SEL methodSel = NSSelectorFromString(methodName);
-    NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[resultModel methodSignatureForSelector:methodSel]];
+    
+    
+    if ( [self isStaticMethod:dict atClass:model] ) {
+         if (error) {
+             *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:@"static methods not supported"}];
+         }
+        return;
+    }
+    NSMethodSignature* sign = [model methodSignatureForSelector:methodSel];
+    if (!sign){
+        if (error) {
+            *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:@"method signature is null, hm"}];
+        }
+        return;
+    }
+    NSInvocation *inv = [NSInvocation invocationWithMethodSignature:sign];
     [inv retainArguments];
     [inv setSelector:methodSel];
-    [inv setTarget:resultModel];
+    [inv setTarget:model];
     
     for (int i = 2; i < inv.methodSignature.numberOfArguments; i++) {
-        [SRMockFabric addAnythingWithInvocation:inv atIndex:i forModel:resultModel];
+        [SRMockFabric addAnythingWithInvocation:inv atIndex:i forModel:model];
     }
     [inv invoke];
     if ( dict[@"returnValue"] ){
@@ -49,7 +53,25 @@
         [inv getReturnValue:&res];
         [given(res) willReturn:dict[@"returnValue"]];
     }
-    return resultModel;
+}
+
++ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model{
+    
+}
+
++ (BOOL)isStaticMethod:(NSDictionary*)model atClass:(MKTObjectMock*)mockObject{
+    Class classValue = [mockObject performSelector:@selector(mockedClass)];
+    MKTClassObjectMock* staticModel = mockClass(classValue);
+    MKTObjectMock* instanceModel = mock(classValue);
+    NSString* methodName = model[@"name"];
+    SEL methodSel = NSSelectorFromString(methodName);
+    
+    if ( [staticModel respondsToSelector:methodSel] ){
+        return YES;
+    }else if ( [instanceModel respondsToSelector:methodSel] ){
+        return NO;
+    }
+    return NO;
 }
 
 

@@ -32,7 +32,10 @@
     NSInvocation* inv = [NSInvocation invocationWithTarget:[SRClientPool clientForTag:self.commandId] selector:NSSelectorFromString(self.method)];
     int i = 2;
     for (id parameter in self.parametrs){
-        [inv setArgument:&parameter atIndex:i];
+        if ( [parameter respondsToSelector:@selector(argumentValue)] ){
+            id argValue = [parameter performSelector:@selector(argumentValue)];
+            [inv setArgument:&argValue atIndex:i];
+        }
         i++;
     }
     return inv;

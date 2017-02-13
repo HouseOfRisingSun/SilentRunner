@@ -1,0 +1,18 @@
+{
+    "jsonrpc": "2.0",
+    "method": "execute",
+    "params": {
+                "commandId": "NSMutableArray",
+                "method": "addObject:",
+                "arguments": [{
+                                "class": "NSURL",
+                                "methods": [{
+                                                "name": "isFileReferenceURL",
+                                                "returnValue": "YES"
+                                                                            },{
+                                                "name": "fileReferenceURL",
+                                                "returnValue": "mock url"
+                                            }]
+                              }]
+            }
+}

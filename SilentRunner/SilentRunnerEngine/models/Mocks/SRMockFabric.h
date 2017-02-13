@@ -12,8 +12,9 @@
 
 @interface SRMockFabric : SRConcreteArgument
 
-
-+ (MKTBaseMockObject*)brewSomeMockWithDictionary:(NSDictionary*)dict andClass:(Class)classValue;
++ (MKTObjectMock*)mockWithClass:(Class)classValue;
++ (void)addMethodsWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error;
++ (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model;
 + (void)addMockForValue:(void *)value withInvocation:(NSInvocation*)inv atIndex:(NSInteger)index;
 + (void)addAnythingWithInvocation:(NSInvocation*)inv atIndex:(NSInteger)index forModel:(MKTBaseMockObject*)model;
 

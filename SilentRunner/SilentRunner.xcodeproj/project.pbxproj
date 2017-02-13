@@ -35,6 +35,7 @@
 		00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EC01E00239600B4BD4C /* SRClientPool.h */; };
 		00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
 		00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
+		00943EC31E51CCF5004F03BB /* multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 00943EC21E51CCF5004F03BB /* multi_method_invoke.json */; };
 		00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */; };
 		00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +141,7 @@
 		00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+ConstructorsTest.m"; sourceTree = "<group>"; };
 		00807EC01E00239600B4BD4C /* SRClientPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClientPool.h; sourceTree = "<group>"; };
 		00807EC21E00252E00B4BD4C /* SRClientPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClientPool.m; sourceTree = "<group>"; };
+		00943EC21E51CCF5004F03BB /* multi_method_invoke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multi_method_invoke.json; sourceTree = "<group>"; };
 		00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SilentRunnerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SilentRunnerEngine.h; sourceTree = "<group>"; };
 		00ADFF8B1DFECF1100D3B255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 		00B3F1521E436BE200D41C01 /* test_resources */ = {
 			isa = PBXGroup;
 			children = (
+				00943EC21E51CCF5004F03BB /* multi_method_invoke.json */,
 				00B3F1531E436BE200D41C01 /* simple_notification.json */,
 			);
 			path = test_resources;
@@ -584,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00943EC31E51CCF5004F03BB /* multi_method_invoke.json in Resources */,
 				00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

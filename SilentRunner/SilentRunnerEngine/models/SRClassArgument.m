@@ -9,6 +9,10 @@
 #import "SRClassArgument.h"
 #import "SRMockFabric.h"
 
+@interface SRClassArgument ()
+
+@end
+
 @implementation SRClassArgument
 
 @synthesize argumentValue;
@@ -27,11 +31,14 @@
 
 - (MKTBaseMockObject*)createModelWithMethods:(NSArray*)methods andProperties:(NSArray*)properties{
     Class modelClass = NSClassFromString(self.className);
+    MKTObjectMock* object = [SRMockFabric mockWithClass:modelClass];
     for ( NSDictionary* model in methods ){
-        MKTBaseMockObject* res = [SRMockFabric brewSomeMockWithDictionary:model andClass:modelClass];
-        return res;
+        [SRMockFabric addMethodsWithDictionary:model toModel:object withError:nil];
     }
-    return nil;
+    for ( NSDictionary* prop in properties ){
+        [SRMockFabric addPropertiesWithDictionary:prop toModel:object];
+    }
+    return object;
 }
 
 @end
