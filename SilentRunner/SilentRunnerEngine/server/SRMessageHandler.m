@@ -22,7 +22,6 @@
         NSError* error = nil;
         SRCommand* entity = [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:data.params error:&error];
         if ( error ) {
-            command = nil;
             if ( parseErrorHandler ){
                 parseErrorHandler(error);
             }
@@ -33,7 +32,9 @@
     } orJSONRPCError:^(JSONRPCErrorResponse *data) {
         
     } serializationError:^(NSError *error) {
-        
+        if ( parseErrorHandler ){
+            parseErrorHandler(error);
+        }
     }];
     
     return command;

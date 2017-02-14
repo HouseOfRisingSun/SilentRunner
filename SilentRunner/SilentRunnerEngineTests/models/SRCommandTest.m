@@ -25,9 +25,11 @@
       @"arguments": @[
               @{
                   @"class": @"NSURL",
-                  @"properties": @[
-                          @"stubProperty(absoluteString, \"https://github.com/andrewBatutin/SilentRunner)\""
-                          ],
+                  @"properties": @[@{
+                                        @"name":@"absoluteString",
+                                        @"returnValue":@"https://github.com/andrewBatutin/SilentRunner"
+                                    }
+                                   ],
                   @"methods": @[
                           @{@"name":@"isFileReferenceURL", @"returnValue":@"1"}
                           ]
@@ -78,5 +80,99 @@
     NSMutableArray* client =  [SRClientPool clientForTag:@"NSMutableArray"];
     XCTAssertTrue(client.count == 1);
 }
+
+- (void)testSRCommandInvalidCommandParsing{
+    NSDictionary* intput = @{
+                             @"commandId": @"UIApplication || app",
+                             @"method": @"application:openURL:options:",
+                             @"arguments": @[
+                                     @{
+                                         @"class": @"NSURL",
+                                         @"properties": @[
+                                                              @"absoluteString",
+                                                              
+                                                          ],
+                                         @"methods": @[
+                                                 @{@"name":@"isFileReferenceURL", @"returnValue":@"1"}
+                                                 ]
+                                         },
+                                     @{
+                                         @"value": @{
+                                                 @"opt1": @"test"
+                                                 }
+                                         },
+                                     @{
+                                         @"class": @"block",
+                                         @"methods": @[
+                                                 @"[given(invoke) willReturn:\"smthng\"]"
+                                                 ]
+                                         }
+                                     ]
+                             };
+    NSError* parseError = nil;
+    [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:intput error:&parseError];
+    XCTAssertNotNil(parseError);
+}
+
+- (void)testSRCommandInvalidCommandParsingWithStaticMethod{
+    NSDictionary* intput = @{
+                             @"commandId": @"UIApplication || app",
+                             @"method": @"application:openURL:options:",
+                             @"arguments": @[
+                                     @{
+                                         @"class": @"NSURL",
+                                         
+                                         @"methods": @[
+                                                 @{@"name":@"URLWithString:", @"returnValue":@"1"}
+                                                 ]
+                                         },
+                                     @{
+                                         @"value": @{
+                                                 @"opt1": @"test"
+                                                 }
+                                         },
+                                     @{
+                                         @"class": @"block",
+                                         @"methods": @[
+                                                 @"[given(invoke) willReturn:\"smthng\"]"
+                                                 ]
+                                         }
+                                     ]
+                             };
+    NSError* parseError = nil;
+    [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:intput error:&parseError];
+    XCTAssertNotNil(parseError);
+}
+
+- (void)testSRCommandInvalidCommandParsingWithWrongMethodSign{
+    NSDictionary* intput = @{
+                             @"commandId": @"UIApplication || app",
+                             @"method": @"application:openURL:options:",
+                             @"arguments": @[
+                                     @{
+                                         @"class": @"NSURL",
+                                         
+                                         @"methods": @[
+                                                 @{@"name":@"isFileReferenceURL:", @"returnValue":@"1"}
+                                                 ]
+                                         },
+                                     @{
+                                         @"value": @{
+                                                 @"opt1": @"test"
+                                                 }
+                                         },
+                                     @{
+                                         @"class": @"block",
+                                         @"methods": @[
+                                                 @"[given(invoke) willReturn:\"smthng\"]"
+                                                 ]
+                                         }
+                                     ]
+                             };
+    NSError* parseError = nil;
+    [MTLJSONAdapter modelOfClass:SRCommand.class fromJSONDictionary:intput error:&parseError];
+    XCTAssertNotNil(parseError);
+}
+
 
 @end

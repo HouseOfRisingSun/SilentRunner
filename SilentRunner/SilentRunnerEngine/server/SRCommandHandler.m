@@ -11,11 +11,7 @@
 @implementation SRCommandHandler
 
 + (void)runCommand:(SRCommand*)command withError:(NSError**)error{
-    @try {
-        [[command commandInvocation] invoke];
-    } @catch (NSException *exception) {
-        *error = [NSError errorWithDomain:exception.name code:0 userInfo:exception.userInfo];
-    }
+    [[command commandInvocation] invoke];
 }
 
 @end

@@ -32,6 +32,7 @@
         [SRCommandHandler runCommand:command withError:&error];
         NSLog(@"res - %@, %@", [SRClientPool clientForTag:@"NSMutableArray"], error);
     } withErrorHandler:^(NSError * error) {
+        
         NSLog(@"%@", error);
     }];
 }

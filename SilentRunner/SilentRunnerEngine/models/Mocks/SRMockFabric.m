@@ -39,7 +39,7 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
     if (!sign){
         if (error) {
             NSString* errorMsg = [NSString stringWithFormat:@"can't create method signature for model %@ with selector %@", model, methodName];
-            *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:errorMsg}];
+            *error = [NSError errorWithDomain:SRErrorDomain code:SRErrorInvokeError userInfo:@{NSLocalizedDescriptionKey:errorMsg}];
         }
         return;
     }
