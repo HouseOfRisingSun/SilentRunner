@@ -8,6 +8,7 @@
 
 #import "SRServer.h"
 #import "SRCommand.h"
+#import "SRServer+Utils.h"
 #import "NSURL+Validity.h"
 #import <SocketRocket/SocketRocket.h>
 #import <JSONRPCom/JSONRPCom.h>
@@ -44,18 +45,18 @@
 #pragma mark - SRWebSocketDelegate
 
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), self);
+    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
 }
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
-    NSLog(@"%@ %@, %@", NSStringFromSelector(_cmd), self, error);
+    SRLog(@"%@ %@, %@", NSStringFromSelector(_cmd), self, error);
     if (self.errorHandler) { self.errorHandler(error); }
 }
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), self);
+    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), self);
+    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
     if ( ![message isKindOfClass:NSString.class] ){ return; }
     if (self.messageHandler){ self.messageHandler(message); }
 }

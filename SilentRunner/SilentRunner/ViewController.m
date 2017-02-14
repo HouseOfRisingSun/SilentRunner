@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 #import "SRServer.h"
+#import "SRServer+Utils.h"
 #import "SRClientPool.h"
 #import "SRCommandHandler.h"
 #import "SRMessageHandler.h"
-
 
 @interface ViewController ()
 @property (nonatomic, strong) SRServer* serv;
@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [SRServer enableLogging];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
