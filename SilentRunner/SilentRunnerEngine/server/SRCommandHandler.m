@@ -7,11 +7,16 @@
 //
 
 #import "SRCommandHandler.h"
+#import "SRServer+Utils.h"
 
 @implementation SRCommandHandler
 
 + (void)runCommand:(SRCommand*)command withError:(NSError**)error{
-    [[command commandInvocation] invoke];
+    @try {
+        [[command commandInvocation] invoke];
+    } @catch (NSException *exception) {
+        *error = [NSError errorWithDomain:SRErrorDomain code:SRErrorInvokeError userInfo:@{exception.reason:exception.callStackSymbols}];
+    }
 }
 
 @end

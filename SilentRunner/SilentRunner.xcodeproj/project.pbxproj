@@ -39,6 +39,10 @@
 		008C617E1E53185300ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
 		008C617F1E53185300ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
 		008C61801E531D0E00ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
+		008C61821E53391F00ED3FA5 /* mock_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61811E53391F00ED3FA5 /* mock_notification.json */; };
+		008C61831E53391F00ED3FA5 /* mock_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61811E53391F00ED3FA5 /* mock_notification.json */; };
+		008C61851E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */; };
+		008C61861E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */; };
 		00943EC31E51CCF5004F03BB /* multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 00943EC21E51CCF5004F03BB /* multi_method_invoke.json */; };
 		00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADFF971DFECF1100D3B255 /* SilentRunnerEngineTests.m */; };
@@ -147,6 +151,8 @@
 		00807EC21E00252E00B4BD4C /* SRClientPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClientPool.m; sourceTree = "<group>"; };
 		008C617B1E53185300ED3FA5 /* SRServer+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SRServer+Utils.h"; sourceTree = "<group>"; };
 		008C617C1E53185300ED3FA5 /* SRServer+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SRServer+Utils.m"; sourceTree = "<group>"; };
+		008C61811E53391F00ED3FA5 /* mock_notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_notification.json; sourceTree = "<group>"; };
+		008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_multi_method_invoke.json; sourceTree = "<group>"; };
 		00943EC21E51CCF5004F03BB /* multi_method_invoke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multi_method_invoke.json; sourceTree = "<group>"; };
 		00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SilentRunnerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ADFF8A1DFECF1100D3B255 /* SilentRunnerEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SilentRunnerEngine.h; sourceTree = "<group>"; };
@@ -398,6 +404,8 @@
 		00B3F1521E436BE200D41C01 /* test_resources */ = {
 			isa = PBXGroup;
 			children = (
+				008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */,
+				008C61811E53391F00ED3FA5 /* mock_notification.json */,
 				00943EC21E51CCF5004F03BB /* multi_method_invoke.json */,
 				00B3F1531E436BE200D41C01 /* simple_notification.json */,
 			);
@@ -589,6 +597,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008C61851E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */,
+				008C61821E53391F00ED3FA5 /* mock_notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +606,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008C61861E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */,
 				00943EC31E51CCF5004F03BB /* multi_method_invoke.json in Resources */,
+				008C61831E53391F00ED3FA5 /* mock_notification.json in Resources */,
 				00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

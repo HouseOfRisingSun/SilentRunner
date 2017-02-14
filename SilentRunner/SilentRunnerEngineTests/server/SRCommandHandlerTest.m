@@ -66,5 +66,14 @@
     XCTAssertEqual(YES, [mockURL isFileReferenceURL]);
 }
 
+- (void)testCommandInvocationWithInvalidMultiMethodMockFailsGracefully{
+    NSURL* url =  [[NSBundle bundleForClass:[self class]] URLForResource:@"invalid_multi_method_invoke" withExtension:@"json"];
+    NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
+    NSError* error = nil;
+    [SRCommandHandler runCommand:command withError:&error];
+    XCTAssertNotNil(error);
+}
 
 @end

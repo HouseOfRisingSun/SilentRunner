@@ -27,13 +27,14 @@
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
         NSError* error = nil;
         SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
-            NSLog(@"error  = %@", error);
+            [self.serv sendErrorMessage:error];
         }];
         [SRCommandHandler runCommand:command withError:&error];
-        NSLog(@"res - %@, %@", [SRClientPool clientForTag:@"NSMutableArray"], error);
+        if ( error ){
+            [self.serv sendErrorMessage:error];
+        }        
     } withErrorHandler:^(NSError * error) {
-        
-        NSLog(@"%@", error);
+        [self.serv sendErrorMessage:error];
     }];
 }
 

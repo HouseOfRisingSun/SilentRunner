@@ -42,6 +42,13 @@
     return self;
 }
 
+- (void)sendErrorMessage:(NSError*)error{
+    JSONRPCErrorModel* model = [[JSONRPCErrorModel alloc] initWithMessage:error.description data:error.userInfo errorCode:JSONRPCErrorModelParseError];
+    JSONRPCErrorResponse* resp = [[JSONRPCErrorResponse alloc] initWithError:model version:@"2.0" jrpcId:@"0"];
+    NSString* msg = [JSONRPCSerialization serializeEntity:resp withError:nil];
+    [self.webSocket send:msg];
+}
+
 #pragma mark - SRWebSocketDelegate
 
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket{
@@ -60,5 +67,6 @@
     if ( ![message isKindOfClass:NSString.class] ){ return; }
     if (self.messageHandler){ self.messageHandler(message); }
 }
+
 
 @end
