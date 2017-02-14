@@ -50,7 +50,9 @@
 }
 
 - (IBAction)runServer:(id)sender {
-    [self.serv.webSocket open];
+    if ( self.serv.webSocket.readyState == SR_CONNECTING ){
+        [self.serv.webSocket open];
+    }
 }
 
 @end
