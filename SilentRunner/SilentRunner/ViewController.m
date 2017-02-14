@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 #import "SRServer.h"
+#import "SRServer+Utils.h"
 #import "SRClientPool.h"
 #import "SRCommandHandler.h"
 #import "SRMessageHandler.h"
-
 
 @interface ViewController ()
 @property (nonatomic, strong) SRServer* serv;
@@ -21,14 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [SRServer enableLogging];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
-        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
         NSError* error = nil;
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
+            [self.serv sendErrorMessage:error];
+        }];
         [SRCommandHandler runCommand:command withError:&error];
-        NSLog(@"%@", [SRClientPool clientForTag:@"NSMutableArray"]);
+        if ( error ){
+            [self.serv sendErrorMessage:error];
+        }        
     } withErrorHandler:^(NSError * error) {
-        NSLog(@"%@", error);
+        [self.serv sendErrorMessage:error];
     }];
 }
 
@@ -44,7 +50,9 @@
 }
 
 - (IBAction)runServer:(id)sender {
-    [self.serv.webSocket open];
+    if ( self.serv.webSocket.readyState == SR_CONNECTING ){
+        [self.serv.webSocket open];
+    }
 }
 
 @end

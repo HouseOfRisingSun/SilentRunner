@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable instancetype)initWithURL:(NSString*)urlString;
 
+- (void)sendErrorMessage:(NSError*)error;
+
 NS_ASSUME_NONNULL_END
 
 @end

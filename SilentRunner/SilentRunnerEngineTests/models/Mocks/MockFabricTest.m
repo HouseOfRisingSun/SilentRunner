@@ -19,13 +19,15 @@
 
 
 - (void)testBrewingMockStaticMethod{
-    id mock = [SRMockFabric brewSomeMockWithDictionary:@{@"name":@"fileURLWithPath:isDirectory:", @"returnValue":@"test"} andClass:NSURL.class];
-    NSString* res =  [mock fileURLWithPath:@"" isDirectory:NO];
-    XCTAssertEqualObjects(@"test", res);
+    NSError* error = nil;
+    id mock = [SRMockFabric mockWithClass:NSURL.class];
+    [SRMockFabric addMethodsWithDictionary:@{@"name":@"fileURLWithPath:isDirectory:", @"returnValue":@"test"} toModel:mock withError:&error];
+    XCTAssertNotNil(error);
 }
 
 - (void)testBrewingMockInstanceMethod{
-    id mock = [SRMockFabric brewSomeMockWithDictionary:@{@"name":@"isFileReferenceURL", @"returnValue":@NO} andClass:NSURL.class];
+    id mock = [SRMockFabric mockWithClass:NSURL.class];
+    [SRMockFabric addMethodsWithDictionary:@{@"name":@"isFileReferenceURL", @"returnValue":@NO} toModel:mock withError:nil];
     BOOL res =  [mock isFileReferenceURL];
     XCTAssertFalse(res);
 }

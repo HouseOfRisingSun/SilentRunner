@@ -19,7 +19,6 @@
     return @{};
 }
 
-
 + (Class)classForParsingJSONDictionary:(NSDictionary *)JSONDictionary {
     if ([JSONDictionary[@"class"] isEqualToString:@"block"]) {
         return SRBlockArgument.class;

@@ -18,7 +18,4 @@
     return self && self.host && ([self.scheme isEqualToString:@"ws"] || [self.scheme isEqualToString:@"http"] || [self.scheme isEqualToString:@"wss"] || [self.scheme isEqualToString:@"https"]);
 }
 
-
-//([scheme isEqualToString:@"ws"] || [scheme isEqualToString:@"http"] || [scheme isEqualToString:@"wss"] || [scheme isEqualToString:@"https"])
-
 @end

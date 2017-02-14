@@ -91,7 +91,7 @@
     NSString* msg = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     SRServer* server = [SRServer serverWithURL:@"https://www.google.com" withMessageHandler:^(NSString* _Nonnull msg){
-        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg];
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
         NSError* error = nil;
         [SRCommandHandler runCommand:command withError:&error];
         [exp fulfill];
