@@ -8,6 +8,8 @@
 
 #import "SRServer+Utils.h"
 
+NSString* const SRErrorDomain = @"HomeOfRisingSun.SilentRunnerEngine";
+
 @implementation SRServer (Utils)
 
 static BOOL isE = NO;

@@ -7,6 +7,10 @@
 //
 
 #import "SRMockFabric.h"
+#import "SRServer+Utils.h"
+
+static NSString* const SRMockFabricMethodNameKey = @"name";
+static NSString* const SRMockFabricReturnValueKey = @"returnValue";
 
 @interface SRMockFabric ()
 
@@ -22,19 +26,20 @@
 }
 
 + (void)addMethodsWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error{
-    NSString* methodName = dict[@"name"];
+    NSString* methodName = dict[SRMockFabricMethodNameKey];
     SEL methodSel = NSSelectorFromString(methodName);
     
     if ( [self isStaticMethod:dict atClass:model] ) {
          if (error) {
-             *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:@"static methods not supported"}];
+             *error = [NSError errorWithDomain:SRErrorDomain code:SRErrorInvokeError userInfo:@{NSLocalizedDescriptionKey:@"static methods not supported"}];
          }
         return;
     }
     NSMethodSignature* sign = [model methodSignatureForSelector:methodSel];
     if (!sign){
         if (error) {
-            *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:@"method signature is null, hm"}];
+            NSString* errorMsg = [NSString stringWithFormat:@"can't create method signature for model %@ with selector %@", model, methodName];
+            *error = [NSError errorWithDomain:@"parse error" code:999 userInfo:@{NSLocalizedDescriptionKey:errorMsg}];
         }
         return;
     }
@@ -47,10 +52,10 @@
         [SRMockFabric addAnythingWithInvocation:inv atIndex:i forModel:model];
     }
     [inv invoke];
-    if ( dict[@"returnValue"] ){
+    if ( dict[SRMockFabricReturnValueKey] ){
         id res = nil;
         [inv getReturnValue:&res];
-        [given(res) willReturn:dict[@"returnValue"]];
+        [given(res) willReturn:dict[SRMockFabricReturnValueKey]];
     }
 }
 
@@ -63,7 +68,7 @@
     Class classValue = [mockObject performSelector:@selector(mockedClass)];
     MKTClassObjectMock* staticModel = mockClass(classValue);
     MKTObjectMock* instanceModel = mock(classValue);
-    NSString* methodName = model[@"name"];
+    NSString* methodName = model[SRMockFabricMethodNameKey];
     SEL methodSel = NSSelectorFromString(methodName);
     
     if ( [staticModel respondsToSelector:methodSel] ){

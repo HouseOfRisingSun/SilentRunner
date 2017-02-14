@@ -11,6 +11,6 @@
 
 @interface SRMessageHandler : NSObject
 
-+ (nullable id<SRCommandProtocol>)createCommandFromMessage:(nullable NSString*)message withError:(void (^)(NSError* error))parseErrorHandler;
++ (nullable id<SRCommandProtocol>)createCommandFromMessage:(nullable NSString*)message withError:(nullable void (^)(NSError* _Nullable error))parseErrorHandler;
 
 @end

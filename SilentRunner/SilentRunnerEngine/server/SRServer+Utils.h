@@ -8,6 +8,12 @@
 
 #import "SRServer.h"
 
+extern NSString* const SRErrorDomain;
+
+typedef enum{
+    SRErrorParseError = -101,
+    SRErrorInvokeError = -102,
+} SRErrorCode;
 
 
 @interface SRServer (Utils)
