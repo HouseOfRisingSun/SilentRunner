@@ -14,9 +14,12 @@
 
 + (NSDictionary*)JSONKeyPathsByPropertyKey{
     return @{
-                @"methods":@"methods"
+                @"returnValue":@"returnValue"
              };
 }
 
+- (id)argumentValue{
+    return ^{};
+}
 
 @end

@@ -40,10 +40,9 @@
                           }
                   },
               @{
-                  @"class": @"block",
-                  @"methods": @[
-                          @"[given(invoke) willReturn:\"smthng\"]"
-                          ]
+                  @"block": @{
+                          @"returnValue":@"notUsed"
+                          }
                   }
               ]
       };

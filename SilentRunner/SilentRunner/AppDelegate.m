@@ -24,7 +24,7 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
-    NSLog(@"Hi Bitches!");
+    NSLog(@"Hi Folks!");
 }
 
 @end

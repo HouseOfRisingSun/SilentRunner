@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXD-dK-yz4">
-                                <frame key="frameInset" minX="171" minY="105" width="46" height="30"/>
+                                <frame key="frameInset" minX="16" minY="105" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Message"/>
                                 <connections>
@@ -27,9 +27,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2t-ls-vmC">
-                                <frame key="frameInset" minX="164" minY="28" width="46" height="30"/>
+                                <frame key="frameInset" minX="16" minY="28" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Run"/>
+                                <state key="normal" title="Run!"/>
                                 <connections>
                                     <action selector="runServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXJ-0z-gWN"/>
                                 </connections>
@@ -40,6 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>
