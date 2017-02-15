@@ -46,7 +46,9 @@
 
 
 - (IBAction)testAction:(id)sender {
-    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
+    if ( self.serv.webSocket.readyState == SR_OPEN ){
+        [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
+    }
 }
 
 - (IBAction)runServer:(id)sender {

@@ -10,7 +10,7 @@
 
 @interface SRBlockArgument : SRConcreteArgument <MTLJSONSerializing>
 
-@property (nonatomic, strong) NSArray* methods;
+@property (nonatomic, strong) id returnValue; // not used
 
 
 @end

@@ -18,6 +18,11 @@
             "value": {
                 "opt1": "test"
             }
+        },
+        {
+            "block": {
+                "returnValue": "notUsed"
+                      }
         }]
     }
 }
