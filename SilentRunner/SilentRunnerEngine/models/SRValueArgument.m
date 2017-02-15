@@ -2,7 +2,7 @@
 //  SRValueArgument.m
 //  SilentRunner
 //
-//  Created by andrew batutin on 12/14/16.
+//  Created by Andrew Batutin on 12/14/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 

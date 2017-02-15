@@ -2,7 +2,7 @@
 //  SilentRunnerEngine.h
 //  SilentRunnerEngine
 //
-//  Created by andrew batutin on 12/12/16.
+//  Created by Andrew Batutin on 12/12/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 

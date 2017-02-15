@@ -2,7 +2,7 @@
 //  NSURL+Validity.h
 //  SilentRunner
 //
-//  Created by andrew batutin on 2/2/17.
+//  Created by Andrew Batutin on 2/2/17.
 //  Copyright © 2017 HomeOfRisingSun. All rights reserved.
 //
 

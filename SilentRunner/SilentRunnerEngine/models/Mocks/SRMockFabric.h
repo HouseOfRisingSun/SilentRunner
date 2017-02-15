@@ -2,7 +2,7 @@
 //  MockFabric.h
 //  SilentRunner
 //
-//  Created by andrew batutin on 12/19/16.
+//  Created by Andrew Batutin on 12/19/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 

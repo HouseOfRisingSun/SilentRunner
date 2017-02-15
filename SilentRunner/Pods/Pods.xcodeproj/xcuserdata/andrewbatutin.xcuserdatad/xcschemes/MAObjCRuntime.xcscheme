@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '323A1A48328DF764CF063963A421FA6F'
-               BlueprintName = 'MAObjCRuntime'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMAObjCRuntime.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "323A1A48328DF764CF063963A421FA6F"
+               BlueprintName = "MAObjCRuntime"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libMAObjCRuntime.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

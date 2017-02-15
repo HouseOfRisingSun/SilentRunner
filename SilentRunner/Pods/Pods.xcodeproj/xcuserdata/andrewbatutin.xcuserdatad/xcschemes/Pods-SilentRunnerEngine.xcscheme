@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6001F55632A772B5C0CE7352C09FD95F'
-               BlueprintName = 'Pods-SilentRunnerEngine'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-SilentRunnerEngine.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6001F55632A772B5C0CE7352C09FD95F"
+               BlueprintName = "Pods-SilentRunnerEngine"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-SilentRunnerEngine.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

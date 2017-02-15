@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/test_resources/mock_notification.json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/test_resources/invalid_multi_method_invoke.json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/test_resources/multi_method_invoke.json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/test_resources/simple_notification.json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/models/SRCommandTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/models/SRClassArgumentTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/models/Mocks/MockFabricTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/utils/NSInvocation+ConstructorsTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/SilentRunnerEngineTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/server/SRServerTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/server/SRCommandHandlerTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngineTests/server/SRMessageHandlerTest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SocketRocket/SocketRocket/SocketRocket.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SocketRocket/SocketRocket/SRWebSocket.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SocketRocket/SocketRocket/SRWebSocket.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Communication/JSONRPCommunication.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/MTLJSONAdapter+Utils.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/NSDictionary+ToString.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/NSString+ToJSONDictionary.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/NSDictionary+ToString.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/NSString+ToJSONDictionary.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Utils/MTLJSONAdapter+Utils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/JSONRPC/JSONRPCId.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/JSONRPC/JSONRPC.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/JSONRPCom.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Serialization/JSONRPCDeSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Serialization/JSONRPCSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Serialization/JSONRPCDeSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Serialization/JSONRPCSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Request/JSONRPCMethod.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Request/JSONRPCNotification.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Request/JSONRPCNotification.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Request/JSONRPCRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Request/JSONRPCRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCErrorModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCErrorResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCErrorModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JSONRPCom/JSONRPCom/Response/JSONRPCErrorResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTProtocol.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/MARTNSObject.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTUnregisteredClass.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTProperty.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTIvar.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/MARTNSObject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTProperty.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTIvar.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTMethod.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTUnregisteredClass.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MAObjCRuntime/RTMethod.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/NSInvocation+OCMockito.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTMatchingInvocationsFinder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTParseCallStack.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTLocation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/NSInvocation+OCMockito.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTParseCallStack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTFilterCallStack.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTPrinter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTCallStackElement.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTLocation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTPrinter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTInvocationMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTCallStackElement.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTInvocation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTInvocationMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTInvocation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTMatchingInvocationsFinder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Invocation/MKTFilterCallStack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTShortArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTObjectArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTFloatArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetterChain.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedCharArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTBoolArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedCharArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTClassArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTBoolArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedLongLongArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTIntArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTPointerArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTClassArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTIntArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTDoubleArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTDoubleArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTShortArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedShortArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedIntArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedShortArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTFloatArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedIntArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTCharArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedLongArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTCharArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTStructArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTSelectorArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTObjectArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedLongArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTStructArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTSelectorArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTLongLongArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTLongArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTLongLongArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTUnsignedLongLongArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTLongArgumentGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTPointerArgumentGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ArgumentGetters/MKTArgumentGetterChain.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedIntReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTBoolReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTBoolReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTLongLongReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTReturnValueSetterChain.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTLongReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTReturnValueSetterChain.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTIntReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTLongReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongLongReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTObjectReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTIntReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongLongReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedIntReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTObjectReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTReturnValueSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTDoubleReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTStructReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTReturnValueSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTDoubleReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTStructReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedLongReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTCharReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTLongLongReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTClassReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTShortReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTCharReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTClassReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTShortReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTFloatReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTFloatReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedCharReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedShortReturnSetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedCharReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTUnsignedShortReturnSetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/OCMockito.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTMockingProgress.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTNonObjectArgumentMatching.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTTestLocation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTTestLocation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTMockitoCore.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/OCMockito.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTMockingProgress.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Core/MKTMockitoCore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTInvocationContainer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTReturnsValue.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTExecutesBlock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTThrowsException.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTAnswer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTReturnsValue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTInvocationContainer.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTOngoingStubbing.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTStubbedInvocationMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTThrowsException.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTStubbedInvocationMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTOngoingStubbing.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Stubbing/MKTExecutesBlock.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTClassObjectMock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTObjectMock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTObjectAndProtocolMock.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTBaseMockObject.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTDynamicProperties.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTObjectMock.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTBaseMockObject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTDynamicProperties.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTObjectAndProtocolMock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTProtocolMock.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTSingletonSwizzler.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTProtocolMock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTClassObjectMock.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Mocking/MKTSingletonSwizzler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTVerificationData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTExactTimes.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtMostNumberOfInvocationsChecker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTExactTimes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtMostNumberOfInvocationsChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTMissingInvocationChecker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTNumberOfInvocationsChecker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtLeastNumberOfInvocationsChecker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtMostTimes.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtLeastTimes.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTNumberOfInvocationsChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtLeastNumberOfInvocationsChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtMostTimes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTAtLeastTimes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTInvocationsChecker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTVerificationMode.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTMissingInvocationChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTInvocationsChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/OCMockito/Verifying/MKTVerificationData.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/ThirdParty/TPDWeakProxy-1.1.0/TPDWeakProxy/MKT_TPDWeakProxy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMockito/Source/ThirdParty/TPDWeakProxy-1.1.0/TPDWeakProxy/MKT_TPDWeakProxy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SocketRocket/SocketRocket-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SocketRocket/SocketRocket-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SocketRocket/SocketRocket.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MAObjCRuntime/MAObjCRuntime-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MAObjCRuntime/MAObjCRuntime.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MAObjCRuntime/MAObjCRuntime-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMockito/OCMockito-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMockito/OCMockito-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMockito/OCMockito.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerTests/Pods-SilentRunnerTests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerTests/Pods-SilentRunnerTests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Mantle/Mantle-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Mantle/Mantle.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Mantle/Mantle-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JSONRPCom/JSONRPCom.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JSONRPCom/JSONRPCom-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JSONRPCom/JSONRPCom-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLReflection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLReflection.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLManipulationAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/Mantle.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLModel+NSCoding.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSValueTransformer+MTLInversionAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLMappingAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLMappingAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSError+MTLModelException.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSError+MTLModelException.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/EXTKeyPathCoding.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/metamacros.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/EXTScope.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/extobjc/EXTScope.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLModel+NSCoding.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLJSONKeyPath.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLJSONKeyPath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLValueTransformer.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLValueTransformer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSDictionary+MTLManipulationAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLJSONAdapter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSValueTransformer+MTLInversionAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLJSONAdapter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSArray+MTLManipulationAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSArray+MTLManipulationAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLTransformerErrorHandling.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSObject+MTLComparisonAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/MTLTransformerErrorHandling.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Mantle/Mantle/NSObject+MTLComparisonAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsAnything.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAllOf.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsNot.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsAnything.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAllOf.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAnyOf.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsNot.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAnyOf.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContains.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualCompressingWhiteSpace.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualCompressingWhiteSpace.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringCase.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringStartsWith.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCSubstringMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContains.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCSubstringMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContainsInOrder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringStartsWith.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContainsInOrder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringEndsWith.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringEndsWith.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringCase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCIs.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCDescribedAs.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCDescribedAs.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCIs.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsCloseTo.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsTrueFalse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCNumberAssert.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsCloseTo.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsEqualToNumber.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCNumberAssert.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCOrderingComparison.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCOrderingComparison.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsEqualToNumber.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsTrueFalse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCArgumentCaptor.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasDescription.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsSame.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCThrowsException.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsTypeOf.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsInstanceOf.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsSame.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasProperty.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsInstanceOf.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCArgumentCaptor.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCThrowsException.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasProperty.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCClassMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsTypeOf.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCClassMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsNil.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCConformsToProtocol.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsEqual.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsNil.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasDescription.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCConformsToProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsEqual.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInOrder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContaining.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionOnlyContaining.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsEmptyCollection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsIn.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInOrder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionOnlyContaining.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInAnyOrder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsIn.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingValue.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInAnyOrder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingValue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCHasCount.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContaining.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInRelativeOrder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingKey.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContaining.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingEntries.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCEvery.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInRelativeOrder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingKey.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingEntries.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContaining.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCEvery.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCHasCount.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsEmptyCollection.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCStringDescription.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDiagnosingMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseDescription.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCSelfDescribing.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDiagnosingMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/NSInvocation+OCHamcrest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRunloopRunner.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCWrapInMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCSenTestFailureReporter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailure.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailure.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCSenTestFailureReporter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedIntReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedShortReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCCharReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCCharReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnValueGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongLongReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCIntReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongLongReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCIntReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedIntReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnValueGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCBoolReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCFloatReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCBoolReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCFloatReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnTypeHandlerChain.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCDoubleReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnTypeHandlerChain.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCDoubleReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCObjectReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedCharReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongLongReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCObjectReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedCharReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongLongReturnGetter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedShortReturnGetter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRunloopRunner.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCWrapInMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCCollect.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRequireNonNilObject.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCInvocationMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRequireNonNilObject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCCollect.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCInvocationMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/NSInvocation+OCHamcrest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCAssertThat.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseMatcher.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCAssertThat.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCStringDescription.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCMatcher.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDescription.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseDescription.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/OCHamcrest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/ViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/AppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunner/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSURL+Validity.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSURL+Validity.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSInvocation+Constructors.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSValueTransformer+SRTransformers.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSInvocation+Constructors.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/utils/NSValueTransformer+SRTransformers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRCommand.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRConcreteArgument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRBlockArgument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRCommandProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRCommand.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRValueArgument.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRClassArgument.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRArgument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/Mocks/SRMockFabric.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/Mocks/SRMockFabric.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRValueArgument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRClassArgument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRConcreteArgument.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/models/SRBlockArgument.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/SilentRunnerEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRCommandHandler.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRMessageHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRServer.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRServer+Utils.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRServer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRServer+Utils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRCommandHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/server/SRMessageHandler.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/logic/SRClientPool.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SilentRunnerEngine/logic/SRClientPool.m" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/XcodeKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CallKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HealthKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PassKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/StoreKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudioKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AssetsLibrary.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WatchConnectivity.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IntentsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreVideo.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Messages.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SceneKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OpenGLES.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AddressBookUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/EventKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WatchKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GSS.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioUnit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreSpotlight.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HealthKitUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Metal.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/VideoToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Contacts.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuickLook.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SafariServices.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameplayKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WebKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CloudKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreImage.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/EventKitUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Photos.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVFoundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Intents.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PushKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreTelephony.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UserNotificationsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Speech.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ReplayKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SpriteKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Twitter.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudio.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreData.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MapKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ContactsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMedia.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaAccessibility.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UserNotifications.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ModelIO.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GLKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MetalKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HomeKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameController.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AdSupport.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/VideoSubscriberAccount.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Social.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accounts.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OpenAL.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NotificationCenter.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/JavaScriptCore.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ImageIO.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PhotosUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AddressBook.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NewsstandKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MessageUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreLocation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/iAd.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMotion.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/XcodeKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CallKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HealthKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PassKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/StoreKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudioKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AssetsLibrary.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WatchConnectivity.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IntentsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreVideo.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Messages.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SceneKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OpenGLES.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AddressBookUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/EventKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WatchKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GSS.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioUnit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreSpotlight.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HealthKitUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Metal.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/VideoToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Contacts.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuickLook.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SafariServices.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameplayKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/WebKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CloudKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreImage.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/EventKitUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Photos.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVFoundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Intents.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PushKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreTelephony.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UserNotificationsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Speech.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ReplayKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SpriteKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Twitter.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudio.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreData.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MapKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ContactsUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMedia.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaAccessibility.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UserNotifications.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ModelIO.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GLKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MetalKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/HomeKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameController.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AdSupport.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/VideoSubscriberAccount.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Social.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accounts.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OpenAL.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NotificationCenter.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/JavaScriptCore.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/ImageIO.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/PhotosUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AddressBook.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/NewsstandKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MessageUI.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/GameKit.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreLocation.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/iAd.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMotion.framework/Headers" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include" />
+          <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

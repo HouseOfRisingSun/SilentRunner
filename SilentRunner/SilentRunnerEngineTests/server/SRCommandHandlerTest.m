@@ -2,7 +2,7 @@
 //  SRCommandHandlerTest.m
 //  SilentRunner
 //
-//  Created by andrew batutin on 2/3/17.
+//  Created by Andrew Batutin on 2/3/17.
 //  Copyright © 2017 HomeOfRisingSun. All rights reserved.
 //
 

@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4BEFE3AC3395605967E00BDD9BFC0F53'
-               BlueprintName = 'JSONRPCom'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libJSONRPCom.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BEFE3AC3395605967E00BDD9BFC0F53"
+               BlueprintName = "JSONRPCom"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libJSONRPCom.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
