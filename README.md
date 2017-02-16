@@ -4,6 +4,8 @@
 
  [![codecov](https://codecov.io/gh/andrewBatutin/SilentRunner/branch/master/graph/badge.svg)](https://codecov.io/gh/andrewBatutin/SilentRunner)
 
+ [![codebeat badge](https://codebeat.co/badges/3b2fee2c-afc2-4410-9281-6b56224ee112)](https://codebeat.co/projects/github-com-andrewbatutin-silentrunner)
+
 ##Intro
 ![alt text][logo]
 [logo]:http://vignette1.wikia.nocookie.net/eastenders/images/f/f6/Under-construction.png/revision/latest?cb=20141120185311
