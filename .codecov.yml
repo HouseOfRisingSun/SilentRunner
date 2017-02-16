@@ -16,6 +16,7 @@ coverage:
   - .*Tests.swift
   - SilentRunner/SilentRunnerEngineTests/.*
   - SilentRunner/Pods/.*
+  - SilentRunner/SilentRunner/.*
   - SilentRunner/Build/.*
 
   status:
