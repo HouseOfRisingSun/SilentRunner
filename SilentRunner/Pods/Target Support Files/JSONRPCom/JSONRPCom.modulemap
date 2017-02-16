@@ -1,0 +1,6 @@
+framework module JSONRPCom {
+  umbrella header "JSONRPCom-umbrella.h"
+
+  export *
+  module * { export * }
+}

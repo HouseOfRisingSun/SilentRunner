@@ -1,6 +1,6 @@
 {
   "name": "JSONRPCom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "JSON RPC implementation",
   "homepage": "https://github.com/andrewBatutin/JSONRPCom",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/andrewBatutin/JSONRPCom.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "source_files": "JSONRPCom/**/*",
   "frameworks": "Foundation",

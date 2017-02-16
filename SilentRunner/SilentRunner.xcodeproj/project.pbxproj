@@ -13,35 +13,25 @@
 		0004DC391DFECE5C0096C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC371DFECE5C0096C9BE /* Main.storyboard */; };
 		0004DC3B1DFECE5C0096C9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3A1DFECE5C0096C9BE /* Assets.xcassets */; };
 		0004DC3E1DFECE5C0096C9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0004DC3C1DFECE5C0096C9BE /* LaunchScreen.storyboard */; };
-		003A176A1E09790D008B7562 /* SRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 003A17681E09790D008B7562 /* SRServer.h */; };
+		0034D0481E55DADD00D8E076 /* SRCommandHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003A176A1E09790D008B7562 /* SRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 003A17681E09790D008B7562 /* SRServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003A176B1E09790D008B7562 /* SRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A17691E09790D008B7562 /* SRServer.m */; };
-		003A176C1E09790D008B7562 /* SRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A17691E09790D008B7562 /* SRServer.m */; };
-		007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 007860151E07E73F00B4DDA1 /* SRMockFabric.h */; };
+		007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 007860151E07E73F00B4DDA1 /* SRMockFabric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		007860181E07E73F00B4DDA1 /* SRMockFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = 007860161E07E73F00B4DDA1 /* SRMockFabric.m */; };
-		007860191E07E73F00B4DDA1 /* SRMockFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = 007860161E07E73F00B4DDA1 /* SRMockFabric.m */; };
 		0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078601B1E07E85C00B4DDA1 /* MockFabricTest.m */; };
-		00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EA71E00078E00B4BD4C /* SRCommand.h */; };
+		00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EA71E00078E00B4BD4C /* SRCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EAA1E00078E00B4BD4C /* SRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EA81E00078E00B4BD4C /* SRCommand.m */; };
-		00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EA81E00078E00B4BD4C /* SRCommand.m */; };
-		00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EAC1E0007B900B4BD4C /* SRCommandProtocol.h */; };
+		00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EAC1E0007B900B4BD4C /* SRCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EAE1E0014FE00B4BD4C /* SRCommandTest.m */; };
-		00807EB41E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */; };
+		00807EB41E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB21E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EB51E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */; };
-		00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB31E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m */; };
-		00807EB91E0021C500B4BD4C /* NSInvocation+Constructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB71E0021C500B4BD4C /* NSInvocation+Constructors.h */; };
+		00807EB91E0021C500B4BD4C /* NSInvocation+Constructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EB71E0021C500B4BD4C /* NSInvocation+Constructors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EBA1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */; };
-		00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EB81E0021C500B4BD4C /* NSInvocation+Constructors.m */; };
-		00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EBC1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m */; };
-		00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EC01E00239600B4BD4C /* SRClientPool.h */; };
+		00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 00807EC01E00239600B4BD4C /* SRClientPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00807EC31E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
-		00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00807EC21E00252E00B4BD4C /* SRClientPool.m */; };
-		008C617D1E53185300ED3FA5 /* SRServer+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C617B1E53185300ED3FA5 /* SRServer+Utils.h */; };
+		008C617D1E53185300ED3FA5 /* SRServer+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C617B1E53185300ED3FA5 /* SRServer+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		008C617E1E53185300ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
-		008C617F1E53185300ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
-		008C61801E531D0E00ED3FA5 /* SRServer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C617C1E53185300ED3FA5 /* SRServer+Utils.m */; };
-		008C61821E53391F00ED3FA5 /* mock_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61811E53391F00ED3FA5 /* mock_notification.json */; };
 		008C61831E53391F00ED3FA5 /* mock_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61811E53391F00ED3FA5 /* mock_notification.json */; };
-		008C61851E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */; };
 		008C61861E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 008C61841E53393F00ED3FA5 /* invalid_multi_method_invoke.json */; };
 		00943EC31E51CCF5004F03BB /* multi_method_invoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 00943EC21E51CCF5004F03BB /* multi_method_invoke.json */; };
 		00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
@@ -50,38 +40,27 @@
 		00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; };
 		00ADFF9E1DFECF1100D3B255 /* SilentRunnerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADFF881DFECF1100D3B255 /* SilentRunnerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00B3F13F1E434F2E00D41C01 /* SRServerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F13E1E434F2E00D41C01 /* SRServerTest.m */; };
-		00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F1441E43532000D41C01 /* NSURL+Validity.h */; };
-		00B3F1471E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
+		00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F1441E43532000D41C01 /* NSURL+Validity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B3F1481E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
-		00B3F1491E43532000D41C01 /* NSURL+Validity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1451E43532000D41C01 /* NSURL+Validity.m */; };
-		00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F14A1E43673100D41C01 /* SRMessageHandler.h */; };
-		00B3F14D1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
+		00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F14A1E43673100D41C01 /* SRMessageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B3F14E1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
-		00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F14B1E43673100D41C01 /* SRMessageHandler.m */; };
 		00B3F1511E436AAE00D41C01 /* SRMessageHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1501E436AAE00D41C01 /* SRMessageHandlerTest.m */; };
 		00B3F1561E436BE200D41C01 /* simple_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B3F1531E436BE200D41C01 /* simple_notification.json */; };
-		00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B3F16A1E4482B100D41C01 /* SRCommandHandler.h */; };
-		00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
 		00B3F16E1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
-		00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */; };
 		00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F1701E44836700D41C01 /* SRCommandHandlerTest.m */; };
-		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; };
-		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; };
+		00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23A1E015234002AFDF8 /* SRArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B23C1E01533F002AFDF8 /* SRClassArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B23F1E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
-		00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B23D1E01533F002AFDF8 /* SRClassArgument.m */; };
 		00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2411E0154A5002AFDF8 /* SRClassArgumentTest.m */; };
-		00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2431E015AA1002AFDF8 /* SRConcreteArgument.h */; };
+		00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2431E015AA1002AFDF8 /* SRConcreteArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B2461E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */; };
-		00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2441E015AA1002AFDF8 /* SRConcreteArgument.m */; };
-		00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2481E015CD6002AFDF8 /* SRValueArgument.h */; };
+		00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B2481E015CD6002AFDF8 /* SRValueArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B24B1E015CD6002AFDF8 /* SRValueArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */; };
-		00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */; };
-		00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */; };
+		00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F3B2501E015E78002AFDF8 /* SRBlockArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */; };
-		00F3B2511E015E78002AFDF8 /* SRBlockArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */; };
-		612FE25B2578EFA10CB7F673 /* libPods-SilentRunnerEngineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0CD0209A73CBD56E9CFE95 /* libPods-SilentRunnerEngineTests.a */; };
-		95FC5A43AD880BA0B760062B /* libPods-SilentRunner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F4BB7F3DC482C3816139AA /* libPods-SilentRunner.a */; };
-		D3231194EC22010489F9CA3D /* libPods-SilentRunnerEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9BFA6C827BE3BC1386A3F /* libPods-SilentRunnerEngine.a */; };
+		199E0ED60941CDCD2DEA3362 /* Pods_SilentRunnerEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */; };
+		871C4CF7BDDF43E5EC4669D2 /* Pods_SilentRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */; };
+		A388760112C0C203DD76C6D6 /* Pods_SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,21 +159,21 @@
 		00F3B2491E015CD6002AFDF8 /* SRValueArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValueArgument.m; sourceTree = "<group>"; };
 		00F3B24D1E015E78002AFDF8 /* SRBlockArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBlockArgument.h; sourceTree = "<group>"; };
 		00F3B24E1E015E78002AFDF8 /* SRBlockArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBlockArgument.m; sourceTree = "<group>"; };
-		1D0CD0209A73CBD56E9CFE95 /* libPods-SilentRunnerEngineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerEngineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7880C2570E75BDF4756BCF /* Pods-SilentRunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerTests/Pods-SilentRunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		282DF76EE5E3A609D3EFFE38 /* libPods-SilentRunnerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentRunnerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDB374027CC3DD60EDDC7D7 /* Pods-SilentRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner.release.xcconfig"; sourceTree = "<group>"; };
-		43A9BFA6C827BE3BC1386A3F /* libPods-SilentRunnerEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E0382DEE3684D9CA1592B3 /* Pods-SilentRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunner/Pods-SilentRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		53E1ED7E8EC444A2BFDEC204 /* Pods-SilentRunnerEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		583809891A2BC2383E539F9E /* Pods-SilentRunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerTests/Pods-SilentRunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentRunnerEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7571EED349B313886BFD0EBD /* Pods-SilentRunnerEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngineTests/Pods-SilentRunnerEngineTests.release.xcconfig"; sourceTree = "<group>"; };
 		777121DC48B4690AB1F2E869 /* Pods-SilentRunnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C71E3F14F425222CBF92080 /* Pods-SilentRunnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A2B52048064192CE9CB28680 /* Pods-SilentRunnerEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.release.xcconfig"; sourceTree = "<group>"; };
 		DEFD94FCA97A87B3B1F7B4CF /* libPods-SilentRunnerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6167EE12D13370C22F93A66 /* Pods-SilentRunnerEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.debug.xcconfig"; sourceTree = "<group>"; };
-		E8F4BB7F3DC482C3816139AA /* libPods-SilentRunner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +181,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95FC5A43AD880BA0B760062B /* libPods-SilentRunner.a in Frameworks */,
 				00ADFF9D1DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */,
+				871C4CF7BDDF43E5EC4669D2 /* Pods_SilentRunner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3231194EC22010489F9CA3D /* libPods-SilentRunnerEngine.a in Frameworks */,
+				A388760112C0C203DD76C6D6 /* Pods_SilentRunnerEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ADFF911DFECF1100D3B255 /* SilentRunnerEngine.framework in Frameworks */,
-				612FE25B2578EFA10CB7F673 /* libPods-SilentRunnerEngineTests.a in Frameworks */,
+				199E0ED60941CDCD2DEA3362 /* Pods_SilentRunnerEngineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +411,11 @@
 		9CC9B90A624ABF2100E550A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8F4BB7F3DC482C3816139AA /* libPods-SilentRunner.a */,
 				DEFD94FCA97A87B3B1F7B4CF /* libPods-SilentRunnerTests.a */,
 				282DF76EE5E3A609D3EFFE38 /* libPods-SilentRunnerUITests.a */,
-				43A9BFA6C827BE3BC1386A3F /* libPods-SilentRunnerEngine.a */,
-				1D0CD0209A73CBD56E9CFE95 /* libPods-SilentRunnerEngineTests.a */,
+				1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */,
+				2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */,
+				6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -454,12 +433,12 @@
 				00F3B2451E015AA1002AFDF8 /* SRConcreteArgument.h in Headers */,
 				003A176A1E09790D008B7562 /* SRServer.h in Headers */,
 				00F3B23B1E015234002AFDF8 /* SRArgument.h in Headers */,
+				0034D0481E55DADD00D8E076 /* SRCommandHandler.h in Headers */,
 				00ADFF9A1DFECF1100D3B255 /* SilentRunnerEngine.h in Headers */,
 				00F3B24F1E015E78002AFDF8 /* SRBlockArgument.h in Headers */,
 				00807EA91E00078E00B4BD4C /* SRCommand.h in Headers */,
 				00F3B23E1E01533F002AFDF8 /* SRClassArgument.h in Headers */,
 				00B3F1461E43532000D41C01 /* NSURL+Validity.h in Headers */,
-				00B3F16C1E4482B100D41C01 /* SRCommandHandler.h in Headers */,
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
@@ -597,8 +576,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008C61851E53393F00ED3FA5 /* invalid_multi_method_invoke.json in Resources */,
-				008C61821E53391F00ED3FA5 /* mock_notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,13 +720,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B3F1471E43532000D41C01 /* NSURL+Validity.m in Sources */,
 				0004DC361DFECE5C0096C9BE /* ViewController.m in Sources */,
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
-				00B3F14D1E43673100D41C01 /* SRMessageHandler.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
-				00B3F16D1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
-				008C61801E531D0E00ED3FA5 /* SRServer+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,28 +751,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B3F1491E43532000D41C01 /* NSURL+Validity.m in Sources */,
-				003A176C1E09790D008B7562 /* SRServer.m in Sources */,
-				00F3B2471E015AA1002AFDF8 /* SRConcreteArgument.m in Sources */,
 				00807EAF1E0014FE00B4BD4C /* SRCommandTest.m in Sources */,
-				00807EBE1E0021CD00B4BD4C /* NSInvocation+ConstructorsTest.m in Sources */,
 				00B3F1511E436AAE00D41C01 /* SRMessageHandlerTest.m in Sources */,
-				00F3B2401E01533F002AFDF8 /* SRClassArgument.m in Sources */,
 				00B3F13F1E434F2E00D41C01 /* SRServerTest.m in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
-				008C617F1E53185300ED3FA5 /* SRServer+Utils.m in Sources */,
-				00F3B24C1E015CD6002AFDF8 /* SRValueArgument.m in Sources */,
 				0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */,
-				00807EC41E00252E00B4BD4C /* SRClientPool.m in Sources */,
-				00B3F14F1E43673100D41C01 /* SRMessageHandler.m in Sources */,
-				00807EBB1E0021C500B4BD4C /* NSInvocation+Constructors.m in Sources */,
-				00807EB61E0018DA00B4BD4C /* NSValueTransformer+SRTransformers.m in Sources */,
 				00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */,
-				00B3F16F1E4482B100D41C01 /* SRCommandHandler.m in Sources */,
-				00807EAB1E00078E00B4BD4C /* SRCommand.m in Sources */,
 				00ADFF981DFECF1100D3B255 /* SilentRunnerEngineTests.m in Sources */,
-				007860191E07E73F00B4DDA1 /* SRMockFabric.m in Sources */,
-				00F3B2511E015E78002AFDF8 /* SRBlockArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,10 +894,18 @@
 			baseConfigurationReference = 47E0382DEE3684D9CA1592B3 /* Pods-SilentRunner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
 				);
 				INFOPLIST_FILE = SilentRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -953,7 +919,15 @@
 			baseConfigurationReference = 2FDB374027CC3DD60EDDC7D7 /* Pods-SilentRunner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = SilentRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunner;
@@ -965,6 +939,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6167EE12D13370C22F93A66 /* Pods-SilentRunnerEngine.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -972,10 +947,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = SilentRunnerEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunnerEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -989,6 +986,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2B52048064192CE9CB28680 /* Pods-SilentRunnerEngine.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -996,10 +994,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = SilentRunnerEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunnerEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1014,9 +1034,32 @@
 			baseConfigurationReference = 53E1ED7E8EC444A2BFDEC204 /* Pods-SilentRunnerEngineTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = SilentRunnerEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunnerEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentRunner.app/SilentRunner";
@@ -1028,9 +1071,32 @@
 			baseConfigurationReference = 7571EED349B313886BFD0EBD /* Pods-SilentRunnerEngineTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONRPCom\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = SilentRunnerEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"JSONRPCom\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"OCHamcrest\"",
+					"-framework",
+					"\"OCMockito\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.SilentRunnerEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentRunner.app/SilentRunner";

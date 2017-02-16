@@ -54,6 +54,7 @@
 - (void)testMessageHandlerReceivedMessage{
     XCTestExpectation* exp = [self expectationWithDescription:@"msg received"];
     SRServer* server = [SRServer serverWithURL:@"https://www.google.com" withMessageHandler:^(NSString * _Nonnull msg) { [exp fulfill]; } withErrorHandler:^(NSError * _Nonnull error) {}];
+    [server.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_OPEN ];
     [server webSocket:server.webSocket didReceiveMessage:@"Hi!"];
     [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
         if (error) {
@@ -96,6 +97,7 @@
         [SRCommandHandler runCommand:command withError:&error];
         [exp fulfill];
     } withErrorHandler:nil];
+    [server.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_OPEN ];
     [server webSocket:server.webSocket didReceiveMessage:msg];
     [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
         if (error) {

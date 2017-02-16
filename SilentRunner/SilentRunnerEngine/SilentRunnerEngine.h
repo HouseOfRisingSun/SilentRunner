@@ -16,4 +16,10 @@ FOUNDATION_EXPORT const unsigned char SilentRunnerEngineVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SilentRunnerEngine/PublicHeader.h>
 
-
+#import <SilentRunnerEngine/SRServer.h>
+#import <SilentRunnerEngine/SRServer+Utils.h>
+#import <SilentRunnerEngine/SRCommand.h>
+#import <SilentRunnerEngine/SRMessageHandler.h>
+#import <SilentRunnerEngine/SRCommandHandler.h>
+#import <SilentRunnerEngine/NSURL+Validity.h>
+#import <SilentRunnerEngine/SRClientPool.h>

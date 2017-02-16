@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MAObjCRuntime.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2A023507EAD85F40065A236BE2F30BD4</key>
+		<key>307205CD96E3983E1F3EF0871D587856</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>323A1A48328DF764CF063963A421FA6F</key>
+		<key>4774638A1EFB7E06F162520D6082E750</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4BEFE3AC3395605967E00BDD9BFC0F53</key>
+		<key>7BC6F8B1697ADFA6C875D22551BBCDA5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6001F55632A772B5C0CE7352C09FD95F</key>
+		<key>860999FC46BD71E6972870EAF7544515</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9669E606F833DA2035ACA7A027989AF9</key>
+		<key>A581140716ED12BF89E1FF07F013CBE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC463034791E434F4214CEA87C945D11</key>
+		<key>EBAA4A3DA928E5730A5C01E4F4994C63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E926E88902604B212CE84DE83F4C84C5</key>
+		<key>F851E76DD78FF33793408A6B15F380C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ED41B41C1D1384BF2DB1EF6C5FAA7C8E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA7A4C91A53A31733D8B2C9D53A148B2</key>
+		<key>FBE46E7A3DC098D89B8502F393BB69BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

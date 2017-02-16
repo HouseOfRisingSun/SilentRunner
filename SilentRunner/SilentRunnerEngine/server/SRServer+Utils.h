@@ -6,19 +6,10 @@
 //  Copyright © 2017 HomeOfRisingSun. All rights reserved.
 //
 
-#import "SRServer.h"
-
-extern NSString* const SRErrorDomain;
-
-typedef enum{
-    SRErrorParseError = -101,
-    SRErrorInvokeError = -102,
-} SRErrorCode;
-
+#import <SilentRunnerEngine/SilentRunnerEngine.h>
 
 @interface SRServer (Utils)
 
-void SRLog(NSString *format, ...);
 + (void)enableLogging;
 + (void)disableLogging;
 + (BOOL)isLoggerEnabled;

@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <OCHamcrest/OCHamcrest.h>
-#import <OCMockito/OCMockito.h>
-
 
 @interface AppDelegate ()
 

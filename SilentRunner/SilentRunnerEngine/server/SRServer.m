@@ -6,12 +6,21 @@
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
-#import "SRServer.h"
-#import "SRCommand.h"
-#import "SRServer+Utils.h"
-#import "NSURL+Validity.h"
-#import <SocketRocket/SocketRocket.h>
+#import <SilentRunnerEngine/SilentRunnerEngine.h>
 #import <JSONRPCom/JSONRPCom.h>
+#import "SRServer+Utils.h"
+
+NSString* const SRErrorDomain = @"HomeOfRisingSun.SilentRunnerEngine";
+
+inline void SRLog(NSString *format, ...)  {
+    if ( ![SRServer isLoggerEnabled] ) { return; };
+    __block va_list arg_list;
+    va_start (arg_list, format);
+    NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:arg_list];
+    va_end(arg_list);
+    NSLog(@"[SR] %@", formattedString);
+}
+
 
 @interface SRServer ()
 
@@ -43,28 +52,39 @@
 }
 
 - (void)sendErrorMessage:(NSError*)error{
+    if ( self.webSocket.readyState != SR_OPEN ){
+        SRLog(@"WebSocket is not open");
+        return;
+    }
     JSONRPCErrorModel* model = [[JSONRPCErrorModel alloc] initWithMessage:error.description data:error.userInfo errorCode:JSONRPCErrorModelParseError];
     JSONRPCErrorResponse* resp = [[JSONRPCErrorResponse alloc] initWithError:model version:@"2.0" jrpcId:@"0"];
     NSString* msg = [JSONRPCSerialization serializeEntity:resp withError:nil];
     [self.webSocket send:msg];
 }
 
+- (void)runServer{
+    if ( self.webSocket.readyState == SR_CONNECTING ){
+        [self.webSocket open];
+    }else{
+        SRLog(@"WebSocket is not in correct state to open");
+    }
+}
+
 #pragma mark - SRWebSocketDelegate
 
-- (void)webSocketDidOpen:(SRWebSocket *)webSocket{
-    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
-}
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
-    SRLog(@"%@ %@, %@", NSStringFromSelector(_cmd), self, error);
     if (self.errorHandler) { self.errorHandler(error); }
-}
-- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
-    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
-    SRLog(@"%@ %@", NSStringFromSelector(_cmd), self);
-    if ( ![message isKindOfClass:NSString.class] ){ return; }
+    if ( ![message isKindOfClass:NSString.class] ){
+        SRLog(@"Only strings allowed to be received");
+        return;
+    }
+    if ( self.webSocket.readyState != SR_OPEN ){
+        SRLog(@"WebSocket is not open");
+        return;
+    }
     if (self.messageHandler){ self.messageHandler(message); }
 }
 

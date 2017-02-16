@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SRCommand.h"
+#import <SilentRunnerEngine/SilentRunnerEngine.h>
 
 @interface SRCommandHandler : NSObject
 

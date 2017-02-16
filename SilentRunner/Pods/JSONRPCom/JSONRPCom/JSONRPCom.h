@@ -2,7 +2,7 @@
 //  JSONRPCom.h
 //  JSONRPCom
 //
-//  Created by andrew batutin on 11/12/16.
+//  Created by Andrew Batutin on 11/12/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
@@ -27,4 +27,6 @@ FOUNDATION_EXPORT const unsigned char JSONRPComVersionString[];
 #import <JSONRPCom/JSONRPCMethod.h>
 #import <JSONRPCom/JSONRPCDeSerialization.h>
 #import <JSONRPCom/JSONRPCSerialization.h>
-
+#import <JSONRPCom/JSONRPCommunication.h>
+#import <JSONRPCom/NSDictionary+ToString.h>
+#import <JSONRPCom/NSString+ToJSONDictionary.h>

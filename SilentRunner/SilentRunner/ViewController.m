@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SRServer.h"
-#import "SRServer+Utils.h"
-#import "SRClientPool.h"
-#import "SRCommandHandler.h"
-#import "SRMessageHandler.h"
+#import <SilentRunnerEngine/SilentRunnerEngine.h>
 
 @interface ViewController ()
 @property (nonatomic, strong) SRServer* serv;
@@ -39,22 +35,12 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 - (IBAction)testAction:(id)sender {
-    if ( self.serv.webSocket.readyState == SR_OPEN ){
-        [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
-    }
+    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
 }
 
 - (IBAction)runServer:(id)sender {
-    if ( self.serv.webSocket.readyState == SR_CONNECTING ){
-        [self.serv.webSocket open];
-    }
+    [self.serv runServer];
 }
 
 @end

@@ -7,9 +7,18 @@
 //
 
 #import "SRConcreteArgument.h"
+#import <SilentRunnerEngine/SilentRunnerEngine.h>
 #import <SocketRocket/SocketRocket.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+extern NSString* const SRErrorDomain;
+
+typedef enum{
+    SRErrorParseError = -101,
+    SRErrorInvokeError = -102,
+} SRErrorCode;
+
 
 @interface SRServer : NSObject <SRWebSocketDelegate>
 
@@ -22,6 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable instancetype)initWithURL:(NSString*)urlString;
 
 - (void)sendErrorMessage:(NSError*)error;
+- (void)runServer;
+
+void SRLog(NSString *format, ...);
 
 NS_ASSUME_NONNULL_END
 

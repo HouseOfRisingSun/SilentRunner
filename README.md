@@ -91,6 +91,4 @@ Smaples of messages:
 ###TODO
 
 * Formal protocol spec
-* Add suport for mock properties
-* Add support for nil arguments
-* Add support for properties getter/setter invocations
+* Support for batch requests
