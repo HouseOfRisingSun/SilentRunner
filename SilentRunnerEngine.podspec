@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.author       = { "andrewBatutin" => "abatutin@gmail.com" }
 
   s.source       = { :git => "https://github.com/andrewBatutin/SilentRunner.git", :tag => s.version }
-  s.source_files = 'SilentRunnerEngine/**/*'
+  s.source_files = 'SilentRunner/SilentRunnerEngine/**/*'
   s.framework    = 'Foundation'
-  
+
 
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.dependency 'SocketRocket'
   s.dependency 'OCMockito'
 
-  
+
 
 end
