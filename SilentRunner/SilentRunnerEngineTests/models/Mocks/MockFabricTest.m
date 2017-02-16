@@ -95,7 +95,7 @@
     [inv getArgument:&realRes atIndex:3];
     XCTAssertFalse(realRes);
     
-    NSString* magicRes = [staticModel fileURLWithPath:@"wer" isDirectory:NO];
+    NSString* magicRes = (NSString*)[staticModel fileURLWithPath:@"wer" isDirectory:NO];
     XCTAssertEqualObjects(magicRes, @"test");
 }
 

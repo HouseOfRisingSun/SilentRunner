@@ -54,13 +54,17 @@
 - (void)testMessageHandlerReceivedMessage{
     XCTestExpectation* exp = [self expectationWithDescription:@"msg received"];
     SRServer* server = [SRServer serverWithURL:@"https://www.google.com" withMessageHandler:^(NSString * _Nonnull msg) { [exp fulfill]; } withErrorHandler:^(NSError * _Nonnull error) {}];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [server.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_OPEN ];
+#pragma clang diagnostic pop
     [server webSocket:server.webSocket didReceiveMessage:@"Hi!"];
     [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
         if (error) {
             NSLog(@"Timeout Error: %@", error);
         }
     }];
+
 }
 
 - (void)testNilMessageHandlerReceivedMessageDoesntCrash{
@@ -97,7 +101,10 @@
         [SRCommandHandler runCommand:command withError:&error];
         [exp fulfill];
     } withErrorHandler:nil];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [server.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_OPEN ];
+#pragma clang diagnostic pop
     [server webSocket:server.webSocket didReceiveMessage:msg];
     [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
         if (error) {

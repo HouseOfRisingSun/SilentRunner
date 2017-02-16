@@ -23,3 +23,8 @@ FOUNDATION_EXPORT const unsigned char SilentRunnerEngineVersionString[];
 #import <SilentRunnerEngine/SRCommandHandler.h>
 #import <SilentRunnerEngine/NSURL+Validity.h>
 #import <SilentRunnerEngine/SRClientPool.h>
+#import <SilentRunnerEngine/SRClassArgument.h>
+#import <SilentRunnerEngine/SRBlockArgument.h>
+#import <SilentRunnerEngine/SRValueArgument.h>
+#import <SilentRunnerEngine/SRMockFabric.h>
+#import <SilentRunnerEngine/NSInvocation+Constructors.h>

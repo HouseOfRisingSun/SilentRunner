@@ -56,7 +56,7 @@ inline void SRLog(NSString *format, ...)  {
         SRLog(@"WebSocket is not open");
         return;
     }
-    JSONRPCErrorModel* model = [[JSONRPCErrorModel alloc] initWithMessage:error.description data:error.userInfo errorCode:JSONRPCErrorModelParseError];
+    JSONRPCErrorModel* model = [[JSONRPCErrorModel alloc] initWithMessage:error.description data:(id<MTLJSONSerializing>)error.userInfo errorCode:JSONRPCErrorModelParseError];
     JSONRPCErrorResponse* resp = [[JSONRPCErrorResponse alloc] initWithError:model version:@"2.0" jrpcId:@"0"];
     NSString* msg = [JSONRPCSerialization serializeEntity:resp withError:nil];
     [self.webSocket send:msg];
