@@ -12,11 +12,10 @@ Pod::Spec.new do |s|
   s.framework    = 'Foundation'
   
 
-  s.ios.deployment_target = '5.0' # there are usages of __weak
-  s.osx.deployment_target = '10.7'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.dependency 'JSONRPCom', :git => 'https://github.com/andrewBatutin/JSONRPCom.git'
+  s.dependency 'JSONRPCom'
   s.dependency 'SocketRocket'
   s.dependency 'OCMockito'
 
