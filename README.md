@@ -10,81 +10,71 @@
 ![alt text][logo]
 [logo]:http://vignette1.wikia.nocookie.net/eastenders/images/f/f6/Under-construction.png/revision/latest?cb=20141120185311
 
-Silent Runner is a testing tool for iOS to trigger some method calls remotly
+Silent Runner is a testing tool for iOS to trigger some method calls remotely
 
-Idea is simple: 
+Idea is simple:
 1. Remote server sends to the app message with method invocation details
-2. Silent runner invokes the method.
+2. Silent runner invokes the method inside the iOS app.
 3. Profit
 
-Usefull for
-1.	Push notifications testing
-2. Analytic System calls
-3. Operation System calls
+Useful for
+1. Push notifications testing
+2. Analytic System calls testing
 
-Smaples of messages:
 
-* Add item to array
-```javascript
-{
-	"jsonrpc": "2.0",
-	"method": "execute",
-	"params": { 
-			"commandId": "objTag",
-			"method": "addObject:",
-			"arguments": [{
-				"class": "NSURL",
-				"methods": [{
-				"name": "URLWithString",
-				"returnValue": "mock data"
-			}, {
-				"name": "fileURLWithPath",
-				"returnValue": "mock path"
-			}]
-		}]
-	}
-}
-```
+Samples of messages:
 
-* Call `openURL:options:completionHandler:` method
+* Call push notification delegate method
 ```javascript
 {
     "jsonrpc": "2.0",
     "method": "execute",
     "params": {
-        "commandId": "UIApplication",
-        "method": "openURL:options:completionHandler:",
+        "commandId": "app",
+        "method": "application:didReceiveRemoteNotification:fetchCompletionHandler:",
         "arguments": [{
-            "class": "NSURL",
+            "class": "UIApplication",
             "properties": [{
-                "name": "absoluteString",
-                "value": "https://github.com/andrewBatutin/SilentRunner"
-            }, {
-                "name": "relativeString",
+                "name": "delegate",
                 "value": "https://github.com/andrewBatutin/SilentRunner"
             }],
             "methods": [{
-                "name": "isFileReferenceURL",
-                "returnValue": "1"
-            }, {
-                "name": "fileReferenceURL",
-                "returnValue": "mock reference"
+                "name": "isIgnoringInteractionEvents",
+                "returnValue": "YES"
             }]
         }, {
             "value": {
                 "opt1": "test"
             }
-        }, {
-            "class": "block",
-            "methods": {
-                "name": "invoke:",
-                "returnValue": "smthng"
-            }
+        },
+        {
+            "block": {
+                "returnValue": "notUsed"
+                      }
         }]
     }
 }
-```
 
+```
+## Usage
+
+0. Use Cocoapod **SilentRunnerEngine** to add lib to project.
+1. Start testing server from **SilentRunnerTestServer**
+2. Connect to server from the app with:
+```objective-c
+    // register your app delegate to be callable from test server
+    [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
+    // create server instance
+    self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat"  withErrorHandler:^(NSError * error) {
+        [self.serv sendErrorMessage:error];
+    }];
+    // run the engine
+    [self.serv runServer];
+```
+3. use **SilentRunnerTestServer** admin page to send messages.
+
+If you'r testing some method make sure you've implemented it in your app.
+So for push notifications check if you have `application:didReceiveRemoteNotification:fetchCompletionHandler:` implemented
 
 ###Dependecies
 * [SocketRocket](https://github.com/facebook/SocketRocket)
@@ -94,3 +84,6 @@ Smaples of messages:
 
 * Formal protocol spec
 * Support for batch requests
+* Swift wrapper
+* Mock params and return values for  block arguments
+* more samples of test cases

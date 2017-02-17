@@ -19,6 +19,7 @@
     [super viewDidLoad];
     [SRServer enableLogging];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
+    // register your app delegate to be callable from test server
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat"  withErrorHandler:^(NSError * error) {
         [self.serv sendErrorMessage:error];
