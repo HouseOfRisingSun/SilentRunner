@@ -26,12 +26,14 @@ typedef enum{
 @property (nonatomic, readonly, copy)  void (^messageHandler) (NSString* );
 @property (nonatomic, readonly, copy) void (^errorHandler) (NSError*);
 
++ (nullable SRServer*)serverWithURL:(NSString*)url withErrorHandler:(nullable void (^)(NSError*))errorHandler;
 + (nullable SRServer*)serverWithURL:(NSString*)url withMessageHandler:(nullable void (^)(NSString*))messageHandler withErrorHandler:(nullable void (^)(NSError*))errorHandler;
 
 - (nullable instancetype)initWithURL:(NSString*)urlString;
 
 - (void)sendErrorMessage:(NSError*)error;
 - (void)runServer;
+- (void)closeServer;
 
 void SRLog(NSString *format, ...);
 

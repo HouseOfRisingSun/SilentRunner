@@ -40,6 +40,23 @@ inline void SRLog(NSString *format, ...)  {
     return server;
 }
 
++ (nullable SRServer*)serverWithURL:(NSString*)url  withErrorHandler:(nullable void (^)(NSError*))errorHandler{
+    SRServer* server = [[SRServer alloc] initWithURL:url];
+    __block SRServer* theServer = server;
+    server.messageHandler = ^(NSString * msg) {
+        NSError* error = nil;
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
+            [theServer sendErrorMessage:error];
+        }];
+        [SRCommandHandler runCommand:command withError:&error];
+        if ( error ){
+            [theServer sendErrorMessage:error];
+        }
+    };
+    server.errorHandler = errorHandler;
+    return server;
+}
+
 
 - (nullable instancetype)initWithURL:(NSString*)urlString{
     if (self == [super init]) {
@@ -68,6 +85,10 @@ inline void SRLog(NSString *format, ...)  {
     }else{
         SRLog(@"WebSocket is not in correct state to open");
     }
+}
+
+- (void)closeServer{
+    [self.webSocket close];
 }
 
 #pragma mark - SRWebSocketDelegate

@@ -20,16 +20,7 @@
     [SRServer enableLogging];
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
-    self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat" withMessageHandler:^(NSString * msg) {
-        NSError* error = nil;
-        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
-            [self.serv sendErrorMessage:error];
-        }];
-        [SRCommandHandler runCommand:command withError:&error];
-        if ( error ){
-            [self.serv sendErrorMessage:error];
-        }        
-    } withErrorHandler:^(NSError * error) {
+    self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat"  withErrorHandler:^(NSError * error) {
         [self.serv sendErrorMessage:error];
     }];
 }
