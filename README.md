@@ -1,5 +1,5 @@
 <h3 align="center">
-  <img src="assets/house_of_rising_sun.png" alt="SilentRunner Logo" height="25%" />
+  <img src="assets/house_of_rising_sun.png" alt="SilentRunner Logo" />
 </h3>
 # Silent Runner
 
