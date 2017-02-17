@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SilentRunnerEngine"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "SilentRunnerEngine"
 
   s.homepage     = "https://github.com/andrewBatutin/SilentRunner"
