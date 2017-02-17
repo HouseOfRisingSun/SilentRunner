@@ -1,3 +1,6 @@
+<h3 align="center">
+  <img src="assets/house_of_rising_sun.png" alt="SilentRunner Logo" />
+</h3>
 # Silent Runner
 
  [![Build Status](https://travis-ci.org/andrewBatutin/SilentRunner.svg?branch=master)](https://travis-ci.org/andrewBatutin/SilentRunner)
