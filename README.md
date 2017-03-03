@@ -76,7 +76,12 @@ Samples of messages:
 If you'r testing some method make sure you've implemented it in your app.
 So for push notifications check if you have `application:didReceiveRemoteNotification:fetchCompletionHandler:` implemented
 
-###Dependecies
+## Demo Apps
+
+* [Obj-C demo app](https://github.com/andrewBatutin/SilentRunnerDemo)
+* [Swift demo app](https://github.com/andrewBatutin/SRTestApp)
+
+###Dependencies
 * [SocketRocket](https://github.com/facebook/SocketRocket)
 * [JSONRPCom](https://github.com/andrewBatutin/JSONRPCom)
 
