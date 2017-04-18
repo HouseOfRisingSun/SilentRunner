@@ -99,6 +99,4 @@
     XCTAssertEqualObjects(magicRes, @"test");
 }
 
-
-
 @end

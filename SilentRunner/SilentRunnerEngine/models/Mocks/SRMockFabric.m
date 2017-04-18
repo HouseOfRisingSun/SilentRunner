@@ -36,6 +36,7 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
         return;
     }
     NSMethodSignature* sign = [model methodSignatureForSelector:methodSel];
+    
     if (!sign){
         if (error) {
             NSString* errorMsg = [NSString stringWithFormat:@"can't create method signature for model %@ with selector %@", model, methodName];
@@ -55,7 +56,17 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
     if ( dict[SRMockFabricReturnValueKey] ){
         id res = nil;
         [inv getReturnValue:&res];
-        [given(res) willReturn:dict[SRMockFabricReturnValueKey]];
+        id retValue = dict[SRMockFabricReturnValueKey];
+        const char * retType = sign.methodReturnType;
+        //TODO - work through all primitive types
+        if (!strcmp(retType, @encode(BOOL))){
+            BOOL arg = ( [retValue isEqual:@"YES"] || [retValue isEqual:@1] ) ? YES : NO;
+            [given(res) willReturnBool:arg];
+        }else if ( retType[0] == @encode(id)[0] ){
+            [given(res) willReturn:retValue];
+        }else{
+            [given(res) willReturn:[[HCIsAnything alloc] init]];
+        }
     }
 }
 
