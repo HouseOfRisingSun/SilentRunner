@@ -58,6 +58,10 @@
 		199E0ED60941CDCD2DEA3362 /* Pods_SilentRunnerEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */; };
 		871C4CF7BDDF43E5EC4669D2 /* Pods_SilentRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */; };
 		A388760112C0C203DD76C6D6 /* Pods_SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */; };
+		A493DB351EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
+		A493DB361EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
+		A493DB391EA638280045D1D4 /* TestModel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB381EA638280045D1D4 /* TestModel+Ext.m */; };
+		A493DB3A1EA638280045D1D4 /* TestModel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB381EA638280045D1D4 /* TestModel+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +171,10 @@
 		777121DC48B4690AB1F2E869 /* Pods-SilentRunnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C71E3F14F425222CBF92080 /* Pods-SilentRunnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A2B52048064192CE9CB28680 /* Pods-SilentRunnerEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.release.xcconfig"; sourceTree = "<group>"; };
+		A493DB331EA638000045D1D4 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		A493DB341EA638000045D1D4 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		A493DB371EA638280045D1D4 /* TestModel+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestModel+Ext.h"; sourceTree = "<group>"; };
+		A493DB381EA638280045D1D4 /* TestModel+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestModel+Ext.m"; sourceTree = "<group>"; };
 		DEFD94FCA97A87B3B1F7B4CF /* libPods-SilentRunnerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SilentRunnerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6167EE12D13370C22F93A66 /* Pods-SilentRunnerEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +234,10 @@
 		0004DC2D1DFECE5C0096C9BE /* SilentRunner */ = {
 			isa = PBXGroup;
 			children = (
+				A493DB331EA638000045D1D4 /* TestModel.h */,
+				A493DB341EA638000045D1D4 /* TestModel.m */,
+				A493DB371EA638280045D1D4 /* TestModel+Ext.h */,
+				A493DB381EA638280045D1D4 /* TestModel+Ext.m */,
 				0004DC311DFECE5C0096C9BE /* AppDelegate.h */,
 				0004DC321DFECE5C0096C9BE /* AppDelegate.m */,
 				0004DC341DFECE5C0096C9BE /* ViewController.h */,
@@ -713,8 +725,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0004DC361DFECE5C0096C9BE /* ViewController.m in Sources */,
+				A493DB391EA638280045D1D4 /* TestModel+Ext.m in Sources */,
 				0004DC331DFECE5C0096C9BE /* AppDelegate.m in Sources */,
 				0004DC301DFECE5C0096C9BE /* main.m in Sources */,
+				A493DB351EA638000045D1D4 /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,7 +761,9 @@
 				00B3F13F1E434F2E00D41C01 /* SRServerTest.m in Sources */,
 				00F3B2421E0154A5002AFDF8 /* SRClassArgumentTest.m in Sources */,
 				0078601C1E07E85C00B4DDA1 /* MockFabricTest.m in Sources */,
+				A493DB361EA638000045D1D4 /* TestModel.m in Sources */,
 				00B3F1711E44836700D41C01 /* SRCommandHandlerTest.m in Sources */,
+				A493DB3A1EA638280045D1D4 /* TestModel+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

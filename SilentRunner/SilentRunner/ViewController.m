@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestModel.h"
 #import <SilentRunnerEngine/SilentRunnerEngine.h>
 
 @interface ViewController ()
@@ -21,6 +22,8 @@
     [SRClientPool addClient:@[].mutableCopy forTag:@"NSMutableArray"];
     // register your app delegate to be callable from test server
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
+    TestModel* model = [[TestModel alloc] init];
+    [SRClientPool addClient:model forTag:@"TestModel"];
     self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat"  withErrorHandler:^(NSError * error) {
         [self.serv sendErrorMessage:error];
     }];
