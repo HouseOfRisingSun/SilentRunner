@@ -1,0 +1,28 @@
+{
+    "jsonrpc": "2.0",
+    "method": "execute",
+    "params": {
+        "commandId": "app",
+        "method": "application:didReceiveRemoteNotification:fetchCompletionHandler:",
+        "arguments": [{
+            "class": "UIApplication",
+            "properties": [{
+                "name": "delegate",
+                "value": "https://github.com/andrewBatutin/SilentRunner"
+            }],
+            "methods": [{
+                "name": "isIgnoringInteractionEvents",
+                "returnValue": "YES"
+            }]
+        }, {
+            "value": {
+                "opt1": "test"
+            }
+        },
+        {
+            "block": {
+                "returnValue": "notUsed"
+                      }
+        }]
+    }
+}
