@@ -28,6 +28,7 @@
 @property(nonatomic, assign) float floatProp;
 @property(nonatomic, assign) double doubleProp;
 @property(nonatomic, strong) id objProp;
+@property(nonatomic, strong) NSString* stringProp;
 
 @end
 
@@ -378,6 +379,22 @@
     
     [SRMockFabric mapRetValue:@234 toMockType:@encode(id) forMock:res];
     XCTAssertEqualObjects(@234, model.objProp);
+}
+
+- (void)testNumberAsStringDataTypesProps{
+    SRMockCLass* model = mock(SRMockCLass.class);
+    NSString* methodName = @"stringProp";
+    SEL methodSel = NSSelectorFromString(methodName);
+    NSInvocation *inv = [NSInvocation invocationWithMethodSignature:[model methodSignatureForSelector:methodSel]];
+    [inv retainArguments];
+    [inv setSelector:methodSel];
+    [inv setTarget:model];
+    [inv invoke];
+    id res = nil;
+    [inv getReturnValue:&res];
+    
+    [SRMockFabric mapRetValue:@234 toMockType:@encode(NSString) forMock:res];
+    XCTAssertEqualObjects(@234, model.stringProp);
 }
 
 @end

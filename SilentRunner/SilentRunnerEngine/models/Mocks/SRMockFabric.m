@@ -139,11 +139,9 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
         }else{
             goto default_type;
         }
-    }else if ( retType[0] == @encode(id)[0] ){
+    }else {
 default_type:
         [given(res) willReturn:retValue];
-    }else{
-        [given(res) willReturn:[[HCIsAnything alloc] init]];
     }
 }
 
