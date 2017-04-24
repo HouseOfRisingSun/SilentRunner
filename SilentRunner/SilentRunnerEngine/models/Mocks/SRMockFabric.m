@@ -57,16 +57,105 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
         id res = nil;
         [inv getReturnValue:&res];
         id retValue = dict[SRMockFabricReturnValueKey];
-        const char * retType = sign.methodReturnType;
+        const char *retType = sign.methodReturnType;
         //TODO - work through all primitive types
-        if (!strcmp(retType, @encode(BOOL))){
+        if ( !strcmp(retType, @encode(BOOL)) ){
             BOOL arg = ( [retValue isEqual:@"YES"] || [retValue isEqual:@1] ) ? YES : NO;
-            [given(res) willReturnBool:arg];
+            //[given(res) willReturnBool:arg];
+            [given(res) willReturn:retValue];
+        }else if ( !strcmp(retType, @encode(long)) ){
+            if ( [retValue isKindOfClass:NSNumber.class]){
+                [given(res) willReturn:retValue];
+            }
         }else if ( retType[0] == @encode(id)[0] ){
             [given(res) willReturn:retValue];
         }else{
             [given(res) willReturn:[[HCIsAnything alloc] init]];
         }
+    }
+}
+
++ (void)mapRetValue:(id)retValue toMockType:(const char *)retType forMock:(id)res{
+    if ( !strcmp(retType, @encode(BOOL)) || !strcmp(retType, @encode(unsigned char)) ){
+        BOOL arg = ( [retValue isEqual:@"YES"] || [retValue isEqual:@1] ) ? YES : NO;
+        [given(res) willReturnBool:arg];
+    }else if ( !strcmp(retType, @encode(short)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnShort:[retValue shortValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(int)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnInt:[retValue intValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(long)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnLong:[retValue longValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(long long)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnLongLong:[retValue longLongValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(NSInteger)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnInteger:[retValue integerValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(unsigned int)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnUnsignedInt:[retValue unsignedIntValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(unsigned short)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnUnsignedShort:[retValue unsignedShortValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(unsigned long)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnUnsignedLong:[retValue unsignedLongValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(unsigned long long)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnUnsignedLongLong:[retValue unsignedLongLongValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(NSUInteger)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnUnsignedInteger:[retValue unsignedIntegerValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(float)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnFloat:[retValue floatValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( !strcmp(retType, @encode(double)) ){
+        if ( [retValue isKindOfClass:NSNumber.class]){
+            [given(res) willReturnDouble:[retValue doubleValue]];
+        }else{
+            goto default_type;
+        }
+    }else if ( retType[0] == @encode(id)[0] ){
+default_type:
+        [given(res) willReturn:retValue];
+    }else{
+        [given(res) willReturn:[[HCIsAnything alloc] init]];
     }
 }
 

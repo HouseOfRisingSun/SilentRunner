@@ -17,5 +17,6 @@
 + (void)addPropertiesWithDictionary:(NSDictionary*)dict toModel:(MKTObjectMock*)model withError:(NSError**)error;
 + (void)addMockForValue:(void *)value withInvocation:(NSInvocation*)inv atIndex:(NSInteger)index;
 + (void)addAnythingWithInvocation:(NSInvocation*)inv atIndex:(NSInteger)index forModel:(MKTBaseMockObject*)model;
++ (void)mapRetValue:(id)retValue toMockType:(const char *)retType forMock:(id)res;
 
 @end

@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSString* data;
 @property (nonatomic, assign) BOOL boolValue;
+@property (nonatomic, assign) long longValue;
 
 @end
