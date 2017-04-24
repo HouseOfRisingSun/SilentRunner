@@ -2,10 +2,10 @@
 // Copyright 2012 Square Inc.
 // Portions Copyright (c) 2016-present, Facebook, Inc.
 // All rights reserved.
-// 
+//
 // This source code is licensed under the license found in the
 // LICENSE-examples file in the root directory of this source tree.
-// 
+//
 
 function SocketClient () {
   this.list_elem = document.getElementById('client_list');
@@ -17,9 +17,9 @@ SocketClient.prototype.connect = function () {
   var self = this;
 
   this.list_elem.innerHTML = '';
-  this.info_div.innerHTML = 'status: connecting...'; 
-  this.socket = new WebSocket("ws://" + document.location.host + "/chat");  
-  
+  this.info_div.innerHTML = 'status: connecting...';
+  this.socket = new WebSocket("ws://" + document.location.host + "/chat");
+
   this.socket.onopen = function () {self.onopen.apply(self, arguments);};
   this.socket.onmessage = function () {self.onmessage.apply(self, arguments);};
   this.socket.onclose = function () {self.onclose.apply(self, arguments);};
@@ -73,6 +73,7 @@ window.addEventListener('load', function () {
     var form = window.document.getElementById('msg_form');
     var msg_field = window.document.getElementById('msg_field');
     var btn = window.document.getElementById('push_btn');
+    var btn_lght = window.document.getElementById('push_lght_btn');
     var iBtn = window.document.getElementById('invalid_btn');
 
     var socketClient = new SocketClient();
@@ -90,9 +91,18 @@ window.addEventListener('load', function () {
       return false;
     };
 
-    
+
     btn.onclick = function (){
       readTextFile("test_resources/mock_notification.json", function(text){
+          socketClient.socket.send(text);
+          var el = document.createElement('li');
+          el.innerHTML = text;
+          window.document.getElementById('history').appendChild(el);
+      });
+    }
+
+    btn_lght.onclick = function (){
+      readTextFile("test_resources/notification_simple.json", function(text){
           socketClient.socket.send(text);
           var el = document.createElement('li');
           el.innerHTML = text;
