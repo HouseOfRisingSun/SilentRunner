@@ -58,23 +58,11 @@ static NSString* const SRMockFabricReturnValueKey = @"returnValue";
         [inv getReturnValue:&res];
         id retValue = dict[SRMockFabricReturnValueKey];
         const char *retType = sign.methodReturnType;
-        //TODO - work through all primitive types
-        if ( !strcmp(retType, @encode(BOOL)) ){
-            BOOL arg = ( [retValue isEqual:@"YES"] || [retValue isEqual:@1] ) ? YES : NO;
-            //[given(res) willReturnBool:arg];
-            [given(res) willReturn:retValue];
-        }else if ( !strcmp(retType, @encode(long)) ){
-            if ( [retValue isKindOfClass:NSNumber.class]){
-                [given(res) willReturn:retValue];
-            }
-        }else if ( retType[0] == @encode(id)[0] ){
-            [given(res) willReturn:retValue];
-        }else{
-            [given(res) willReturn:[[HCIsAnything alloc] init]];
-        }
+        [self mapRetValue:retValue toMockType:retType forMock:res];
     }
 }
 
+// Yes, i know, it's ugly
 + (void)mapRetValue:(id)retValue toMockType:(const char *)retType forMock:(id)res{
     if ( !strcmp(retType, @encode(BOOL)) || !strcmp(retType, @encode(unsigned char)) ){
         BOOL arg = ( [retValue isEqual:@"YES"] || [retValue isEqual:@1] ) ? YES : NO;
