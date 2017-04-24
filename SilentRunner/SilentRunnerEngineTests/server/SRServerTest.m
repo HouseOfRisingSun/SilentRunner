@@ -35,6 +35,7 @@
     BOOL resAsProp = application.isIgnoringInteractionEvents;
     BOOL resAsMethod = [application isIgnoringInteractionEvents];
     XCTAssertTrue(resAsProp && resAsMethod);
+    XCTAssertEqualObjects(@"delegate", application.delegate);
     [self.exp fulfill];
 }
 
@@ -150,10 +151,17 @@
     MockAppDelegate* mockAppDel = [[MockAppDelegate alloc] initWithExp:exp];
     [SRClientPool addClient:mockAppDel forTag:@"app"];
     SRServer* server = [SRServer serverWithURL:@"https://www.google.com" withMessageHandler:^(NSString* _Nonnull msg){
-        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:nil];
         NSError* error = nil;
+        SRCommand* command = (SRCommand*)[SRMessageHandler createCommandFromMessage:msg withError:^(NSError* error){
+            XCTFail(@"Should not be here; %@", error);
+        }];
         [SRCommandHandler runCommand:command withError:&error];
-    } withErrorHandler:nil];
+        if ( error ){
+            XCTFail(@"Should not be here; %@", error);
+        }
+    } withErrorHandler:^(NSError* error){
+        XCTFail(@"Should not be here; %@", error);
+    }];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [server.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_OPEN ];
