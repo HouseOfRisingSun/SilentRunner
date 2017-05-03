@@ -58,6 +58,7 @@
 		199E0ED60941CDCD2DEA3362 /* Pods_SilentRunnerEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */; };
 		871C4CF7BDDF43E5EC4669D2 /* Pods_SilentRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */; };
 		A388760112C0C203DD76C6D6 /* Pods_SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */; };
+		A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A456FA6F1EB9CCD70014EC54 /* SRServerCommandProtocol.h */; };
 		A493DB351EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
 		A493DB361EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
 		A493DB391EA638280045D1D4 /* TestModel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB381EA638280045D1D4 /* TestModel+Ext.m */; };
@@ -171,6 +172,7 @@
 		777121DC48B4690AB1F2E869 /* Pods-SilentRunnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C71E3F14F425222CBF92080 /* Pods-SilentRunnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerUITests/Pods-SilentRunnerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A2B52048064192CE9CB28680 /* Pods-SilentRunnerEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentRunnerEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilentRunnerEngine/Pods-SilentRunnerEngine.release.xcconfig"; sourceTree = "<group>"; };
+		A456FA6F1EB9CCD70014EC54 /* SRServerCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRServerCommandProtocol.h; sourceTree = "<group>"; };
 		A493DB331EA638000045D1D4 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		A493DB341EA638000045D1D4 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		A493DB371EA638280045D1D4 /* TestModel+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestModel+Ext.h"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				00B3F16B1E4482B100D41C01 /* SRCommandHandler.m */,
 				008C617B1E53185300ED3FA5 /* SRServer+Utils.h */,
 				008C617C1E53185300ED3FA5 /* SRServer+Utils.m */,
+				A456FA6F1EB9CCD70014EC54 /* SRServerCommandProtocol.h */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
+				A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */,
 				00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */,
 				007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */,
 			);

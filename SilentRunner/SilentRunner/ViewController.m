@@ -35,7 +35,16 @@
 }
 
 - (IBAction)runServer:(id)sender {
-    [self.serv runServer];
+    [self.serv runServer:^(SRWebSocket* socket) {
+        NSLog(@"server started");
+    }];
 }
+
+- (IBAction)stopServer:(id)sender {
+    [self.serv closeServer:^(SRWebSocket* socket) {
+        NSLog(@"server stopped");
+    }];
+}
+
 
 @end

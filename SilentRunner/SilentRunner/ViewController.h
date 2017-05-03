@@ -12,6 +12,7 @@
 
 - (IBAction)testAction:(id)sender;
 - (IBAction)runServer:(id)sender;
+- (IBAction)stopServer:(id)sender;
 
 @end
 
