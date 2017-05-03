@@ -44,6 +44,8 @@ def parse_args():
 connections = set()
 
 class ChatHandler(tornado.websocket.WebSocketHandler):
+
+
     def open(self):
         connections.add(self)
         return None
@@ -51,11 +53,17 @@ class ChatHandler(tornado.websocket.WebSocketHandler):
     def on_message(self, msg):
         for c in connections:
             if c is self:
+                if msg.startswith("test") == True:
+                    c.write_message(str(self.connection_list()))
                 continue
+
             c.write_message(msg)
 
     def on_close(self):
         connections.remove(self)
+
+    def connection_list(self):
+        return list(map(lambda x : x.request.remote_ip, connections))
 
 
 def main():

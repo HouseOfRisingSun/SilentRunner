@@ -30,6 +30,7 @@ SocketClient.prototype.deviceAdded = function (params) {
   el.innerHTML = '<a href="devtools/devtools.html?host=' + document.location.host + '&page=' + params.page + '">' + params.device_name + '</a>' + ' <span class="device_details">(' + params.app_id + ', ' + params.device_model + ', ' + params.device_id + ')</span>';
   this.list_elem.appendChild(el);
   this.visibleElems[params.connection_id] = el;
+  console.log('deviceAdded');
 };
 
 SocketClient.prototype.deviceRemoved = function (params) {
@@ -41,6 +42,8 @@ SocketClient.prototype.onopen = function () {
   this.info_div.innerHTML = 'status: connected to gateway';
   this.list_elem.innerHTML = '';
   this.visibleElems = {};
+  console.log(this.socket)
+  console.log(this.socket.connection_list)
   console.log('connection to gateway opened');
 };
 
