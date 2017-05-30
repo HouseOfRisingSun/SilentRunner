@@ -27,7 +27,8 @@ inline void SRLog(NSString *format, ...)  {
 @property (nonatomic, strong) SRWebSocket* webSocket;
 @property (nonatomic, copy) void (^messageHandler) (NSString*);
 @property (nonatomic, copy) void (^errorHandler) (NSError*);
-
+@property (nonatomic, copy) void (^startHandler) (SRWebSocket*);
+@property (nonatomic, copy) void (^stopHandler) (SRWebSocket*);
 
 @end
 
@@ -68,6 +69,11 @@ inline void SRLog(NSString *format, ...)  {
     return self;
 }
 
+- (void)createWebSocket:(NSURL*)url{
+    self.webSocket = [[SRWebSocket alloc] initWithURL:url];
+    self.webSocket.delegate = self;
+}
+
 - (void)sendErrorMessage:(NSError*)error{
     if ( self.webSocket.readyState != SR_OPEN ){
         SRLog(@"WebSocket is not open");
@@ -79,25 +85,51 @@ inline void SRLog(NSString *format, ...)  {
     [self.webSocket send:msg];
 }
 
-- (void)runServer{
-    if ( self.webSocket.readyState == SR_CONNECTING ){
-        [self.webSocket open];
-    }else{
-        SRLog(@"WebSocket is not in correct state to open");
+- (void)runServer:(void (^)(SRWebSocket*))handler{
+    switch (self.webSocket.readyState) {
+        case SR_OPEN:{
+            [self closeServer:^(SRWebSocket * socket) {
+                [self createWebSocket:self.webSocket.url];
+                [self.webSocket open];
+                self.startHandler = handler;
+            }];
+            break;
+        }
+        case SR_CLOSING:
+        case SR_CLOSED:
+            [self createWebSocket:self.webSocket.url];
+        case SR_CONNECTING:
+            [self.webSocket open];
+            self.startHandler = handler;
+            break;
+        default:{
+            NSString* reasonOfFail = [NSString stringWithFormat:@"WebSocket is not in correct state to open %ld", (long)self.webSocket.readyState];
+            SRLog(reasonOfFail);
+            NSError* error = [NSError errorWithDomain:SRErrorDomain code:SRErrorServerError userInfo:@{NSLocalizedDescriptionKey:reasonOfFail}];
+            self.errorHandler(error);
+            break;
+        }
     }
 }
 
-- (void)closeServer{
+- (void)closeServer:(void (^)(SRWebSocket*))handler{
     [self.webSocket close];
+    self.stopHandler = handler;
 }
 
 #pragma mark - SRWebSocketDelegate
 
-- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
+- (void)webSocketDidOpen:(SRWebSocket*)webSocket{
+    if( self.startHandler ){
+        self.startHandler(webSocket);
+    }
+}
+
+- (void)webSocket:(SRWebSocket*)webSocket didFailWithError:(NSError *)error{
     if (self.errorHandler) { self.errorHandler(error); }
 }
 
-- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
+- (void)webSocket:(SRWebSocket*)webSocket didReceiveMessage:(id)message{
     if ( ![message isKindOfClass:NSString.class] ){
         SRLog(@"Only strings allowed to be received");
         return;
@@ -109,5 +141,10 @@ inline void SRLog(NSString *format, ...)  {
     if (self.messageHandler){ self.messageHandler(message); }
 }
 
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
+    if( self.stopHandler ){
+        self.stopHandler(webSocket);
+    }
+}
 
 @end

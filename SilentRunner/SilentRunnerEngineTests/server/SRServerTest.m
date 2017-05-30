@@ -176,5 +176,86 @@
     XCTAssertNotNil(res);
 }
 
+- (void)testStartServerCallbackOnSuccess{
+    XCTestExpectation* exp = [self expectationWithDescription:@"socket opened"];
+    SRServer* sut = [SRServer serverWithURL:@"https://www.google.com"  withErrorHandler:^(NSError * error) {
+        XCTAssertTrue(NO, @"should not be here");
+    }];
+    [sut runServer:^(SRWebSocket *socket) {
+        [exp fulfill];
+        XCTAssertNotNil(socket);
+    }];
+    
+    [sut webSocketDidOpen:sut.webSocket];
+    [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+    }];
+}
+
+- (void)testStopServerCallbackOnSuccess{
+    XCTestExpectation* exp = [self expectationWithDescription:@"socket opened"];
+    SRServer* sut = [SRServer serverWithURL:@"https://www.google.com"  withErrorHandler:^(NSError * error) {
+        XCTAssertTrue(NO, @"should not be here");
+    }];
+    [sut closeServer:^(SRWebSocket *socket) {
+        [exp fulfill];
+        XCTAssertNotNil(socket);
+    }];
+    
+    [sut webSocket:sut.webSocket didCloseWithCode:-1 reason:nil wasClean:YES];
+    [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+    }];
+}
+
+- (void)testStartServerIfSocketInClosedState{
+    XCTestExpectation* exp = [self expectationWithDescription:@"socket opened"];
+    SRServer* sut = [SRServer serverWithURL:@"https://www.google.com"  withErrorHandler:^(NSError * error) {
+        XCTAssertTrue(NO, @"should not be here");
+    }];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [sut.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_CLOSED ];
+#pragma clang diagnostic pop
+
+    [sut runServer:^(SRWebSocket *socket) {
+        [exp fulfill];
+        XCTAssertNotNil(socket);
+    }];
+    
+    [sut webSocketDidOpen:sut.webSocket];
+    [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+    }];
+}
+
+- (void)testStartServerIfSocketInClosingState{
+    XCTestExpectation* exp = [self expectationWithDescription:@"socket opened"];
+    SRServer* sut = [SRServer serverWithURL:@"https://www.google.com"  withErrorHandler:^(NSError * error) {
+        XCTAssertTrue(NO, @"should not be here");
+    }];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [sut.webSocket performSelector: NSSelectorFromString(@"setReadyState:") withObject:(__bridge id)(void*)SR_CLOSING ];
+#pragma clang diagnostic pop
+    
+    [sut runServer:^(SRWebSocket *socket) {
+        [exp fulfill];
+        XCTAssertNotNil(socket);
+    }];
+    
+    [sut webSocketDidOpen:sut.webSocket];
+    [self waitForExpectationsWithTimeout:0.1 handler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+    }];
+}
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "SRConcreteArgument.h"
+#import "SRServerCommandProtocol.h"
 #import <SilentRunnerEngine/SilentRunnerEngine.h>
 #import <SocketRocket/SocketRocket.h>
 
@@ -17,10 +18,11 @@ extern NSString* const SRErrorDomain;
 typedef enum{
     SRErrorParseError = -101,
     SRErrorInvokeError = -102,
+    SRErrorServerError = -103,
 } SRErrorCode;
 
 
-@interface SRServer : NSObject <SRWebSocketDelegate>
+@interface SRServer : NSObject <SRWebSocketDelegate, SRServerCommandProtocol>
 
 @property (nonatomic, readonly, strong) SRWebSocket* webSocket;
 @property (nonatomic, readonly, copy)  void (^messageHandler) (NSString* );
@@ -32,8 +34,6 @@ typedef enum{
 - (nullable instancetype)initWithURL:(NSString*)urlString;
 
 - (void)sendErrorMessage:(NSError*)error;
-- (void)runServer;
-- (void)closeServer;
 
 void SRLog(NSString *format, ...);
 
