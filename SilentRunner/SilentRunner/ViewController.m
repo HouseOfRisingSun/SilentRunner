@@ -24,7 +24,7 @@
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
     TestModel* model = [[TestModel alloc] init];
     [SRClientPool addClient:model forTag:@"TestModel"];
-    self.serv = [SRServer serverWithURL:@"ws://localhost:9000/chat"  withErrorHandler:^(NSError * error) {
+    self.serv = [SRServer serverWithURL:@"http://localhost:1489"  withErrorHandler:^(NSError * error) {
         [self.serv sendErrorMessage:error];
     }];
 }

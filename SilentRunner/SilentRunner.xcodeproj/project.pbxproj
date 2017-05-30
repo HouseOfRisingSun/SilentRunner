@@ -58,7 +58,7 @@
 		199E0ED60941CDCD2DEA3362 /* Pods_SilentRunnerEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5C481693A0CB2871484A17 /* Pods_SilentRunnerEngineTests.framework */; };
 		871C4CF7BDDF43E5EC4669D2 /* Pods_SilentRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1412C4309AE7BA7868B764AE /* Pods_SilentRunner.framework */; };
 		A388760112C0C203DD76C6D6 /* Pods_SilentRunnerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75948A612ECA20CBBF0A7C /* Pods_SilentRunnerEngine.framework */; };
-		A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A456FA6F1EB9CCD70014EC54 /* SRServerCommandProtocol.h */; };
+		A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A456FA6F1EB9CCD70014EC54 /* SRServerCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A493DB351EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
 		A493DB361EA638000045D1D4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB341EA638000045D1D4 /* TestModel.m */; };
 		A493DB391EA638280045D1D4 /* TestModel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A493DB381EA638280045D1D4 /* TestModel+Ext.m */; };
@@ -449,8 +449,8 @@
 				00807EC11E00239600B4BD4C /* SRClientPool.h in Headers */,
 				00F3B24A1E015CD6002AFDF8 /* SRValueArgument.h in Headers */,
 				00807EAD1E0007B900B4BD4C /* SRCommandProtocol.h in Headers */,
-				A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */,
 				00B3F14C1E43673100D41C01 /* SRMessageHandler.h in Headers */,
+				A456FA701EB9CCD70014EC54 /* SRServerCommandProtocol.h in Headers */,
 				007860171E07E73F00B4DDA1 /* SRMockFabric.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
