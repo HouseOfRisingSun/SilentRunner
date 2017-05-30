@@ -18,7 +18,7 @@ function connection(socket, io, deviceIO, config) {
   intel.verbose(`Browser connected from ${addr}:${port}`);
   //intel.verbose('DeviceIO:', deviceIO);
   socket.on('send_message', (msg) => sendMessage(socket, io, deviceIO, msg));
-  socket.emit('server_ip', config.ip); 
+  socket.emit('server_ip', `http://${config.ip}:${config.devicePort}`);
   socket.emit('device_ip', deviceWS.getDeviceIP());
 }
 
