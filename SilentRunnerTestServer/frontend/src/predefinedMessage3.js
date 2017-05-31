@@ -19,7 +19,7 @@ export default `{
      }]
    }, {
      "value": {
-       "opt1": "test"
+       "aps": {"alert" :"Silent Hi!"}
      }
    }]
  }

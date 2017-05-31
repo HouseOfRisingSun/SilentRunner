@@ -87,6 +87,7 @@ export default class App extends Component {
   }
 
   sendMessage(msg) {
+    this.setState({outputJSON: ""});
     this.socket.emit("send_message", msg);
   }
 
@@ -110,7 +111,7 @@ export default class App extends Component {
     const props = {
       isInputValid,
       validate,
-      inputChange, 
+      inputChange,
       buttonCallbacks,
       runCallback: (e) => {this.sendMessage(this.state.inputJSON)},
       ...this.state

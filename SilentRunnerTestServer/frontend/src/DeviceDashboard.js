@@ -109,10 +109,10 @@ const DeviceDashboard = (props) => (
             Push Short Msg
           </WideButton>
           <WideButton onClick={props.buttonCallbacks[3]}>
-            DidLoad Msg
+            Send Message
           </WideButton>
           <WideButton onClick={props.buttonCallbacks[4]}>
-            WillTerminate Msg
+            Send Lockboxitem
           </WideButton>
         </SPanel>
       </Col>
