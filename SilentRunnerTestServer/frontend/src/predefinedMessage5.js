@@ -1,2 +1,2 @@
 export default `Test Message
-number 3`;
+number 5`;

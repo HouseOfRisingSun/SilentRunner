@@ -74,10 +74,10 @@ const OutputMessage = (props) => {
 
 const ValidationResult = ({valid}) => {
   let textColor = solarized.green;
-  let text = "Valid"; 
+  let text = "Valid";
   if(!valid) {
     textColor = solarized.red;
-    text = "Invalid"; 
+    text = "Invalid";
   }
   const ResultLabel = styled(Label)`
     color: ${textColor};
@@ -101,28 +101,28 @@ const DeviceDashboard = (props) => (
         <SPanel>
           <WideButton onClick={props.buttonCallbacks[0]}>
             Invalid Msg
-          </WideButton> 
+          </WideButton>
           <WideButton onClick={props.buttonCallbacks[1]}>
-            Push Msg
-          </WideButton> 
+            Push Long Msg
+          </WideButton>
           <WideButton onClick={props.buttonCallbacks[2]}>
-            Other Msg 1
-          </WideButton> 
+            Push Short Msg
+          </WideButton>
           <WideButton onClick={props.buttonCallbacks[3]}>
-            Other Msg 2
-          </WideButton> 
+            DidLoad Msg
+          </WideButton>
           <WideButton onClick={props.buttonCallbacks[4]}>
-            Other Msg 3
-          </WideButton> 
+            WillTerminate Msg
+          </WideButton>
         </SPanel>
       </Col>
       <Col xs={8}>
         <ButtonPanel>
-          <PanelButton onClick={props.runCallback}>Run</PanelButton> 
+          <PanelButton onClick={props.runCallback}>Run</PanelButton>
           <ValidationResult valid={props.isInputValid} />
         </ButtonPanel>
         <InputMessage value={props.inputJSON} onChange={props.inputChange}/>
-        <OutputMessage 
+        <OutputMessage
           value={props.outputJSON}
           isThereError={props.isThereError}
           valid={props.outputJSONValid}
@@ -132,7 +132,7 @@ const DeviceDashboard = (props) => (
       <Col xs={2}>
         <ServerPanel>
           <TagPanel>Server</TagPanel>
-          {props.serverIP} 
+          {props.serverIP}
         </ServerPanel>
       </Col>
     </Grid>
