@@ -67,7 +67,7 @@ export default class App extends Component {
       this.setState({serverIP: msg});
     });
     socket.on('device_ip', (msg) => {
-      console.log("device_ip message");
+      console.log("device_ip message", msg);
       this.setState({deviceIP: msg});
     });
     socket.on('receive_message', (msg) => {
@@ -76,8 +76,16 @@ export default class App extends Component {
       this.setState({
         outputJSONValid: valid,
         outputJSON: prettyMsg,
+        isThereError: false
       });
     });
+    socket.on('error_msg', (msg) => {
+        console.log("error message", msg);
+        this.setState({
+          outputJSON: msg,
+          isThereError: true,
+        });
+      });
     console.log("App did mount");
   }
 

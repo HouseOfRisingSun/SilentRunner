@@ -8,13 +8,13 @@ const deviceWS = require('./deviceSocket');
 
 const sendMessage = Promise.coroutine(function* (socket, io, deviceIO, msg) {
   intel.verbose('sendMessage', msg);
-  deviceWS.send(msg);
+  deviceWS.send(msg, socket);
 });
 
 function connection(socket, io, deviceIO, config) {
   const addr = socket.request.connection.remoteAddress;
   const port = socket.request.connection.remotePort;
-  //intel.verbose("server ip:", config.ip); 
+  //intel.verbose("server ip:", config.ip);
   intel.verbose(`Browser connected from ${addr}:${port}`);
   //intel.verbose('DeviceIO:', deviceIO);
   socket.on('send_message', (msg) => sendMessage(socket, io, deviceIO, msg));

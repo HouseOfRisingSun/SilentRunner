@@ -38,13 +38,14 @@ function getDeviceIP() {
   return '<disconnected>';
 }
 
-function send(msg) {
+function send(msg, clientSocket) {
   if(current_conn){
     intel.info("Sending message to device:", msg);
     current_conn.send(msg);
   }
   else{
     intel.info("Requested sending message to device, but device not connected", msg);
+    clientSocket.emit("error_msg", "Device not connected");
   }
 }
 
