@@ -13,7 +13,7 @@ import solarized from './solarized';
 const WideButton = styled(Button)`
     background-color: ${solarized.base2};
     color: ${solarized.base01};
-    margin: 2px;
+    margin-bottom: 2px;
     width: 100%;
 `;
 
@@ -92,7 +92,7 @@ const ValidationResult = ({valid}) => {
 
 const DeviceDashboard = (props) => (
   <div className="App">
-    <Grid>
+    <Grid fluid>
       <Col xs={2}>
         <SPanel>
           <TagPanel>Device</TagPanel>
