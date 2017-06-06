@@ -2,7 +2,7 @@ language: objective-c
 install: true
 env:
   global:
-    - FRAMEWORK_NAME=<SilentRunnerEngine>
+    - FRAMEWORK_NAME=SilentRunnerEngine
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
@@ -21,3 +21,5 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 osx_image: xcode8.2
+xcode_workspace: SilentRunner/SilentRunner.xcworkspace
+xcode_scheme: SilentRunnerEngine
