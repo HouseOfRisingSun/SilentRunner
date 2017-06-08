@@ -23,3 +23,11 @@ after_success:
 osx_image: xcode8.2
 xcode_workspace: SilentRunner/SilentRunner.xcworkspace
 xcode_scheme: SilentRunnerEngine
+deploy:
+  provider: releases
+  api_key: $GITHUB_ACCESS_TOKEN
+  file: $FRAMEWORK_NAME
+  skip_cleanup: true
+  on:
+    repo: repo/repo
+    tags: true
