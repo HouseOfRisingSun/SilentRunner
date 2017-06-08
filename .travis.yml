@@ -31,3 +31,4 @@ deploy:
   on:
     repo: HouseOfRisingSun/SilentRunner
     tags: true
+    all_branches: true
