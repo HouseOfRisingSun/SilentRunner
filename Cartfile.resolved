@@ -1,0 +1,5 @@
+github "Mantle/Mantle" "2.1.0"
+github "andrewBatutin/JSONRPCom" "0.0.4"
+github "andrewBatutin/SocketRocket" "0.5.1.1"
+github "hamcrest/OCHamcrest" "v6.1.1"
+github "jonreid/OCMockito" "v4.1.0"

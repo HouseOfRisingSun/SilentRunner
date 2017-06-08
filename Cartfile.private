@@ -1,4 +1,4 @@
-github "facebook/SocketRocket"
+github "andrewBatutin/SocketRocket"
 github "Mantle/Mantle"
 github "andrewBatutin/JSONRPCom"
 github "hamcrest/OCHamcrest" ~> 6.0
