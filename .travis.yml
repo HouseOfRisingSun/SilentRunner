@@ -26,8 +26,8 @@ xcode_scheme: SilentRunnerEngine
 deploy:
   provider: releases
   api_key: $GITHUB_ACCESS_TOKEN
-  file: $FRAMEWORK_NAME
+  file: $FRAMEWORK_NAME.framework.zip
   skip_cleanup: true
   on:
-    repo: repo/repo
+    repo: HouseOfRisingSun/SilentRunner
     tags: true

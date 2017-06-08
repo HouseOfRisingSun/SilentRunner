@@ -1,11 +1,11 @@
 <h3 align="left" >
-  <img valign="middle" src="https://github.com/andrewBatutin/SilentRunner/blob/master/assets/house_of_rising_sun.png?raw=true">
+  <img valign="middle" src="https://raw.githubusercontent.com/HouseOfRisingSun/SilentRunner/master/assets/house_of_rising_sun.png">
   <b>SilentRunner</b>
 </h3>
 
- [![Build Status](https://travis-ci.org/andrewBatutin/SilentRunner.svg?branch=master)](https://travis-ci.org/andrewBatutin/SilentRunner)
+ [![Build Status](https://travis-ci.org/HouseOfRisingSun/SilentRunner.svg?branch=master)](https://travis-ci.org/andrewBatutin/SilentRunner)
 
- [![codecov](https://codecov.io/gh/andrewBatutin/SilentRunner/branch/master/graph/badge.svg)](https://codecov.io/gh/andrewBatutin/SilentRunner)
+ [![codecov](https://codecov.io/gh/HouseOfRisingSun/SilentRunner/branch/master/graph/badge.svg)](https://codecov.io/gh/HouseOfRisingSun/SilentRunner)
 
  [![codebeat badge](https://codebeat.co/badges/3b2fee2c-afc2-4410-9281-6b56224ee112)](https://codebeat.co/projects/github-com-andrewbatutin-silentrunner)
 
@@ -78,8 +78,8 @@ So for push notifications check if you have `application:didReceiveRemoteNotific
 
 ## Demo Apps
 
-* [Obj-C demo app](https://github.com/andrewBatutin/SilentRunnerDemo)
-* [Swift demo app](https://github.com/andrewBatutin/SRTestApp)
+* [Obj-C demo app](https://github.com/HouseOfRisingSun/SilentRunnerDemo)
+* [Swift demo app](https://github.com/HouseOfRisingSun/SRTestApp)
 
 ###Dependencies
 * [SocketRocket](https://github.com/facebook/SocketRocket)
