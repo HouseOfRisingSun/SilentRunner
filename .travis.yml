@@ -7,8 +7,6 @@ before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
   - gem install cocoapods
-  - rm -rf ~/.cocoapods/repos/master
-  - pod setup
 before_script:
   # bootstrap the dependencies for the project
   # you can remove if you don't have dependencies
@@ -22,7 +20,6 @@ branches:
   - /^\d+\.\d+\.\d+.*$/
 script:
   - travis_retry xcodebuild -workspace SilentRunner/SilentRunner.xcworkspace  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' -scheme SilentRunnerEngine  test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-  - pod lib lint --use-libraries --allow-warnings SilentRunnerEngine.podspec
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 osx_image: xcode8.2
