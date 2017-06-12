@@ -21,10 +21,10 @@ before_script:
   - pod setup
 script:
   - travis_retry xcodebuild -workspace SilentRunner/SilentRunner.xcworkspace  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' -scheme SilentRunnerEngine  test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
   - pod lib lint --use-libraries --allow-warnings SilentRunnerEngine.podspec
   - carthage build --no-skip-current
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 before_deploy:
   - carthage archive $FRAMEWORK_NAME
 deploy:
