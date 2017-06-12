@@ -24,14 +24,14 @@
     [SRClientPool addClient:[UIApplication sharedApplication].delegate forTag:@"app"];
     TestModel* model = [[TestModel alloc] init];
     [SRClientPool addClient:model forTag:@"TestModel"];
-    self.serv = [SRServer serverWithURL:@"http://localhost:1489"  withErrorHandler:^(NSError * error) {
+    self.serv = [SRServer serverWithURL:@"http://192.168.193.107:1489"  withErrorHandler:^(NSError * error) {
         [self.serv sendErrorMessage:error];
     }];
 }
 
 
 - (IBAction)testAction:(id)sender {
-    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"hi"];
+    [self.serv webSocket:self.serv.webSocket didReceiveMessage:@"Should see error at Silent Viewer"];
 }
 
 - (IBAction)runServer:(id)sender {

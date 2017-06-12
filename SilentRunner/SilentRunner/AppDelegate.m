@@ -20,8 +20,13 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    NSLog(@"Hi Folks! %@", userInfo);
+}
+
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
-    NSLog(@"Hi Folks! %d", application.isIgnoringInteractionEvents);
+    NSLog(@"Hi Folks! %@", userInfo);
 }
 
 @end
